@@ -1,0 +1,2 @@
+WIRESHARK  - ANALISADOR DE PROTOCOLOS
+Permite analisar pacotes  e problemas na rede.
