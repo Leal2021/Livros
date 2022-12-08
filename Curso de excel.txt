@@ -1,0 +1,305 @@
+CURSO DE EXCEL
+
+01 - INTRODUÇÃO E CONCEITO
+As versões de 2007 a 2016 mudam alguns caminhos.
+ctrl + seta pra direita = se desloca ate a ultima linha
+ctrl + seta pra baixo = se desloca para ultima celula.
+ctrl + home = se desloca ate a primeira celula.
+ctrl + rolagem do mouse = zoom.
+As letras e numeros tambem sao chamados de titulo.
+
+**Nova Planilha
+Shift + f11 ou  clicar no sinal de '+'
+Com o botão direito na planilha, novas opções são apresentadas.
+- excluir
+- renomear (duplo clique)
+- mover ou copiar (colocar o arquivo em pasta de trabalho)
+- exibir código (mostra uma linguagem de programação - visual basic)
+- proteger planilha (inserção de senha na planilha, células ou pasta de trabalho)
+- cor da guia = facilita a localização da planilha.
+- ocultar (oculta a planilha selecionada), para desocultar, segue botão direito, reexibir (mostra uma caiza com as planilhas ocultas).
+
+
+Conceito de tabela = é um conjunto de células com a intersecção entre linhas e colunas. O ponteiro do mouse em forma de cruz, indica inicio para uso.
+Movimentar célular, clicar, segurar e movimentar o mouse.
+A alça de preenchimento, auxilia na reprodução automatica de fórmulas e informações.
+
+**Determinar numero de planilha
+- menu arquivo, opções, geral, incluir este numero de planilha e aumentar. Da próxima vez que abrir o excel o numero de planilha sera adicionado.
+- tema do Office = altera o plano de fundo para trabalhar.
+
+02 - SEQUENCIA LÓGICA LINHAS E COLUNAS
+Ao usar a alça de preenchimento para meses, facilita. A tecla segurada, e ao usar a alça de preenchimento completa as informações.
+Seleção com intervalos de números = colocamos 15 e 30, ao usar a alça de preenchimento colocará de 15 em 15.
+
+**Auto-ajuste
+duplo click na coluna, caso seja personalizado, ir na linha da coluna,clicar e segurar ou botao direito largura =  colocar a medida desejada. O processo é o mesmo para altura.
+
+**Nova linha ou coluna
+Escolher aonde quer que ela fique, botão direito, inserir.
+
+**Reprodução personalizada
+- selecionar um intervalo de celular, digitar a informação, segurar o ctrl e pressionar Enter.
+
+**Ocultar célula
+ - seleocionar o intervalo, botão direito, ocultar.
+**Menu exbir
+- permite configurar para obter mais privacidade, como retirar linhas de grade, barra de fórmulas.
+
+03 - FORMATAÇÃO DE TABELAS
+Na Guia Página Inicial traz as principais opções para formatação.
+
+É aconselhavel usar virgula quando se tratar com casas decimais.
+
+**Formatar células
+Botão direito na célula formatar células ou ctrl + 1.
+
+04 - PRIMEIRAS FÓRMULAS
+Todo o cálculo inicia com igual.
+
+**Regra de Prioridade
+()	parenteses
+^	expoencial
+* /	multiplicação ou divisão
++ -	adição ou subtração
+
+Endereço relativo é a forma de copiar fórmula e colando nas celulas na sequencia, cima ou abaixo.
+
+05 - FUNÇÕES BÁSICAS
+=SOMA(B4:E4)
+=MÉDIA(B4:E4)
+=MÍNIMO(B4:E4)
+=MÁXIMO(B4:E4)
+=MAIOR(B4:E4;1) esta fórmula encontra a primeira maior, vai encontrar a primeira maior do intervalo, posso escolher a '2','3','4' maior.
+=MENOR(B4:E4;1) mesma função de maior
+
+06 - MESCLANDO FUNÇÕES BÁSICAS
+Somando com intervalos intercalados
+=SOMA(A1:A4;B2;B4;C3:C5;C7)
+=MÉDIA(MENOR(A1:A4;1);(MENOR(A1:A4;2)))	// nesse caso houve a mesclagem de duas fórmulas.
+
+07 - FUNÇÕES DE CONTAGEM
+As funções de contagem funcionam atraves de condições.
+=CONT.SE(A2:A6;"carlos")	// converte em numero as palavras iguais, nesse casso foi usado de exemplo o nome 'CARLOS'.
+
+=CONT.NÚM(C2:C6) // realiza a qtde de números na tabela
+=CONT.VALORES(A2:A6) // converte palavras dentro das células em qtde
+=CONTAR.VAZIO(A2:A7) // realiza a contagem de células vazias na tabela
+
+08 - FUNÇÃO SE (CONDICIONAL)
+Esta função usa condições, retornando valores após serem testados.
+=SE(A2=40;"Igual";"diferente") // função se simples
+=SE(A4<=17;"Menor";"Maior") // se composta
+
+09 - TREINANDO FUNÇÃO SE
+10 - CALCULANDO LUCRO
+PRODUTOS	PREÇO DE COMPRA	%	QTDE	PREÇO DE VENDA	TOTAL
+Geladeira	R$ 1.300,00 	10%	5	 R$ 1.430,00 	 R$ 7.150,00 
+Fogão		R$ 1.000,00 	15%	3	 R$ 1.150,00 	 R$ 3.450,00 
+TvSmart		R$ 2.500,00 	5%	10	 R$ 2.625,00 	 R$ 26.250,00 
+Microondas	R$ 450,00 	8%	8	 R$ 486,00 	 R$ 3.888,00 
+Tablet		R$ 250,00 	9%	50	 R$ 272,50 	 R$ 13.625,00 
+						TOTAL	 R$ 54.363,00 
+Foi usado a tabela acima como referencia. Aonde foi calculado o lucro.
+=B2+(B2*C2) // valor de B2 somado a multiplicação de B2 com C2.
+
+11 - FUNÇÃO SE COM OPERADORES
+Foi usado uma o~pção chamado de congelamento, ao clicar e apertar F4, ocorre o congelamento tanto da linha como na coluna, sendo representado como sinal de '$'.
+
+=SE(B10<=1000;B10*$B$15;B10*$B$16)
+
+FOLHA DE PAGAMENTO					
+Código	Nome	Salário Bruto	Abono		Inss		Salário Liq
+345	André	 R$ 806,00 	 R$ 200,00 	R$ 64,48 	R$ 941,52 
+234	Juliano	 R$ 2.300,00 	 R$ 150,00 	R$ 184,00 	R$ 2.266,00 
+722	Amanda	 R$ 1.800,00 	 R$ 150,00 	R$ 144,00 	R$ 1.806,00 
+438	Roberto	 R$ 890,00 	 R$ 200,00 	R$ 71,20 	R$ 1.018,80 
+
+=C30*8% // calculo do inss
+=C30+D30-E30 // salario liquido
+
+12 - CRIANDO PAINÉIS
+Usado para facilitar a navegação entre as planilhas.
+- menu inserir, autoformas, escolher retangulo com cantos arredondados
+- botão direito, hyperlink, colocar neste documento, e procurar a planilha aser aberta.
+- colocar a seta do mouse em cima do botão (virar mãozinha)
+- segurando a tecla ctrl e clique em cima, o botão volta a ser editável.
+
+13 - FUNÇÃO PROCV
+Função de procura e referencia, considera função avançada.
+=procv (realiza na vertical)
+=proch (realiza na vertical)
+=PROCV(A2;$A$10:$B$14;2) // nao é necessário inserir célula de segurança
+
+14 - PROCV e PROCH
+*Renomear Tabela
+- Selecionar determinado intervalo
+- menu Fórmulas, Gerenciador de nomes, clicar em novo, confirmar a seleção dos valores ou  fazer novamente manualmente e colocar um nome para o intervalor.
+
+*Formatação condicional
+- Formatação Condicional, Realçar Regras das Células, Igual a
+- Insira a informação a ser mudada e ao lado muda a cor ou posso personalizar.
+
+15 - TREINAMENTO DE FÓRMULA PROCV
+Foi feito exemploscom Ipi e nota fiscal.
+
+16 - FUNÇÃO SOMASE
+trata-se de uma função que irá calcular um soma atraves de um condição ou critério.
+Faz a soma de determinado item com intervalos entre.
+
+17 - TREINANDO FÓRMULAS
+Houve mais um treinamento dentro da planilha somase, com um exemplo de supermercados.
+
+18 - PROCV COM EXPONENCIAÇÃO
+Realizado exercicios para fixação.
+
+19 - PROCH, CONGELAMENTO e SE COMPOSTA
+Realizado exercicios para fixação.
+
+20 - CAIXA DE COMBINAÇÃO e FUNÇÃO DESLOCAMENTO
+Antes de usar as caixas, devemos habilitar a Guia Desenvolvedor.
+- Menu Arquivo
+- Opções
+- Personalizar Faixas de Opções
+- Habilitar Guia Desenvolvedor
+* Iniciar Caixa de Combinação
+- Menu Desenvolvedores, Inserir, Caixa de combinação e montar na tela
+- necessitando editá-la, segurar CTRL e clicar em cima
+- Botão direito, Formatar Controle
+- Intervalo de Dados = selecionar a tabela onde esta os campos a serem acessados.
+- Vinculo da Célula = marcar a célula que recebeu a caixa de combinação (B2)
+Este recurso serve como um combobox no delphi.
+
+** Habilitar outras informações ao selecionar na caixa de combinação
+=desloc( // após clicas no botão 'Função' para abrir janela personalizada.
+- REF = marco apenas o titulo da informação desejada (IDADE)
+- LINS = célula de referencia, neste caso foi usado B2
+- COLS = colocamos 0
+
+21 - SISTEMA DE CADASTRO
+Ao iniciar esta etapa.
+- Menu Desenvolvedores, Inserir, Caixa de Grupo (radiogroup no delphi)
+- Menu Desenvolvedores, Inserir, Checkbox
+
+22 - Continuação da Aula 21
+Iniciando os vinculos.
+- Botão direito no primeiro item do curso, e vincular com a célula que vai receber o curso (a informação será vinculada quando clicar)
+- Inserrir uma Fórmula Se para detecter o estado do componente, sendo verdadeiro insere o que foi marcado no checkbox.
+
+** Fórmula de Concatenação
+=CONCATENAR(C14;" ";C15;" "; C16) // entre aspas então os espaços que serão colocados entre as informações.
+
+** Uso de botão para realizar ações
+- Menu Desenvolvedores, Inserir, Botão
+
+** Uso de Macro
+- Menu Desenvolvedores, Gravar Macro (nesta janela é possivel adicionar atalho com o ctrl + tecla desejada para iniciar a macro)
+- realizar as tarefas e depois botão direito no botão, atribuir macro.
+- inserir uma linha em branco
+- copiar aonde estão dos dados que devem aparecer, escolher a tabela da macro e botão direito, selecionar valores (não suar ctrl + c)
+- selecionar uma linha abaixo e formatar
+
+23 - CAIXA DE OPÇÃO COM SE
+É um elemento que permite optar por uma opção.
+- Menu desevolvedores, Opção
+- Botão direito (possui as mesma opções da Caixa de Combinação)
+
+24 - FUNÇÃO BDCONTAR
+Fórmula que permite um certa filtragem em um banco de dados.
+=BDCONTAR(A1:E7;;A9:E10) // foi colocado 2 ';;' para anular o critério padrão da fórmula.
+
+25 - FUNÇÃO BDSOMAR
+Permite fazer cálculos matemáticos através de critérios.
+Assim com BDcontar é necessário uma tabela para critérios. Ocorre a soma e tambem permite filtrar quais itens receberam valores.
+
+26 - FUNÇÃO BDEXTRAIR
+Permite ler informações do db, porém nao realiza consultas com informaç~eos repetidas.
+
+** Criar Lista Suspensa
+- Menu Dados, validação, escolher lista e fazer a relação do intervalo.
+
+27 - FUNÇÃO SEERRO
+Função que permite substtituir mensagens de erro dentro das células.
+=SEERRO(D3/C3;"Aguardando valor") // caso apague algum valor no cálculo, a Fórmula SeErro vai substitui com uma frase.
+
+28 - FUNÇÃO ESCOLHER
+É uma funçao de busca e referência. Esta função pede referencias alternadas.
+
+29 - FUNÇÕES DE DATA e HORA com FUNÇÃO ESCOLHER
+Treinamento com exemplos sobre funções com data e hora.
+
+30 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
