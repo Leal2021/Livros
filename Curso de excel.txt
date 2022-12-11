@@ -228,8 +228,72 @@ Função que permite substtituir mensagens de erro dentro das células.
 29 - FUNÇÕES DE DATA e HORA com FUNÇÃO ESCOLHER
 Treinamento com exemplos sobre funções com data e hora.
 
-30 - 
+30 - GRÁFICOS
+É representação gráfica de uma tabela de dados.
+- Menu Inserir, Gráficos Recomendados
 
+** Alterar Tipo de Gráfico
+-selecionar o gráfico, Menu Design, ALterar tipo de gráfico (ou selecionar dados e pressionar F11).
+
+**Mover Gráfico
+-selecionar o gráfico, Menu Design, Mover Gráfico
+Nova Planilha = insere o gráfico em uma nova a tabela.
+
+** Há opções de formatação no gráfico, clicando no mesmo e segurando e arrastando. Permite retirar ou deslocar informações do gráfico.
+
+31 - FUNÇÃO CORRESP
+Função de correspondencia, relativo ao item procurado, podendo retornar em linha ou coluna na qual esta contida.
+
+32 - FUNÇÃO CORRESP COM PROCV E SEERRO
+
+33 - FUNÇÃO MATRICIAL
+Executa multiplos cálculos voltando apenas um resultado. Não permite apagar dados aleatórios.
+
+** Criar Réplica de Colunas de Dados
+- selecionar aonde será replicado, sinal de '=' e pressionar Ctrl + Shift + Enter.
+
+34 - FUNÇÃO MATRICIAL COM SE
+Exercicios para a prática do conteúdo.
+
+35 - FUNÇÃO SOLVER
+Considerado um plugin para o excel. Auxilia na adequação de fluxo de caixa, estoque.
+
+** Habilitar Solver
+-Menu Arquivo, opções, Suplementos, Suplementos do excel,Ir, Marcar Solver, OK.
+Estará disponivel na guia Dados.
+
+** Usando Solver
+-Definir Objetivos = valor total da soma
+-Alterando Células Variaveis = foi usado as qtdes para se adequarem ao valor disponivel.
+
+36 - TABELA DINÂMICA
+Serve para dinamizar, resumir ou otimizar dados na planilha, para melhor entendimento.
+- Após selecionar os dados juntamenta com os títulos da tabela, Menu Inserir, Tabela Dinâmica
+- Aparecem campos na esquerda, sendo possivel marcá-los ou arrastá-los.
+Exemplo:
+Arrastei Cargo para Linha e Salário para Valores.
+- para saber o numero de pessoas.
+- arrastar salário, botão direito, Resumir Valores por (Contagem)
+
+37 - FOLHA DE PAGAMENTO
+Foi gerada uma folha de pagamento no excel, como forma de prática.
+
+
+38 - FILTRO AVANÇADO COM MACROS
+- Iniciando com a Gravação da Macro
+- Gravar Macro
+- Menu Dados, Filtro Avançado
+- Selecionar toda a tabela
+- Em Intervalo de Dados (refere-se a tabela secundária aonde será mostrado o filtro)
+- Marcar 'Copiar para outro local'
+	- copiar para marcar os campos da tabela terciária
+- Após para a Macro (Menu Desenvolvedores, Parar Gravação)
+
+** Macro para Limpar
+- Menu Desenvolvedores, Macro, Iniciar Gravação
+- Seleciona toda a tabela secundária, Menu Página Inicial e clicar na borracha e depois para gravação.
+
+39 - FLUXO DE CAIXA
 
 
 
