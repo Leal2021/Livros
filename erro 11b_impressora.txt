@@ -1,0 +1,15 @@
+erro de 11b windows nao pose comunicar a impressora.
+
+windows + r
+appwiz.cpl
+
+clicar em ativar ou desativar recursos do windows
+abrir serviços de impressão e documentos
+marcar serviçoe de impressão LPD
+
+após widows + r digitar services.msc para chegar os serviços disponiveis
+- procurar por spooler de impressão deve estar em automatico
+- apos abrir regedit
+-hkey_local_machine
+-system
+-current control set

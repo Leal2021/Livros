@@ -1,0 +1,8 @@
+FAZER TESTE COM CARD COMO PÁGINA INDEX.HTML
+
+criar uma base nova usando bootstrap[
+
+usar nav,nav-link no site   
+
+novo logo da recall parecido com o kadak  ou 
+dentro de um retangulo                            

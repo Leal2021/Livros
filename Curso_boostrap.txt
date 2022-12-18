@@ -1,0 +1,930 @@
+CURSO DE BOOSTRAP
+01 - INTRODUÇÃO AO BOOTSTRAP
+É um framework mobile first.
+Site oficial do boostrap, oferecea documentação, obter o boostrap e exemplos.
+Oferece a opção de usar o cdn para usar toda a biblioteca.
+No site oficial disponibiliza o cdn.
+Quick start
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+
+Javascript
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.j">
+
+Após a inserção dos cdn, o  bootstrap possui uma formatação própria.
+
+02 - COMO USAR CLASSE CONTAINER
+<div class="container"><!--a classe container indica ser fixo, recebe centralização, automaticamente se torna responsivo-->
+    <h1>CFB CURSOS bootstrap</h1>
+    <p>Este container de tamanho fixo</p>
+</div>
+
+<div class="container-fluid border p-5 bg-primary text-white"><!--ocupa todo o espaço disponivel da página, envolve margins, padding.
+Border insere borda
+pt=padding top,somente p insere em todas os lados
+bg + cor=background na página
+text+ cor=define cor da letra
+border border+cor=insere cor na borda-->
+
+03 - TRABALHANDO COM GRIDS (classes col e row)
+<div class="container-fluid border border-danger p-5">
+    <div class="border border-primary row"><!--antes de colocar a class col é necessário informar row no elemento pai-->
+        <div class="col-1 border">Coluna 1</div><!--define um tamanho especifico-->
+        <div class="col-2 border">Coluna 2</div>
+        <div class="col border">Coluna 3</div>
+    </div>
+
+04 - TRABALHANDO COM GRID PT2 (exercicio prático)
+<div class="container-fluid border border-primary p-1 text-center">
+    <div class="row border">
+        <div class="col border">Home</div><!--col-2, número de espaços que será ocupado pela linha-->
+        <div class="col border border-4">Sobre nós</div><!--largura da borda, border border-4-->
+        <div class="col border border-2">Contato</div>
+    </div>
+
+05 - FORMATANDO FONTE TIOGRAFIA
+A tipografia possui opção de tag e classe.
+<div class="container-fluid border border-2 border-primary p-1 row">
+    <div class="container-fluid col">
+<h1>CFB CURSOS</h1>
+<h2>CFB CURSOS</h2>
+<h3>CFB CURSOS</h3>
+<h4>CFB CURSOS</h4>
+<h5>CFB CURSOS</h5>
+<h6>CFB CURSOS</h6>    
+</div>
+<div class="container-fluid border border-2 border-danger p-1 col">
+    <p class="h1">CFB CURSOS</p><!--usando a classe de h1-->
+    <p class="h2">CFB CURSOS</p>
+    <p>CFB CURSOS</p>
+    <p>CFB CURSOS</p>
+    <p>CFB CURSOS</p>
+    <p>CFB CURSOS</p>
+  
+</div>
+</div>
+
+    <p class="display-1">CFB CURSOS</p><!--display classe de destaque,são tags de formatação de título-->
+    <p class="display-2">CFB CURSOS</p>
+
+06 - CORES EM BOOTSTRAP
+    <div class="container fluid"><!--sequencia das cores, tb aceitam bg + nome da cor-->
+        <p class="h3 text-muted">Muted</p>
+        <p class="h3 text-primary">Important</p>
+        <p class="h3 text-success">Success</p>
+        <p class="h3 text-info">Info</p>
+        <p class="h3 text-warning">Warning</p>
+        <p class="h3 text-danger">Danger</p>
+        <p class="h3 text-secondary">Secondary</p>
+        <p class="h3 text-dark">Dark</p>
+        <p class="h3 text-white-50 bg-primary">Branco</p><!--grau de transparencia no elemento-->
+        <p class="h3 text-light bg-primary">Light</p>
+    </div>
+
+07 - CLASSES PARA TABELAS
+<table class="table table-hover table-bordered table-primary"><!--classe table ja possui uma estrutura pronta
+table striped = coloca cores e alternando entre escuro e claro.
+table-hover = cria efeito de passar o mouse escurendo a linha.
+table-primary = define a cor de fundo.
+table-bordered = insere bordas e table-borderless = retira as bordas.
+-->
+
+08 - CLASSES PARA IMAGENS
+<img src="imagens/kof_personagensTODOS.jpeg" alt="" class="w-25 rounded-circle my-2 mx-auto img-thumbnail img-fluid">
+<!--w = width porem em %
+rounded = arredonda os cantos suavemente
+rounded-circle = deixa a imagem dentro de um círculo
+d-black = display
+my = margem
+mx-auto = centraliza a imagem no container
+img-thumbnail = insere uma borda como se fosse um retrato
+img-fluid = deixa a imagem responsiva
+-->
+
+09 - CRIANDO JUMBOTRON
+Essa classe foi descontinuada no bootstrap3. Permitia dar destaque ao container.
+<div id="jumbotron" class="container bg-primary text-white p-4 rounded my-4 invisible"><!--invisible = oculta o jumbotron-->
+<h1 class="text-center">CFB CURSOS</h1>
+<p class="text-center">Desenvolvimento na áreas de Tecnologia.</p>
+
+</div>
+<div>
+<button onclick="document.getElementById('jumbotron').classList.remove('invisible')">Mostrar</button>
+    <button onclick="document.getElementById('jumbotron').classList.add('invisible')">Ocultar</button>
+</div>
+
+10 - CLASSES PARA ALERTAS
+<div class="alert alert-success alert-dismissible fade show"><!--tipo de alerta já com formatação pronta e cor padrão.
+alert-dismissible = indica que o alerta pode ser fechado
+fade show = adiciona efeito ao fechar a janela do alert-->
+<button class="btn-close" data-bs-dismiss="alert"></button>
+    Sucesso em uma ação
+
+</div>
+
+11 - CLASSES PARA BOTÕES
+<div class="container-fluid bg-primary">
+<div class="container-fluid bg-white m-3 p-3">
+    <button class="btn btn-outline-primary" disabled>Normal</button><!--a class btn já possui hover próprio
+    disable = desabilita o botão-->
+    <button class="btn btn-primary btn-lg">Primário</button><!--adiciona tamanho ao botão, sm = small, lg = large-->
+    <button class="btn btn-secondary btn-block">Secundário</button>
+    <button class="btn btn-success">Sucesso</button>
+    <button class="btn btn-info">Informação</button>
+</div>
+<div class="container-fluid bg-white m-3 p-3">
+    <button class="btn btn-warning btn-outline-primary">Alerta</button><!--coloca fundo do botão como primary-->
+    <button class="btn btn-danger">Perigo</button>
+    <button class="btn btn-dark">Dark</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-link">Link</button>
+</div>
+</div>
+
+12 - GRUPO DE BOTÕES
+Cria um menu com setas para gerar sub-menus.
+<button class="btn btn-primary">HTML</button>
+<button class="btn btn-primary">CSS</button>
+<div class="btn-group">
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">JAVASCRIPT</button><!--dropdown-toggle  = cria seta no menu-->
+
+<div class="dropdown-menu"><!--indicando a classe-->
+    <a href="#" class="dropdown-item">Variaveis</a><!--itens do menu-->
+    <a href="#" class="dropdown-item">If e Else</a>
+    <a href="#" class="dropdown-item">Loops e For</a>
+</div>
+</div>
+<button class="btn btn-primary">BOOTSTRAP</button>
+<button class="btn btn-primary">REACT</button>
+</div>
+</div>
+
+13 - ALINHAMENTO E POSICIONAMENTO (em geral para qualquer conjunto de elementos)
+   <img src="imagens/Logo_tkof96.png" alt="" class="img-thumbnail float-start d-block imagem"><!--float start = alinha a esquerda
+    float-end = alinha a direita
+    mx-auto = centraliza a imagem
+-->
+    <
+
+14 - COLUNAS EM BOOSTRAP
+  <!--align-items-start = alinha a esquerda e no topo
+        align-items-center = centraliza no eixo x e y
+    align-items-end = alinha na base da linha
+PARA FUNCIONAR RETIRAR O ALINHAMENTO
+align-self-start = alinha no topo a direita
+align-self-center = centraliza 
+align-self-end = alinha na inferior esquerda
+ALINHAMENTO VERTICAL
+justify-content-start = alinhas linhas a esquerda
+justify-content-center = centraliza as linhas
+justify-content-end = alinha as linhas a esquerda
+order = permite determinar a ordem das linhas (order-3), inicia a linha pela coluna 3
+-->
+
+15 - BADGE (distintivo ou crachá)
+Classe usada para destacar conteúdos.
+    <h2>Curso de Bootstrap - Primary <span class="badge bg-primary rounded-pill">Badges</span></h2>
+    <!--badge usado dentro do span junto ao bg
+    rounded-pill = deixa oval
+-->
+<button type="button" class="btn btn-primary"> Download <spam class="badge bg-danger">4</spam></button>
+
+16 - CLASSES PARA PROGRESS BAR (barra de progresso)
+    <div class="container">
+    <div class="progress"><!--área da barra-->
+        <div id="progressbar1" class="progress-bar bg-warning text-primary progress-bar-striped" style="width: 50%;"><!--progresso da barra
+        progress-bar-striped = animação barra de progresso
+    progress-bar-animated-->
+
+        </div>
+    </div>
+</div>
+<script>
+let barra=document.getElementById('progressbar1');
+let carga=0;
+let intBarra=setInterval(()=>{
+    barra.innerHTML=carga + "%";
+barra.style.width=carga + "%";
+carga ++;
+if (carga>=100) {
+    carga=0;
+}
+},100)
+</script>
+
+USO DAS BARRAS PARA GRÁFICOS
+<div class="container">
+    <div class="progress" style="height: 30px;"><!--área da barra-->
+    <div class="progress-bar bg-primary" style="width: 50%;">50%</div>
+        <div class="progress-bar bg-success" style="width: 10%;">10%</div>
+        <div class="progress-bar bg-danger" style="width: 40%;">20%</div>
+        <div class="progress-bar bg-warning" style="width: 20%;">10%</div>
+
+        </div>
+    </div>
+</div>
+
+17 - SPINNER (loadind)
+<div class="spinner-border text-primary spinner-border-sm"><!--
+spinner-border = loading
+spinner-border-sm = define tamanho
+spinner-grow = loading piscante
+-->
+</div>
+
+Exemplo de spinner dentro do botão
+<button class="btn btn-primary"> <span class="spinner-border spinner-border-sm"></span> Aguarde</button>
+
+18 - FORMATAR PAGINAÇÃO EM BOOTSTRAP
+<ul class="pagination"><!--classe necessária-->
+   <li class="page-item active"><a href="#" class="page-link">Anterior</a></li><!--page-item refere-se aos tópicos na página
+active = define qual será destacado
+disabled = desabilita o botão ou link-->
+   <li class="page-item" onclick="ativar(this)"><a href="1.html" class="page-link">1</a>  </li>
+   <li class="page-item" onclick="ativar(this)"><a href="#" class="page-link">2</a>  </li>
+   <li class="page-item" onclick="ativar(this)"><a href="#" class="page-link"> 3</a> </li>
+   <li class="page-item" onclick="ativar(this)"><a href="#" class="page-link"> 4 </a></li>
+   <li class="page-item" onclick="ativar(this)"><a href="#" class="page-link">Próxima</a></li>
+</ul>
+
+<script> <!--script para deixar marcado o botão clicado-->
+    const ativar=(elemento)=>{
+        let itens=document.getElementsByClassName("page-item");
+        for(i=0;i<itens.length;i++){
+            itens[i].classList.remove("active");
+        }
+        elemento.classList.add("active")
+    }
+</script>
+
+19 - LISTGROUP EM BOOTSTRAP
+Cria uma lista de links, botões.
+<ul class="list-group">
+    <li class="list-group-item list-group-item-action list-group-item-primary">Curso de bootstrap <span class="badge bg-primary rounded-pill">19</span></li><!--
+    active = deixa habilitado, mesma função da aula anterior
+     list-group-item-action = função de hover
+     list-group-horizontal = deixa em linha, como se fosse menu
+     list-group-item-primary = insere fundo, destacando o action
+    -->
+    <li class="list-group-item list-group-item-action list-group-item-success">Curso de Javascript</li>
+    <li class="list-group-item list-group-item-action">Curso de C++</li>
+</ul>
+
+20 - CARDS EM BOOTSTRAP
+Permite cartão como entrada de site ou explicação de algum serviço ou produto.
+    <div class="container text-center" style="width: 500px;">
+<div class="card"><!--classe necessária-->
+    <div class="card-header"><!--área de cabeçalho-->
+        <h1 class="card-title">CFB CURSOS</h1>
+    </div>
+    <img src="imagens/Logo_tkof96.png" alt="" class="card-img">
+    <!--card-img = define a imagem como parte do card-->
+    <div class="card-body"><!--classe indica o corpo do card-->
+        <p class="card-text">O Canal voltado para programação.</p>
+        <!--área para descrição do assunto-->
+        <a href="https://www.youtube.com/cfbcursos" target="_blank" class="btn btn-primary"> Acessar </a>
+    </div>
+    <div class="card-footer">www.youtube.com.br</div><!--rodapé do card-->
+</div>
+</div>
+
+21 - MENU DROPDOWN
+Permite criar um menu personalizado, com títulos sobre as opções do menu.
+ <div class="dropdown dropstart"><!--classe necessária
+dropend = abre o menu com as opções à direita
+dropstart = abre o menu com as opções à esquerda-->
+    <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"> Cursos </button>
+    <div class="dropdown-menu">
+        <h2 class="dropdown-header">Desenvolvimento Web</h2><!--serve como um título no menu-->
+        <a href="#" class="dropdown-item" title="Padronização de estilos">Bootstrap</a>
+        <a href="#" class="dropdown-item">Javascript</a>
+        <hr class="dropdown-divider"><!--insere uma linha divisória entre o menu-->
+        <h2 class="dropdown-header">Desenvolvimento Desktop</h2>
+        <a href="#" class="dropdown-item">C++</a>
+        <a href="#" class="dropdown-item">QTCreator</a>
+        <hr class="dropdown-divider">
+        <h2 class="dropdown-header">Desenvolvimento Mobile</h2>
+        <a href="#" class="dropdown-item">ReactNative</a>
+        <a href="#" class="dropdown-item">AppInventor</a>
+    </div>
+ </div>
+
+22 - COLLAPSE EM BOOTSTRAP
+Formatação especifica de um texto ou comentário, podendo exibir ou ocultar.
+<button data-bs-toggle="collapse" data-bs-target="#cfbcursos" class="btn btn-warning"> CFB CURSOS </button><!--
+    collapse = alterna a visualização
+-->
+<a href="#cfbcursos" class="btn bg-primary" data-bs-toggle="collapse" data-bs-target="#cfbcursos"> Bootstrap </a>
+<!--no caso de link não é necessário usar dataset-->
+<div id="cfbcursos" class="collapse bg-primary text-white" style="width:550px;border: 1px solid black;border-radius: 10px;margin-left: 50px;">
+
+        <p style="text-align: justify;text-indent: 20px; margin: 5px;">  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut dolor earum quas saepe illo fugit nobis exercitationem esse error quae veritatis culpa modi nisi fuga alias, assumenda at voluptates consequuntur?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quod vitae doloribus, cumque tenetur sequi repellat inventore quae cupiditate provident ipsum rerum cum architecto autem eaque similique expedita ab mollitia!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab temporibus sapiente quod delectus odio harum numquam natus, quas, dolorum commodi saepe porro facere magnam quia blanditiis quisquam voluptates pariatur praesentium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aliquam veritatis fuga magni dolor incidunt sint eum praesentium et facere sunt, vero, voluptatum rerum, natus quos. Voluptatem possimus iste quia.
+        </p>  
+</div>
+
+23 - NAV EM BOOTSTRAP
+Permite criar elementos de navegação iguais de tabs de janela
+<ul class="nav nav-pills nav-justified"><!--classe nab é necessária e já possui uma formatação especifica
+justify-content-center = centraliza os itens da lista
+nav-justified = espalha os itens na mesma proporção
+nav-tabs = cria abas como se fosse janelas-->
+    <li class="nav-item">
+        <a href="#navegar" class="nav-link">Bootstrap</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Javascript</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">CSS</a>
+    </li>
+</ul>
+<p></p>
+
+<div id="navegar" style="margin-top: 10000px;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos animi nihil illum fugiat dolores doloremque? Deserunt, iusto? Repellendus repudiandae repellat dolore odit temporibus! Quidem et nihil necessitatibus doloremque! Exercitationem.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloribus libero earum distinctio porro saepe error adipisci tempore, et atque quo perferendis ab eaque id beatae in velit quos. Fuga?<br>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae eligendi iure quaerat sit hic velit tempora recusandae ipsa reprehenderit fugit, itaque nesciunt dolorum facere
+    <br>
+     
+    
+</div>
+
+24 - NAV COM DROPDOWN
+<ul class="nav nav-pills nav-justified"><!--classe nab é necessária e já possui uma formatação especifica
+justify-content-center = centraliza os itens da lista
+nav-justified = espalha os itens na mesma proporção
+nav-tabs = cria abas como se fosse janelas-->
+    <li class="nav-item">
+        <a href="#navegar" class="nav-link">Bootstrap</a>
+    </li>
+    <li class="nav-item dropdown-toggle" data-bs-toggle="dropdown"><!--classe necessária-->
+        <a href="#" class="nav-link">Javascript</a>
+        <ul class="dropdown-menu"><!--iniciando menus-->
+            <li><a href="#" class="dropdown-item">Formatação Clássica</a></li><!--intens dentro do menu-->
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">CSS</a>
+    </li>
+</ul>
+<p></p>
+
+<div id="navegar" style="margin-top: 10000px;">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque eos animi nihil illum fugiat dolores doloremque? Deserunt, iusto? Repellendus repudiandae repellat dolore odit temporibus! Quidem et nihil necessitatibus doloremque! Exercitationem.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloribus libero earum distinctio porro saepe error adipisci tempore, et atque quo perferendis ab eaque id beatae in velit quos. Fuga?<br>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae eligendi iure quaerat sit hic velit tempora recusandae ipsa reprehenderit fugit, itaque nesciunt dolorum facere
+    <br>
+     
+    
+</div>
+
+25 - NAV DINAMICA
+Permite colocar conteudos dentro das tabs.
+  <ul class="nav nav-tabs nav-justified "><!--classe nab é necessária e já possui uma formatação especifica
+        justify-content-center = centraliza os itens da lista
+        nav-justified = espalha os itens na mesma proporção
+        nav-tabs = cria abas como se fosse janelas-->
+    <li class="nav-item">
+<a href="#cursodeboot" class="nav-link" data-bs-toggle="tab">Bootstrap</a></li>
+            <li class="nav-item">
+                <a href="#cursodecss" data-bs-toggle="tab" class="nav-link"  data-bs-toggle="tab">Javascript</a>
+            </li>
+            <li class="nav-item">
+                <a href="#cursodejavas" class="nav-link"  data-bs-toggle="tab">CSS</a>
+            </li>
+        </ul>
+        <p></p>
+<div class="tab-content"><!--conteudo de tabs-->
+    <div id="cursodeboot" class="tab-pane container bg-primary p-3">Curso de Bootstrap</div><!--tab-pane = indica ser painel-->
+    <div id="cursodecss" class="bg-success tab-pane container">Curso de CSS</div>
+    <div id="cursodejavas" class="bg-danger tab-pane container">Curso de Javascript</div>
+
+</div>
+
+26 - CLASSE PARA NAVEBAR (BARRA DE NAVEGAÇÃO)
+Personalizando navbar
+<nav class="navbar navbar-expand bg-dark navbar-dark"><!--estrutura de nav-->
+    <div class="container">
+        <span class="navbar-text">C++</span><!--opção para colocar texto-->
+        <ul class="navbar-nav">
+         
+<a href="#" class="navbar-brand"><img src="imagens/Logo_tkof96.png" alt="" style="width: 100px;"></a>
+       
+<li class="nav-item"><a href="#" class="nav-link">Arduino</a></li>
+<li class="nav-item"><a href="#" class="nav-link">Bootstrap</a></li>
+<li class="nav-item"><a href="#" class="nav-link">React-Native</a></li>
+        </ul>
+    </div>
+</nav>
+
+27 - MENU SANDWICH EM BOOTSTRAP
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+        <img src="imagens/Logo_tkof96-semFundo.png" alt="" style="width: 150px;">
+    </a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menucursos" style="cursor: pointer;" aria-expanded="true">
+    <span class="navbar-toggler-icon"></span><!--insere o icone do sandwich-->
+</button>
+
+<div class="navbar-collapse collapse" id="menucursos">
+    <ul class="navbar-nav">
+        <li class="navbar-item">
+        <a href="#" class="nav-link">História</a>
+        </li>
+    
+        <li class="navbar-item">
+        <a href="#" class="nav-link">Personagens</a>
+        </li>
+    <li class="navbar-item">
+    <a href="#" class="nav-link">Tkof 96</a>
+    </li>
+    <li class="navbar-item">
+        <a href="#" class="nav-link">Imagens Tkof XV</a>
+        </li>
+
+    </ul>
+</div>
+</div>
+    </nav>
+
+28 - FORMATAR CAMPO DE PESQUISA NA NAVBAR
+Inserir o campo aonde for necessário.
+ <form action="" class="d-flex">
+    <input type="text" class="form-control me-2">
+    <button class="btn btn-primary"> Pesquisar </button>
+ </form>
+
+29 - CARROUSEL EM BOOTSTRAP (banner rotativo)
+    <div id="banner" class="carousel slide" data-bs-ride="carousel"><!--classes de uso para carroussel-->
+
+<div id="indicadores" class="carousel-indicators">
+<button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#banner"  data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#banner"  data-bs-slide-to="2"></button>
+<button type="button" data-bs-target="#banner"  data-bs-slide-to="3"></button>
+<button type="button" data-bs-target="#banner"  data-bs-slide-to="4"></button>
+    </div>
+
+    <div id="imagens" class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="imagens/b1.jpg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+        <img src="imagens/b2.jpeg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+        <img src="imagens/b3.jpeg" alt="" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+        <img src="imagens/b4.jpeg" alt="" class="d-block w-100">
+    </div>
+</div>
+
+
+    <button type="button" class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button type="button" class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+30 - ADICIONANDO TEXTO AO CARROUSSEL
+Após a inserção da imagem, adicionar
+   <div class="carousel-caption">
+            <h2>Viagem sem gastar muito!</h2>
+            <p>Invista em sua felicidade</p>
+        </div>
+
+31 - COMO CRIAR UMA JANELA MODAL
+Cria uma janela de explicação, divulgação enfim, esta janela pode ser usada em diversas opções.
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janelaModal"> Abrir Janela Modal </button>
+
+    <div id="janelaModal" class="modal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+    <div class="modal-header"><!--titulo da janela-->
+        <h1 class="modal-title">CFB Cursos</h1>
+        <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button><!--botao fechar na janela-->
+    </div>
+<div class="modal-body">
+    <p style="columns: 2; text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dolor officiis maiores cum saepe porro eveniet. Laboriosam, veniam blanditiis! Autem voluptatem obcaecati laborum cupiditate est sunt nemo. Nobis, facilis?
+    <br> <img src="imagens/b1.jpg" alt="" style="width: 150px;">
+    <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis illo corporis aliquid quidem in nobis officia porro maiores, id necessitatibus aperiam ut sapiente, animi quam veniam nisi aspernatur, autem architecto.
+    </p>
+</div>
+<div class="modal-footer">
+    <a href="https://recallti.netlify.app/" target="_blank" class="me-5">Site Recall</a>
+    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Fechar </button>
+</div>
+
+32 - OFFCANVAS (janela lateral)
+Antes de trabalhar com esta opção é necessário importar cdn do bundle no site do bootstrap.
+    <div class="offcanvas offcanvas-start" id="menu"><!--indica que sera janela lateral
+    offcanvas-top = deixa como menu em cima da página
+    offcanvas-start = abre menu estilo mobile
+    -->
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Menu de Cursos</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body"><!--dados da janela-->
+        <a href="#" target="_blank">Curso de Bootstrap</a><br>
+        <a href="#" target="_blank">Curso de Arduino</a><br>
+        <a href="#" target="_blank">Curso de JavaScript</a><br>
+        <a href="#" target="_blank">Curso de C++</a><br>
+    </div>
+    </div>
+
+    <div class="container-fluid mt-3">
+        <h3>OffCanvas Janela Lateral</h3>
+        <p>CFB Cursos, canal de programação.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu"> Abrir Janela </button>
+    </div>
+
+33 - CLASSES BORDER E SUAS VARIAÇÕES
+A classe border insere automaticamente a borda no  elemento. 
+border-0 = retira a borda
+border-top-0 = retira borda de cima, mudando bottom
+border-3 = borda mais espessa
+border-primary = insere cor na borda, usando as cores em bootstrap
+border-top border-bottom border-3 border-danger = borda em cima e em baixo
+border rounded-4 = arredonda os cantos e rounded-pill deixa oval
+border rounded-4 rounded-start border-dark = arredonda apenas na esquerda
+border border-dark rounded-circle = deixa em forma de circulo
+
+34 - CLASSES FLOAT LEFT, RIGHT E CLEARFIX
+Essa função reseta algumas formatações para alinhamento de itens na pagina.
+    <div class="clearfix">
+    <div class="caixa bg-primary float-start">Esquerda 1</div>
+<div class="caixa bg-primary float-end">Direita 1</div>
+</div>
+<div class="clearfix">
+<div class="caixa bg-success float-start">Esquerda 2</div>
+<div class="caixa bg-success float-end">Direita 2</div>
+</div>
+<div class="caixa bg-secondary float-start">Esquerda 3</div>
+<div class="caixa bg-secondary float-end">Direita 3</div>
+</div>
+
+35 - CLASSES PARA LARGURA, ALTURA E CENTRALIZAR ELEMENTOS
+   <div class="container-fluid"><!--largura-->
+        <div class="w-25 bg-primary mb-2">25%</div>
+        <div class="w-50 bg-primary mb-2">50%</div>
+        <div class="w-75 bg-primary mb-2">75%</div>
+        <div class="w-100 bg-primary mb-2">100%</div>
+        <div class="w-auto bg-primary mb-2">Automático</div><!--
+            auto = auto ajusta ao elemento pai.
+        -->
+    </div>
+
+    <div class="container-fluid" style="height: 300px;">
+        <div class="h-25 bg-danger me-2 d-inline-block">25%</div>
+        <div class="h-50 bg-danger me-2 d-inline-block">50%</div>
+        <div class="h-75 bg-danger me-2 d-inline-block">75%</div>
+        <div class="h-100 bg-danger me-2 d-inline-block">100%</div>
+        <div class="h-auto bg-danger me-2 d-inline-block">Automático
+    </div>
+<p></p>
+    <div class="container-fluid bg-success">
+        <div class="bg-danger mx-auto" style="width: 200px;">Centro</div>
+    </div>
+
+36 - ESPAÇAMENTO INTERNO E EXTERNO
+margens variam de m-1 a m-5.
+Variam:
+mt = margim no  topo
+ms = margin na esquerda
+me = margin na direita
+mb = margin em baixo
+padding seguem os mesmos exemplos das margens.
+
+37 - CLASSES SHADOWN PARA BOOTSTRAP
+<div class="border border-1 border-dark m-5 p-4 bg-white shadow">Cfb cursos</div><!--shadow é a sombra padrão
+shadow-sm = sombra muito discreta
+shadow-lg = espalha mais a sombra
+shadow-none = retira a sombra
+-->
+<div class="border border-1 border-dark m-5 p-4 bg-white shadow-sm">Cfb cursos</div>
+<div class="border border-1 border-dark m-5 p-4 bg-white shadow-lg">Cfb cursos</div>
+<div class="border border-1 border-dark m-5 p-4 bg-white shadow-none">Cfb cursos</div>
+</div>
+
+38 - CLASSE RATIO EM VÍDEOS (proporções)
+Ratio define como ficará o vídeo na página com dimensões.
+<div class="container">
+    <div class="border border-1 border-dark ratio ratio-21x9">
+        <!--ratio-1x1 = quadrado
+            ratio-16x9 = seria padrão em widescreen
+            ratio-21x9 = ultra widescreen
+        -->
+        <iframe src="https://www.youtube.com/embed/oRVBoGpgtu0"  frameborder="0"></iframe>
+    </div>
+</div>
+
+39 - DISPLAY FLEX EM BOOTSTRAP
+<div class="p-2 d-inline-flex" style="background-color: #ddd;">
+    <!--ocupa somente o seu tamanho na qtde de itens-->
+<div class="bg-primary w-25">CFB CURSOS</div>
+<div class="bg-warning">CFB CURSOS</div>
+<div class="bg-danger">CFB CURSOS</div>
+<div class="bg-info">CFB CURSOS</div>
+
+</div>
+<div class="p-2 d-flex flex-column" style="background-color: #ddd;">
+    <!--flex-row-reverse = reverte a sequencia
+    flex-column = coloca em colunas
+    -->
+    <div class="bg-primary w-25">CFB CURSOS</div>
+    <div class="bg-warning w-50">CFB CURSOS</div>
+    <div class="bg-danger w-75">CFB CURSOS</div>
+    <div class="bg-info w-auto">CFB CURSOS</div>
+    
+    </div>
+
+40 - ALINHAMENTO HORIZONTAL DISPLAY
+Permite usar display flex para preencher espaços
+<div class="p-1 d-flex flex-row m-2" style="background-color: #ddd;">
+    <div class="bg-primary">CFB CURSOS</div>
+    <div class="bg-danger">CFB CURSOS</div>
+    <div class="bg-warning">CFB CURSOS</div>
+    <div class="bg-info">CFB CURSOS</div>
+</div>
+<div class="p-1 d-flex flex-row m-2 justify-content-end" style="background-color: #ddd;">
+    <div class="bg-primary">CFB CURSOS</div>
+    <div class="bg-danger">CFB CURSOS</div>
+    <div class="bg-warning">CFB CURSOS</div>
+    <div class="bg-info">CFB CURSOS</div>
+</div>
+<div class="p-1 d-flex flex-row m-2 justify-content-center" style="background-color: #ddd;">
+    <div class="bg-primary" >CFB CURSOS</div>
+    <div class="bg-danger" >CFB CURSOS</div>
+    <div class="bg-warning flex-fill">CFB CURSOS</div>
+    <!--flex-fill = divide o espaço e o restante pega para si-->
+    <div class="bg-info flex-fill">CFB CURSOS</div>
+</div>
+<div class="p-1 d-flex flex-row m-2 justify-content-between"  
+style="background-color: #ddd;">
+<!--between = espalha na mesma proporção-->
+    <div class="bg-primary">CFB CURSOS</div>
+    <div class="bg-danger">CFB CURSOS</div>
+    <div class="bg-warning">CFB CURSOS</div>
+    <div class="bg-info">CFB CURSOS</div>
+</div>
+<div class="p-1 d-flex flex-row m-2 justify-content-around" style="background-color: #ddd;">
+    <!--around espalha com medidas-->
+    <div class="bg-primary" >CFB CURSOS</div>
+    <div class="bg-danger flex-fill">CFB CURSOS</div>
+    <div class="bg-warning">CFB CURSOS</div>
+    <div class="bg-info">CFB CURSOS</div>
+</div>
+
+41 - ALIGN CONTENT, JUSTIFY CONTENT
+Revisão de display flex
+
+42 - MARGENS AUTOMÁTICAS
+Margens
+m-1 = aplica margens em todas as direções.
+ms = margem start(esquerda)
+me = margem end (direita)
+mt = margem top (cima)
+mb = margem bottom (baixo)
+m-auto = distribui a margem entre o(s)elemento(s)
+variam de 1 a 5.
+
+43 - AUTO-ALINHAMENTO DOS ELEMENTOS
+Será em relação aos elementos do container.
+  align-self-start = alinha na parte superior
+            align-self-end = alinha na parte inferior
+            align-self-center = alinha no centro do eixo
+
+        --> lembrar que se mudar para flex-column o eixo muda
+
+44 - CLASSES PARA FORMATAÇÃO FORMULÁRIOS PT1
+  <form action="">
+    <div class="row">
+    <div class="col">
+    <label for="" class="form-label">Nome</label>
+    <input type="text" name="f_nome" id="" class="form-control">
+</div>
+<!--
+form-control = traz uma formatação própria
+form-control-color - especifico para componentes
+-->
+<div class=" col">
+    <label for="" class="form-label">E-mail</label>
+    <input type="email" name="f_email" id="" class="form-control">
+</div>
+</div>
+
+   <label for="" class="form-label">Senha</label>
+   <input type="password" name="f_senha" id="" class="form-control">
+
+   <label for="" class="form-label">Telefone</label>
+   <input type="text" class="form-control">
+
+   <label for="" class="form-label">Nascimento</label>
+   <input type="date" class="form-control">
+
+   <input type="submit" name="btn_enviar" value="Enviar" class="btn btn-primary"></button>
+   </form>
+
+45 - FORMATAÇÃO DE FORMULÁRIO PT2
+  <form action="" class="p-3 was-validated">
+    <!--
+was-validated = valida o formulário
+    -->
+    <div class="row linha">
+    <div class="my-3 col">
+    <label for="" class="form-label">Nome</label>
+    <div class="input-group">
+        <span class="input-group-text">Nome</span><!--cria uma formatação diferente de entrada de campo-->
+        <input class="form-control" type="text" name="f_nome" autofocus>
+    </div>
+</div>
+
+<div class="my-3 col">
+   <div class="form-floating mb-3 mt-3"><!--cria o label flutuante quando clicar-->
+    <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
+    <label for="">Email</label>
+   </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="my-3 col">
+        <label for="" class="form-label">Senha</label>
+        <input type="password" class="form-control" name="f_senha" required>
+        <div class="valid-feedback">Senha Ok</div>
+        <!--exibe mensagens de validação da senha-->
+        <div class="invalid-feedback">Senha Errada</div>
+    </div>
+    <div class="my-3 col">
+        <label for="" class="form-label">Selecione uma cor</label>
+        <input type="color" class="form-control form-control-color" name="f_cor">
+    </div>
+    <div class="my-3 col">
+        <label class="form-label">Telefone</label>
+        <input type="text" class="form-control" name="f_fone">
+    </div>
+<div class="my-3 col">
+<label for="" class="form-label">Nascimento</label>
+<input type="date" class="form-control" name="f_nascimento">
+</div>
+
+<div class="my-3 col">
+    <label for="" class="form-label">Transporte</label>
+    <select class="form-select"  name="f_transporte" id="">
+        <option value="">Carro</option>
+        <option value="">Moto</option>
+        <option value="">Avião</option>
+        <option value="">Trem</option>
+        <option value="">Navio</option>
+    </select>
+</div>
+</div>
+
+
+<div class="my-3 linha p-2">   
+<label for="" class="form-label">Selecione o meio de deslocamento:</label>
+<div>
+<input type="checkbox" class="form-check-input" name="chk_terrestre" value="Terrestre">
+<label for="" class="form-check-label">Terrestre</label>
+</div>
+<div>
+    <input type="checkbox" class="form-check-input" name="chk_terrestre" value="aereo">
+    <label for="" class="form-check-label">Áereo</label>
+    </div>
+
+    <div>
+        <input type="checkbox" class="form-check-input" name="chk_terrestre" value="maritimo">
+        <label for="" class="form-check-label">Maritimo</label>
+        </div>
+</div>
+
+<div class="my-3">
+    <label for="" class="form-label">Distãncia Máxima</label>
+    <input type="range" class="form-range" name="f_distancia">
+</div>
+
+<div class="my-3">
+    <input type="submit" class="btn btn-primary" name="btn_enviar" value=" Enviar ">
+</div>
+
+  </form>
+
+46 - CRIANDO UMA PÁGINA COMPLETA EM BOOTSTRAP PT1
+47 - CONTINUAÇÃO
+48 - CONTINUAÇÃO
+49 - CONTINUAÇÃO
+
+EXEMPLO DE SITE COMPLETO EM BOOTSTRAP
+<div class="p-2 bg-primary text-white d-flex justify-content-start">
+    <img src="imagens/Logo_tkof96-semFundo.png" alt="" class="w-25">
+    <h3 class="m-auto align-self-center">A Revolução da Snk em 32bits</h3>
+</div><!--fim do cabeçalho do site-->
+
+<nav class="navbar navbar-expand-sm navbar-dark fundoAzulEscuro">
+    <!--navegação 
+    -sm = se torna responsiva-->
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Personagens</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">História</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container mt-5">
+<div class="row"><!--abaixo consta as divisões da página-->
+    <div class="col-sm-8"><!--esta coluna será maior-->
+<div class="rounded p-2 mb-3 fundoCinzaClaro"><!--serve como cartões do site, com o tituulo e assuntos-->
+    <h2>Título do Conteúdo</h2>
+    <h5>Descrção do conteúdo</h5>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit illum dicta nihil cum eius earum explicabo dolorem harum illo! Recusandae totam nihil nulla, vero esse iure accusantium ullam impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore illo aspernatur quaerat autem, beatae, voluptate exercitationem laudantium architecto, nobis maxime eius adipisci officia quod? Dolorem voluptates omnis provident sint?</p>
+</div>
+<div class="rounded p-2 mb-3 fundoCinzaClaro"><!--serve como cartões do site, com o tituulo e assuntos-->
+    <h2>Título do Conteúdo</h2>
+    <h5>Descrção do conteúdo</h5>
+    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam velit illum dicta nihil cum eius earum explicabo dolorem harum illo! Recusandae totam nihil nulla, vero esse iure accusantium ullam impedit.</p>
+</div>
+    </div>
+    <div class="col-sm-4"><!--segunda coluna-->
+<h2>Sobre</h2>
+<h5>Planos para o futuro</h5>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolore velit facere nihil dolorem placeat nobis voluptates cum exercitationem fugit quibusdam porro, pr
+    <h3 class="mt-4">Personagens</h3>
+    <ul class="nav nav-pills flex-column"><!-- flex-column deixa um abaixo do outro-->
+        <li class="nav-item">
+            <a href="#" class="nav-link" id="n1" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Kyo
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" id="n2" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Yori</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" id="n3" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Rugal</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" id="n4" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Clark</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" id="n5" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Raidern</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link" id="n6" onmouseover="marcar(this.id)" onmouseout="marcar(this.id)">Equipe Orochi</a>
+        </li>
+    </ul>
+    </div>
+</div>
+</div>
+
+<footer class="mt-5 p-4 fundoAzulEscuro text-white text-center">
+    <p>A Revolução dos Arcades na sua mão.</p>
+
+</footer>
+<script> 
+ const marcar=(obj)=>{
+    document.getElementById(obj).classList.toggle("active");
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

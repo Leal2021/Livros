@@ -1,0 +1,2769 @@
+CURSO DE HTML5
+01 - CODIFICAÇÃO BÁSICA
+<!DOCTYPE html> <!--Instrução para o navegador saber qual versçao será usada-->
+<html lang="pt-br"> <!--qual pais indicado ao google, considerada tag-->
+<head><!--cabeça de página, sendo container para outras tags importantes-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprendendo HTML</title><!--define o titulo da página-->
+</head>
+<body><!--corpo da página, container visivel para as tags-->
+    
+</body>
+</html> <!--serve como o container geral-->
+
+02 - TAG P E MAIS REGRAS E DETALHES SOBRE CÓDIGO
+ <p>LUCIANO</p><!--indica paragráfo e se houver outro, pula linha e continua-->
+    <p>Refazendo novamente o HTML5</p>
+
+03 - TAGS H (do 1 ao 6)
+São tags usadas para cabeçalhos, títulos e subtítulos.
+<h1>CFB</h1>
+<h2>Curso Completo</h2> <!--nivel de hierarquia, h2 serve como subtítulo de h1, são usados como motores de busca no google-->
+<h3>Começando</h3>
+<h4>Status</h4>
+<h5>Refazendo</h5>
+<h6>Novos comandos</h6>
+
+04 - TAG ANCORA
+São os link (hiperlinks), permite o acesso a outras páginas ou conteúdos.
+<a>Ancora vazia</a> <!-- espaço reservado para o link, precisa href(parametro))-->
+<a href="https://www.youtube.com/cfbcursos" target="_blank">Canal no Youtube</a> <!--_blank = nova página,_parent,_self=mesma janela,_top-->
+<a href="01.html" target="_blank">Próxima página</a>
+<a href="imagens/tkof.jpeg" download="">download da imagem</a> <!--permite disponibilizar a imagem para download-->
+<a href="mailto:luciano.leal2009@hotmail.com">E mail</a>
+<a href="javascript:alert('CFB Cursos');"> Canal </a><!--mostra mensagem de alerta-->
+<a href="../Beto/20211110_104215.jpg">Foto beto carreiro</a> <!--abre arquivo fora da pasta raiz-->
+
+05 - TAG ABBR (abreviações)
+Serve para abreviar conteúdo dentro da página.
+<p>Curso de <abbr title="HyperText Markup Language"> Html</abbr> Profissional e CSS</p> <!--serve como uma explicação sobre o conteúdo-->
+
+06 - TAG ADDRESS (informações de contato)
+Armazena e exibe informações de contato. Já possui uma formatação especifica.
+   <address>
+        Autor: Luciano Leal<br>
+        Se inscreva no nosso canal e visite nosso site.
+    </address>
+
+07 - TAG AREA e MAP (mapeando link)
+Area= define uma area clicável com definições de shapes (formas).
+  <img src="imagens/tkof.jpeg" alt="" title="Mapa do Território Brasileiro" usemap="#mapaBrasil">
+    <map name="mapaBrasil">
+        <area shape="rect" coords="734,726,854,828" href="#" alt="Rio Grande do sul"><!--alt texto alternativo, shape= forma podendo ser rect, circle ou poly'poligono'-->
+    </map>
+
+08 - TAG ARTICLE E NOVA SEMANTICA
+    <article><!--representa uma sessão inedependente no documento, com assuntos especificos,post, comentário, qualquer conteudo-->
+<h1>CFB Cursos</h1>
+<br>Canal de cursos no youtube.
+<br>Todos os cursos são obrigatórios.
+    </article>
+
+    <article>
+        <h2>Programação DEV</h2>
+        <ul>
+            <li>Java</li>
+            <li>Delphi</li>
+            <li>Javascript</li>
+            <li>CSS</li>
+            <li>JQuery</li>
+        </ul>
+    </article>
+**css
+article{
+    padding: 15px;
+    border: 1px solid black;
+    background-color: bisque;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+article h2,h1{
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: -15px;
+    box-shadow: 4px 4px 2px black;
+text-indent: 50px;
+}
+
+09 - TAG ASIDE (nova semantica)
+<aside><!--representa um conteúdo ligado diretamente ao principal, pode ser até um menu-->
+    <h3>Nota</h3>
+    <p>www.youtube.com/cfbcursos</p>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+</aside>
+
+10 - TAG AUDIO
+  <audio src="Sons/Musica_Intro.mp3" autoplay controls muted loop>
+        <!--controls permite controle sobre a música,Muted deixa o mudo ativado, somente LOOP repete ao terminar mas é possivel determinar numero de repetições-->
+        <p>seu navegador não suporta a tag AUDIO.</p>
+    </audio>
+
+**Inserção de videos
+   <video src="videos/06 - Tag address   Informações de contato.mp4" autoplay controls></video>
+basicamente é mesma forma de inserir áudio.
+
+11 - TAG B (negrito)
+A Tag b, aceita formatações em CSS, além de cor, fonte, tamanho. Traz opção de font-weight sendo permitido colocar valor para a intensidade do negrito.
+
+12 - TAG BASE (apontamento de local)
+Cria apontamento para atributos de local para arquivos. Essa tag esta dentro do HEAD e não possui filhos(não precisa ser fechada).
+Somente é usada tag base. A Tag auxilia para localizar determinadas informações.
+<base href="imagens/"> <!--foi especificado aonde deve procurara as imagens-->
+<title>Aprendendo HTML</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<img src="mapaBrasil.jpeg" alt="" id="foto"> <!--não é necessário especificar, apenas colocar o nome da imagem-->
+<br>
+<a href="../01.html">Sobre</a><!--o link será procurado na pasta imagens, o mesmo não será encontrado, porem devemos usar '../'-->
+
+13 - TAG BDO (controle de direção de texto)
+<p dir="rtl">Cursos CFB de programação</p><!--ltr = esquerda para direita-->
+<bdo dir="rtl">Como programador só há elógios.</bdo> <!--inverte a palavra, alguns caracteres como arabe ou hebraico-->
+
+14 - TAG BLOCKQUOTE e CITE (citações)
+Permite adicionar citações sobre autores de determinadas informações, podendo ser texto, poema, foto, etc.
+<blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi velit repellat aut beatae provident vel inventore vitae, nobis nisi impedit est nemo ipsum cum quos! Accusantium nobis eum numquam quaerat.</p>
+    <cite>
+    Javascript<!--cite mostra a fonte original da informação-->
+    </cite>
+    Java
+    Word
+</blockquote>
+
+15 - TAG BR (linha)
+É uma tag que não possui filhos, sendo desnecessário fechar.
+
+16 - TAG BUTTON (botão)
+Permite inserir um botão na página.
+  <button type="" onclick="alert('Bom dia')"> Clique Aqui </button><!--type define o comportamento do botão-->
+<!--submit= envia dados do formulário
+reset=limpa o campo do formulário
+button-->
+
+17 - TAG CANVAS (desenho)
+Todo o controle de canvas é realizado por javascript.
+<script>
+    function desenha(){
+        var canvas=document.getElementById("teladesenho");
+        var ctx = canvas.getContext('2d');
+        ctx.fillRect(25,25,100,100);
+    }
+
+</script>
+<body>
+    <canvas id="teladesenho" width="500px" height="500px">Não há suporte ao canvas</canvas>
+    <script>
+        desenha();
+    </script>
+
+18 - TAG PRE e CODE 
+Não são correlacionadas. Code destaca um trecho de código e Pre seria como pré formatação.
+<code><!--marca como se fosse trecho de código com formatação diferente adequadas para códigos-->
+    <pre><!--mostra exatamente como foi digitado no editor-->
+    @ set color to r, comando de trocar cor da letra no clipper.<br>
+    @ set color to r/b troca a cor de fundo para azul
+</pre>
+</code>
+**correto é sempre usar pre dentro de code.
+
+19 - TAGS DEL e INS
+São tags que podem ser usadas separadas.
+    <article>
+<p>Meu Curso favorito é de <del cite="" datetime="28-04-2023T22:36:00">C++</del></p><!--del deixa um riscado no meio da palavra, indicando que algo foi descartado ou cumprido, o cite indica aonde esta a referencia, datetime é quando aconteceu a ação-->
+<br>Lista de Cursos
+<ul>
+    <li>Html</li>
+    <li><ins>Photoshop</ins></li><!--ins representa inserção de alguma informação-->
+    <li><del><abbr title="O Curso foi reformulado e ainda nao esta disponivel">Javascript</abbr></del></li>
+    <li>C++</li>
+    <li>Arduino</li>
+</ul>
+</article>
+
+20 - TAGS DETAILS e SUMMARY
+Trabalham em conjunto, trazendo mais interação na página.
+Somente o details já gera uma interação na página, sendo usada para menu e com submenu.
+   <details open> <!--open ja expande o menu ao entrar na página-->
+        <summary>Recall TI : Serviços</summary> <!--representa o título -->
+        <article>
+        Aplicativos
+        <br>Programação
+        <br>Manutenção de Pcs
+        <br>Marketing Digital
+        <br>Contatos
+    </article>
+    </details>
+
+21 - TAG DFN (definição)
+Marca o termo de uma determinada definição.
+<p><dfn title="A SNK preve um remake">TKOF</dfn> the king of fighters 98, uma grande franquia que marcou gerações.</p><!--dfn é usada para explicar um item que está na mesma sentença da frase.-->
+
+22 - TAG DIALOG (diálogo)
+Disponibiliza o conteúdo em forma de diálogo. Já possui forma própria de formatação.
+<script>
+    function abrir(){
+        document.getElementById("d1").setAttribute("open",""); // esta setando o atributo
+    }
+    function fechar(){
+        document.getElementById("d1").removeAttribute("open");
+    }
+
+</script>
+</head>
+<body>
+<button onclick="abrir()">Abrir</button>
+<button onclick="fechar()">Fechar</button>
+
+<dialog id="d1">
+<p><dfn title="A SNK preve um remake">TKOF</dfn> the king of fighters 98, uma grande franquia que marcou gerações.</p><!--dfn é usada para explicar um item que está na mesma sentença da frase.-->
+</dialog>
+
+23 - TAG DIV PT1
+É um container, um componente de organização para posicionar elementos dentro da página. A grande vantagem é a forma de controlar melhor a forma de como esta sendo desenvolvido a página, sendo influenciado diretamente pelo css.
+
+24 - TAG DIALOG PT2 (forma mais prática)
+Não funcionou a caixa de diálogo
+
+25 - TAG DIV PT2
+
+26 - LISTA LISTA DE DEFINIÇÃO, DL e DT
+Cria uma lista personalizada com recuos.
+<dl>
+        <dt>HTML</dt> <!--titulo-->
+        <dd>Principal linguagem para web</dd><!--descrição-->
+        <dt>CSS</dt>
+        <dd>Principal linguagem de formatação Web</dd>
+        <dd>Fácil uso e manipulação</dd>
+        <dt>Mais Avançadas</dt>
+        <dd>Java</dd>
+        <dd>Delphi</dd>
+    </dl>
+
+27 - TAG EM (enfase)
+Usada para destacar palavras, muito parecido com itálico.
+   <p>Lorem <em>ipsum dolor <em>sitamet</em></em> consectetur.
+Optar por formatar em css. 
+em{
+}
+em em{
+}
+
+28 - TAG EMBED
+Incorporar algum conteúdo externo nao sendo html na página.
+    <embed src="videos/06 - Tag address   Informações de contato.mp4" type="" width="500" height="500"><!--embed ja traz os controles, sendo video é possivel configurar o tamanho da janela-->
+
+29 - TAG FIGURE
+Serve para representar o elemento(legenda).
+ <figure><!--possui uma pré formatação, usado em qualquer elemento, não apenas na figura-->
+ <img src="imagens/tkof.jpeg" alt="">
+    <figcaption><!--legenda sobre o assunto, esta ligado diretamente ao figure-->
+www.youtube.com/cfbcurso
+    </figcaption>
+</figure>
+
+30 - TAG FOOTER (rodapé)
+   <footer class="rodape_final"><!--rodapé para qualquer sessão na página-->
+Pode ser usado em qualquer etapa ou elemento da página.
+
+31 - FORMULÁRIO PT1
+32- <form action="01.html" name="f_cadastro" method="get"><!--serve como container, get método mais rápido e post sendo mais seguro-->
+<label for="f_nome">Nome.......:</label><!--etiqueta para input-->
+<input type="text" name="f_nome" id="f_nome" maxlength="200" placeholder="Insira nome do cliente"><!--campo de texto-->
+<br>
+<label for="">Endereço.:</label>
+<input type="text" name="f_endereco" id="">
+<br>
+<input type="submit" name="f_nome" value=" Salvar "><!--envia os dados do formulário para a págna especificada no action do form-->
+<input type="reset" name="f_nome" value=" Limpar "><!--limpa os campos do formulário-->
+<input type="button" name="f_nome" value=" OK ">
+</form>
+
+33 - OUTROS COMPONENTES PARA FORMULÁRIOS
+PASSWORD, RADIO, CHECKBOX
+<form action="" name="f_cadastro" action="#" method="get">
+    <label for="">Usuário</label>
+    <input type="text" name="f_username" id="" size="50">
+    <label for="">Senha</label>
+    <input type="password" name="f_senha" id="" maxlength="10">
+    <label for="" class="quebra">Esporte favorito</label>
+    <input type="checkbox" name="f_futebol" id="" value="Futebol">Futebol<!--caixa de seleção-->
+    <input type="checkbox" name="f_basquete" id="" value="Basquete"> Basquete<!--value indica o que sera salvo--> 
+    <input type="checkbox" name="f_volei" id="" value="Volei"> Volei
+    <br>
+    <label for="">Possui Carro?</label>
+    <input type="radio" name="f_carro" id="" value="s" checked>Sim<!--checked permite marcar automaticamente-->
+    <input type="radio" name="f_carro" id="" value="n">Não
+    <input type="submit" name="f_entrar" id="" value=" Entrar " class="quebra"> 
+
+34 - FORMULÁRIO (date, time, datetime local)
+<form action="" name="f_cadastro" action="#" method="get">
+    <label for="">Hora</label>
+    <input type="time" name="f_hora" min="09:00" max="17:00" required><!--elemento para inserir hora, require torna o campo obrigatório-->
+    <br>
+    <label for="">Data</label>
+<input type="date" name="f_data" id="" min="2022-10-05" max="2022-10-10"><!--insere data e min e max realiza um filtro dentro do calendário-->
+<br>
+<label for="">Data e Hora</label>
+<input type="datetime-local" name="f_datahora" id="">
+
+    <input type="submit" name="f_entrar" id="" value=" Entrar " class="quebra">
+
+35 - FORMULÁRIO (month, week, hidden)
+    <label for="">Mês</label>
+<input type="month" name="f_mes"><!--insere  o mes-->
+<br>
+<label for="">Semana</label>
+<input type="week" name="f_semana" id=""><!--insere informações sobre a a semana-->
+
+36 - FORMULÁRIO (input color, email, image)
+    <label for="">Selecione uma cor</label>
+<input type="color" name="f_cor"><!--insere opções para cores-->
+<br>
+<label for="">Email</label>
+<input type="email" name="f_email" id=""><!--insere campo para emil, porem será enviado somente se estiver correto-->
+<br>
+<input type="image" name="f_enviar2" src="imagens/check.jepg.png" class="botaofig"><!--permite criar botão com uma imagem e se torna submit-->
+
+37 - FORMULÁRIO (input tel, number, search)
+    <label for="">Telefone</label>
+<input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx"><!--pattern especifica as informações que serão validadas-->
+<br> 
+<label for="">Senha</label>
+<input type="password" name="f_senha" id="" pattern="[a-zA-Z0-9]{5}"><!--definido letras minusculas e maiusculas, numeros de 0 a 9 e limite de '5'-->
+<br>
+<label for="">Escolha numero</label>
+<input type="number" name="f_numero" step="2" min="0" max="10"><!--step representa a incrementação-->
+<br>
+<label for="">Pesquisar</label>
+<input type="search" name="f_procura"><!--permite entrada de texto e permite limpar o campo-->
+
+38 - FORMULÁRIO (input file, input url)
+<form action="" name="f_cadastro" action="#" method="get" enctype="multipart/form-data"><!--multipart/formdata representa enviar todas as informações-->
+<label for="">Selecione o Arquivo</label>
+<br>
+<input type="file" name="f_arquivo" id="" multiple accept=".jpg,.gif,.png"><!--cria uma caixa de envio de informaçãoes, multiple permite varios arquivos serem enviados ao mesmo tempo-->
+<!--accept determina quais informações serão aceitas, ocorrendo o filtro dos itens escolhidos dentro da tag
+.doc,docx
+application\msword
+image\*,.pdf
+.jpg,.gif,.png
+image/jpg,image/gif,image/png
+-->
+<br>
+<label for="">Informe o URL do site</label>
+<input type="url" name="f_url" id="" placeholder="www" part="http://"><!--Cria o campo de validação de url-->
+
+39 - FORMULÁRIO (select, option)
+<label for="">Gênero</label>
+<select name="f_gen" id=""><!--cria uma caixa de seleção, size mostra numero de elementos visiveis, multiple seleciona vários elementos-->
+<option value="m">Masculino</option><!--value mostra o que foi passado ao enviar-->
+<option value="f">Feminino</option>    
+</select>
+
+40 - FORMULÁRIO (list, datalist)
+<input list="transportes"  name="f_cor" id="">
+<datalist id="f_cores"><!--gera um filtro permitindo digitar dentro da caixa-->
+    <option value="black">Preto</option><!--value representa uma especia de titulo-->
+    <option value="red">Vermelho</option>
+    <option value="blue">Azul</option>
+    <option value="green">Verde</option>
+    <option value="gray">Cinza</option>
+    <option value="yellow">Amarelo</option>
+    <option value="white">Branco</option>
+</datalist>
+
+41 - FORMULÁRIO (fieldset)
+Permite agrupar determinados objetos e trabalhar separadamente.
+<fieldset disabled><!--cria grupos de elementos com uma formatação própria, disabled desabilita o fieldset-->
+    <legend>Dados do cliente</legend><!--insere um titulo em cima da borda do fieldset-->
+   <label for="">Nome</label>
+   <input type="text" name="f_nome" id=""> 
+   <label for="">Time</label>
+   <input type="text" name="f_time" id="">
+</fieldset>
+<fieldset>
+    <legend>Dados Particulares</legend>
+    <label for="">Data de Nasc</label>
+    <input type="date" name="" id="">
+</fieldset>
+<br>
+
+42 - FORMULÁRIO (textarea)
+Permite trabalhar com diversas linhas.
+<textarea name="" id="" cols="100" rows="10" maxlength="100" autofocus></textarea><!--cols coluna, rows linhas, autofocus recebe o sinal do cursor-->
+
+43 - MUDANDO FONTES PELO GOOGLE
+exemplo de font baixada
+@font-face {
+  font-family: 'Great';
+  src: url(fontes/GreatVibes-Regular.ttf);
+}
+
+p{
+  font-family: 'Great';
+  font-size: 20px;
+}
+**SEGUNDO EXEMPLO
+-copiar o link no site do google fonts(último) e adicionar o nome da fonte no estilo css mencionado no link abaixo.
+
+44 - HEADINGS (h1 até h6)
+Auxiliam no motor de busca do google.
+Há uma recomendação de usar h1 por página, google entender o conteúdo chave da página.
+
+45 - TAG HEAD (cabeça na página)
+Vem antes da tag body. Não contém elementos visiveis e apenas de configuração da página.
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprendendo HTML</title>
+<link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+46 - TAG HEADER (tag de sessão)
+Usada para cabeçalho da sessão de onde esta inserida. Recomenda-se apenas um header por página.
+
+<header> titulo
+<h1>CFB Cursos</h1> conteúdo da parte de introdução
+<p>www.youtube.com.br</p>
+</header>
+
+47 - TAG HR (barra horizontal)
+Usada para separar contéudos.
+hr{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 5px;
+  background-color: rgb(61, 66, 65);
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px blue;
+}
+
+48 - TAG HTML 
+É o elemento raiz da página, todo o conteúdo deve estar dentro da tag.
+O parametro lang auxilia no mecanismo de busca, de fala e define qual idioma esta o conteúdo da pagina.
+
+49 - TAG I (itálico)
+Essa tag ainda é válida no html5.
+<h1>RECALL TI  - <i>TECNOLOGIA</i> A SEU TOQUE</h1>
+
+50 - TAG IFRAME
+Permite fazer carregamentos de sites, imagens, video, formulários, fazendo integrações na página.
+<iframe src="https://pokemon-amigos.web.app/pt-br/Canada/trainer-codes-pokemon-go" frameborder="0"></iframe><!--site externo-->
+<iframe src="01.html" frameborder="0"></iframe>
+<iframe src="https://recallti.netlify.app/" frameborder="0" sandbox="allow-scripts"></iframe><!--sandbox bloqueia diversos itens na página, ao informar estamos permitindo-->
+
+51 - TAG IMG
+Ao colocarmos a tag, o browser entende que deverá reservar espaço para inserção da imagem.
+<img src="imagens/tkof.jpeg" alt="imagem não encontrada" title="TKOF"><!--alt insere texto caso a imagem não seja encontrada, title insere um comentário-->
+
+52 - TAG KBD
+Representa entrada e saída do usuário, podendo destacar teclas.
+ <p>Pressione<kbd> CTRL + S</kbd> para salvar .</p><!--kbd possui formatação especifica-->
+Usa-se css para destacar o kbd, usando color e a cor desejada.
+
+53 - TAG LINK
+Permite vincular recursos externos na página, principalmente css e imagens.
+<link rel="stylesheet" href="estilo.css"> // conexão com a página de estilo
+
+<link rel="icon" href="imagens/html.png" sizes="32x32"><!--size indica tamanho do icone--> // trocar o icone da página
+
+54 - TAG MARK 
+Permite destacar um texto como se usassemos um marca texto.
+<mark>consectetur adipisicing elit. Recusandae vero praesentium</mark>
+
+55 - TAG IFRAME PT2
+Carregando elementos no iframe por link.
+ <a href="01.html" target="main"> Página</a><!--direcionando o link para dentro do iframe-->
+    <a href="https://recallti.netlify.app" target="main">Recall TI</a>
+    <br>
+
+    <iframe src="01.html" frameborder="0" name="main"></iframe>
+
+56 - TAGS META
+Não são tags visuais, servem para configuração de parametros.
+Aula sobre as configurações da tag meta.
+
+57 - TAG METER
+Representa uma medida escalar ao elemento. Gera uma barra de carregamento.
+<p>www.youtube.com.br</p>
+<p>www.recallti.com.br</p>
+<meter value="9" max="10" min="0" high="8" low="2" optimum="5" id="m1"></meter><!--high e low são considerados alertas, ou seja, abaixo de 2 e acima de 8. os alertas mudam a cor de carregamento da barra-->
+<script>
+    document.getElementById("m1").value="2";
+</script>
+
+58 - TAG NAV
+Representa uma sessão de navegação(menus ou botões).
+<nav><!--cria elementos para navegação-->
+    <a href="#" class="link">Home</a>
+    <a href="#" class="link">Downloads</a>
+    <a href="#" class="link">Área do Cliente</a> 
+</nav>
+
+59 - TAG NOSCRIPT
+Usada quando os scripts estão desabilitados ou o browser nao suporta.
+<script>
+    alert("Ola bom dia")
+</script>
+<noscript> <p>Olá luciano seja bem vindo</p></noscript><!--o ideal é a tag ficar sempre abaixo da tag script. O noscript será ativado quando o browser não suportar-->
+
+60 - TAG OBJECT
+Vincular arquivos externos ao html.
+ <object data="Luciano_Leal_Rodrigues.pdf" type="" name="logo" width="400" height="400"></object><!--carrega diversos formatos de arquivos, incluindo textos-->
+ou
+ <object data="" type="" name="logo" width="400" height="400">
+   <param name="src" value="Luciano_Leal_Rodrigues.pdf"><!--define diretamente o arquivo-->
+    </object>
+
+61 - TAG OL (listas ordenadas)
+    <p>LISTA DE CURSOS</p>
+<ol start="" type="A"><!--start onde inicia a lista,type define por letras ou algarismos romanos, reversed inverte-->
+    <li>Html</li>
+    <ol>
+        <li>Framework</li><!--criando subitens-->
+        <ol>
+            <li>Mecanismo</li>
+        </ol>
+        <li>Boostrap</li>
+    </ol>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li>C++</li>
+    <li>Arduino</li>
+</ol>
+
+62 - TAG OPTGROUP (agrupar elementos)
+Separa elementos de um select em um grupo.
+<select name="" id=""><!--caixa de seleção estilo box-->
+<optgroup label="WEB"><!--titulo de seleção-->
+<option>HTML</option><!--item dentro do select-->
+<option>Javacript</option> 
+</optgroup>
+<optgroup label="Programação">
+<option>Boostrap</option>
+<option>Jquery</option>
+<option>Arduino</option>
+</optgroup>
+</select>
+
+63 - TAG OUTPUT
+Representa uma saída de informação. Geralmente é usado dentro de formulário, assim recebendo os valores de um cálculo.
+<form action="" oninput="res.value=parseInt(a.value)+parseInt(b.value)">
+    0<input type="range" name="" id="a" value="50">100
+    <p>+</p>
+    <input type="number" name="" id="b" value="0">
+    <p>=</p>
+    <output name="res" for="a b"><!--apenas recebe o valor final-->
+    </output>
+</form>
+
+64 - TAG PROGRESS
+Representa uma barra de progresso.
+    <input type="range" min="0" max="100" value="0" onchange="p1.value=this.value">
+    <p></p>
+<progress value="0" max="100" id="p1"></progress>
+
+65 - TAG Q (QUOTE)
+Coloca o texto com aspas no inicio e fim da citação.
+<q cite="www.youtube.com.br">vitae nesciunt ut blanditiis modi natus aperiam fuga quidem</q>
+
+66 - TAGS RUBY e RT
+Trabalham em conjunto.
+Ruby entra com o idioma e RT serve como a tradução.
+
+67 - TAG SAMP
+Representa um exemplo código ou programa.
+<samp>3.1415926535369</samp><!--ja possui uma formatação especifica-->
+
+68 - TAG SECTION
+Sessão genérica com agrupamento de contéudo, com caracteristicas parecidas com o article.
+<section>
+    <h1>CURSOS</h1>
+    <dl><!--gera uma lista com avanços-->
+        <dt>Html</dt><!--titulo-->
+        <dd>Principal linguagem de programação WEB.</dd><!--conteúdo da lista-->
+        <dt>CSS</dt>
+        <dd>Principal ferramenta de formatação.</dd>
+    </dl>
+</section>
+
+69 - TAG SMALL
+É uma tag de formatação de texto destacando-o no tamanho. O Conteúdo em small nao diminui a importancia no texto, alertas, citação.
+<small>dolor sit amet consectetur adipisicing elit. Sunt temporibus dolorem quod at</small>
+
+70 - TAG SOURCE
+É uma tag de especificação de fontes para tags de audio, video e imagem.
+
+PÁGINA COM LINK COM SOM
+<script>
+    var teste = new Audio();
+    teste.src = 'Sons/21 - Laser.mp3';
+    </script>
+
+  <a href="#" onmouseover="teste.play()"> Home </a>
+
+71 - TAG SPAN
+Permite alteração visual sem alterar o fluxo do texto, criando uma caixa ao redor do texto, sem alterar em nada. Sera alterado apenas um pedaço.
+<span class="destaque">consectetur</span>
+
+72 - TAG STRONG
+Considerada como efeito negrito, porém o conteúdo envolvido ganha destaque.
+<strong>Mollitia</strong>
+
+73 - TAG STYLE
+Seu objetivo é agrupar comandos em css.
+<style>
+    
+</style>
+
+74 - TAGS SUP e SUB
+Permitem colocar texto como se fosse em potenciação e fórmulas quimicas.
+<p>4<sup>2</sup>=16</p>
+<p>H<sub>2</sub>O
+</p>
+
+75 - COMO CRIAR TABELAS P1
+Esqueleto básico de criação de tabelas.
+<table border="1"><!--container principal-->
+    <tr><!--table row = linha-->
+        <td> Fabricante </td><!--table division = recebe o conteúdo-->
+        <td> Modelo </td>
+        <td> Valor em R$ </td>
+    </tr>
+    <tr>
+        <td> Honda </td>
+        <td> WRV </td>
+        <td> 80.000 </td>
+    </tr>
+    <tr>
+        <td> Ford </td>
+        <td> New Fiesta </td>
+        <td> 40.000 </td>
+    </tr>
+</table>
+
+76 - TABELAS PT2
+Mesclando células.
+  <tr>
+        <td rowspan="4"> Seminovos</td><!--rowspan mescla colunas-->
+    </tr>
+<tr>
+        <td colspan="4" style="text-align: center;"> Tabela de Preços 2022 </td><!--colspan mescla  número de linhas desejadas-->
+    </tr>
+
+78 - TABELA PT3
+Theader,TFooter e TBody. Permitem dividir tabela em blocos.
+<table border="1"><!--container principal-->
+    <thead><!--organização do bloco-->
+    <tr><!--table row = linha-->
+        <th> Fabricante </th><!--table head = é o título da tabela, ja possui uma formatação própria e alinhamento-->
+        <th> Modelo </th>
+        <th> Valor em R$ </th>
+    </tr>
+</thead>
+<tbody><!--corpo da tabela-->
+    <tr>
+        <td> Honda </td>
+        <td> WRV </td>
+        <td> 80.000 </td>
+    </tr>
+    <tr>
+        <td> Ford </td>
+        <td> New Fiesta </td>
+        <td> 40.000 </td>
+    </tr>
+</tbody>
+<tfoot><!--rodape da página-->
+    <tr>
+        <td colspan="4" style="text-align: center;"> Tabela de Preços 2022 </td><!--colspan mescla  número de linhas desejadas-->
+    </tr>
+</tfoot>
+</table>
+
+78 - FORMATANDO TABELA EM CSS
+thead{
+  background-color: aquamarine;
+}
+tbody{
+  background-color: blueviolet;
+  color: white;
+}
+tfoot{
+  background-color: cadetblue;
+  color: white;
+}
+table, th, td{
+border: 1px solid black; /* borda em toda a tabela*/
+  padding: 10px;
+
+}
+table{
+  border-collapse: collapse; /*retira espaçamentos entre as linhas*/
+
+}
+.especial{
+  border: 2px solid red;
+}
+td{
+  width: 250px;
+  padding: 10px;
+}
+
+79 - TAG TIME
+Coloca dentro do sistema data e hora, representando no formato mais técnico.
+<p><time datetime="2022-12-25">25 de dezembro</time></p><!--informação interna-->
+<p><time datetime="12:00">7 de setembro</time></p>
+
+80 - TAG TITLE
+Tag de título da página. Sempre estará dentro do head. Usado pelo favoritos para gravar o site.
+<title>Aprendendo HTML</title>
+
+81 - TAG UL (lista não ordenadas)
+<style>
+ul{
+    list-style-type: lower-roman;/*square = quadrado, circle = redondo,dec = ordena a lista,decimal-leading-zero coloca zeros a esquerda,lower alpha fica em minuscula,lower-roman numeros romanos*/
+    list-style-image: url(imagens/js.png); /*insere imagem como marcador*/
+
+}
+</style>
+</head>
+
+<body>
+    <h2>Cursos pré-prontos</h2>
+<ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>Php</li>
+    <li>Javascript</li>
+    <li>JQuery</li>
+</ul>
+
+82 - TAG VAR (lista não ordenada)
+ <var>E</var>=<var>m</var><var>c</var><sup>2</sup><!--recebe uma formatação padrão-->
+    </p>
+
+83 - TAG VIDEO
+  <video src="videos/06 - Tag address   Informações de contato.mp4" controls autoplay>
+
+84 - CONSTRUINDO LAYOUT PT1
+85 - CONSTRUINDO LAYOUT PT2
+86 - CONSTRUINDO LAYOUT PT3
+87 - CONSTRUINDO LAYOUT PT4
+88 - ANIMAÇÃO AO SCROLL - CONSTRUINDO LAYOUT PT5
+89 - EFEITO PARALLAX - CONSTRUINDO LAYOUT PT6
+90 - JANELA MODAL - CONSTRUINDO LAYOUT PT7
+91 - JANELA MODAL PT2
+92 - JANELA MODAL PT3
+Abaixo segue o código fonte em html, css e javascript.
+HTML
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="site feito durante aprendizado">
+<title>Aprendendo HTML</title>
+<link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<link rel="icon" href="imagens/html.png" sizes="32x32"><!--size indica tamanho do icone-->
+<body>
+<header><!--cabeçalho da página-->
+  <nav><!--criando menu-->
+    <ul>
+      <li><a href="#banner"> Home </a></li>
+      <li><a href="#sobre"> Sobre </a></li>
+      <li><a href="#cursos"> Cursos </a></li>
+      <li><a href="#canal"> Canal </a></li>
+      <li><a href="#contato"> Contato </a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section id="banner"><!--partes da página-->
+<img src="imagens/The_King_of_Fighters_logo.jpeg" alt="" class="banner">
+  </section>
+
+  <section id="sobre" class="flexivel">
+<article data-anima="esquerda">
+  Sobre o Canal
+</article>
+<article data-anima="direita">
+  Sobre Mim
+</article>
+  </section>
+
+  <section id="cursos" class="flexivel">
+    <article data-anima="esquerda" class="conteinerCursos">
+<img src="imagens/TrioBrasil.jpeg" alt="Trio do Brasil" onclick="cliqueModal(this)" class="mini">
+<img src="imagens/TrioBoss.jpeg" alt="Trio dos Chefões" onclick="cliqueModal(this)" class="mini">
+<img src="imagens/TrioItalia.jpeg" alt="Trio da Itália" onclick="cliqueModal(this)" class="mini">
+<img src="imagens/TrioMexico.jpeg" alt="Trio do México" onclick="cliqueModal(this)" class="mini">
+    </article>
+    <article data-anima="centro" class="conteinerCursos">
+      <img src="imagens/TrioBrasil.jpeg" alt="Trio do Brasil" onclick="cliqueModal(this)" class="mini">
+      <img src="imagens/TrioBoss.jpeg" alt="Trio dos Chefões" onclick="cliqueModal(this)" class="mini">
+      <img src="imagens/TrioItalia.jpeg" alt="Trio da Itália" onclick="cliqueModal(this)" class="mini">
+      <img src="imagens/TrioMexico.jpeg" alt="Trio do México" onclick="cliqueModal(this)" class="mini">
+    </article>
+    <article data-anima="direita" class="conteinerCursos">
+      <img src="imagens/TrioBrasil.jpeg" alt="Trio do Brasil" onclick="cliqueModal(this)" class="mini">
+      <img src="imagens/TrioBoss.jpeg" alt="Trio dos Chefões" onclick="cliqueModal(this)" class="mini">
+      <img src="imagens/TrioItalia.jpeg" alt="Trio da Itália" onclick="cliqueModal(this)" class="mini">
+      <img src="imagens/TrioMexico.jpeg" alt="Trio do México" onclick="cliqueModal(this)" class="mini">
+    </article>
+  </section>
+
+  <section class="parallax p1">
+    <article>
+      CFB Cursos<br>
+      CFB Cursos<br>
+      CFB Cursos<br>
+      CFB Cursos<br>
+      CFB Cursos<br>
+    </article>
+  </section>
+
+  <section id="canal" class="flexivel">
+    <article data-anima="esquerda">
+imagem Link Canal
+    </article>
+    <article data-anima="direita">
+      Link direto para o canal
+    </article>
+  </section>
+
+  <section class="parallax p2">
+    <article>
+      CFB Cursos<br>
+      CFB Cursos<br>
+      CFB Cursos<br>
+      CFB Cursos<br>
+      CFB Cursos<br>
+    </article>
+  </section>
+
+  <section id="contato" class="flexivel">
+    <article data-anima="esquerda">
+      Contato esquerda
+    </article>
+    <article data-anima="centro">
+      Contato centro
+    </article>
+    <article data-anima="direita">
+      Contato direita
+    </article data-anima="esquerda">
+
+  </section>
+
+  <footer>
+
+    <div id="janelaModal" class="janelaModal escondeJanelaModal"><!--div usada para receber janela modal-->
+<span id="Fechar" class="Fechar">X</span>
+<img src="" alt="" id="imgModal" class="imgModal">
+<div id="txtModal" class="txtModal"></div>
+    </div>
+
+  </footer>
+  <script src="script.js"></script><!--ligando script.js-->
+</body>
+</html>  
+
+**CSS
+  *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  body{
+    font-family: 'Rubik', sans-serif;
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  padding: 15px 0px;
+  position: fixed; /*não role com elementos da página*/
+  width: 100%;
+  background-color: white;
+  z-index: 999; /*evita elementos em cima do menu*/
+}
+
+header nav ul{ /*apontando do menor ao maior*/
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li{
+  display: inline;
+}
+
+header nav ul li a{
+text-decoration: none;
+text-transform: uppercase;
+color: gray;
+font-size: 1.2em;
+padding: 2px 10px;
+display: inline-block;
+}
+
+header nav ul li a:hover{
+color: #b6dbf1;  
+}
+
+section{
+
+  width: 100%;
+  height: 300px;
+}
+
+section:nth-child(even){ /*odd  = impar, even = par*, esta pseuso classe coloca formatação apartir do atributo*/
+  background-color: #3c4f60;
+
+}
+section,footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.banner{
+  display: flex;
+}
+
+.banner img{ /*evita que a imagem distorça*/
+  width: 100%;
+}
+
+.borda0{
+  border: none;
+
+}
+
+.borda1{
+  border: 1px solid black;
+}
+
+.borda2{
+  border: 1px solid red;
+}
+
+.flexivel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*espaçamento igual para todos os elementos*/
+ 
+}
+
+article{
+  width: 100%;
+  text-align: center;
+}
+
+/*animações*/
+[data-anima]{
+  opacity: 0;
+  transition: .5s;
+}
+
+[data-anima="esquerda"]{
+  transform: translate3d(-50px,0,0);/*x y z*/
+}
+
+[data-anima="direita"]{
+  transform: translate3d(50px,0,0);/*x y z*/
+}
+[data-anima="centro"]{
+  transform: translate3d(0,50px,0);/*x y z*/
+}
+
+[data-anima].animacao{
+  opacity: .8;
+  transform: translate3d(0,0,0);
+}
+
+/*parallax*/
+.parallax{
+background-attachment: fixed; /*imagem fica parada e somente a div vai rolar*/
+background-size: cover; /*ajusta a imagem na área*/
+background-repeat: no-repeat; /*não repete a imagem*/
+background-position: center center; /*alinhamento da imagem*/
+/*transform: scale(1.0);*/
+
+}
+
+.p1{
+background-image: url('imagens/tk96Tela.jpeg');
+
+}
+
+.p2{
+background-image: url('imagens/kof_personagensTODOS.jpeg');
+}
+
+/*area de CURSOS*/
+.conteinerCursos{
+  justify-content: space-around; /*distribuição horizontal*/
+  align-items: center; /*alinhamento vertical*/
+  display: flex;
+  flex-wrap: wrap;
+}
+.mini{
+  width: 49%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*JANELA MODAL*/
+.janelaModal{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  z-index: 9999; /*na fte de tudo*/
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mostraJanelaModal{
+  display: block;
+}
+
+.escondeJanelaModal{
+  display: none;
+}
+
+.Fechar{
+position: absolute;
+top: 15px;
+right: 35px;
+color: white;
+font-weight: bold;
+font-size: 40px;
+cursor: pointer;
+}
+
+.imgModal{
+margin: auto;
+display: block;
+width: 100%;
+max-width: 800px;
+}
+
+.txtModal{
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: gray;
+padding: 10px 0px;
+height: 150px;
+}
+
+** JAVASCRIPT
+const elementos=document.querySelectorAll('[data-anima]'); /*selecionando todas*/
+
+const animacaoClass='animacao';
+
+function animaScroll(){
+const topopagina=window.pageYOffset + ((window.innerHeight * 3)/4); /*o topo aparace a 3/4 da janela ou pode ser substituido por valor direto*/
+elementos.forEach(function(elemento){
+    if(topopagina > elemento.offsetTop){
+        elemento.classList.add(animacaoClass);
+    }else{
+        elemento.classList.remove(animacaoClass);  
+    }
+});
+}
+
+if(elementos.length){
+window.addEventListener('scroll',function(){
+   animaScroll(); 
+})
+}
+
+function cliqueModal(img){
+const janelaModal=document.getElementById('janelaModal'); //apontamento para os ids
+const imgModal=document.getElementById('imgModal');
+const txtModal=document.getElementById('txtModal');
+const Fechar=document.getElementById('Fechar');
+
+janelaModal.classList.remove("escondeJanelaModal"); //remove a classe que esconde
+janelaModal.classList.add("mostraJanelaModal"); // mostra a classe da modal
+
+imgModal.src=img.src; // adicionar a imagem quando clicar
+imgModal.alt=img.alt;
+txtModal.innerHTML=img.alt;
+
+Fechar.onclick=function(){
+janelaModal.classList.add('escondeJanelaModal');
+janelaModal.classList.remove('mostraJanelaModal');
+}
+}
+
+93 - MENU DE ICONES FIXO
+HTML
+<nav class="menu">
+  <a href="#" class="ativo" data-menu><img src="icones/home.png" alt=""></a>
+  <a href="#" class="" data-menu><img src="icones/search.png" alt=""></a>
+  <a href="#" class="" data-menu><img src="icones/email.png" alt=""></a>
+  <a href="#" class="" data-menu><img src="icones/youtube.png" alt=""></a>
+</nav>
+
+CSS
+.menu{
+  background-color: #444;
+  width: 85px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.menu a{
+  display: block;
+  text-align: center;
+padding: 25px;
+transition: all 0.5s ease; /*ease=suave*/
+
+}
+
+.menu a:hover{
+background-color: #400;
+}
+
+.ativo{
+  background-color: #a00;
+}
+
+JAVASCRIPT
+const menu=document.querySelectorAll('[data-menu]');
+const cssAtivo='ativo';
+
+menu.forEach(function (e){
+e.addEventListener('click',function(){
+    for(i=0;i<menu.length;i++){
+        menu[i].classList.remove(cssAtivo);
+    }
+    e.classList.add(cssAtivo);
+})
+});
+
+94 - MENU RETRÁTIL
+HTML
+<nav class="menu">
+  <div>
+  <a href="#" class="ativo" data-menu><img src="icones/home.png" alt=""></a>
+  <a href="#" class="" data-menu><img src="icones/search.png" alt=""></a>
+  <a href="#" class="" data-menu><img src="icones/email.png" alt=""></a>
+  <a href="#" class="" data-menu><img src="icones/youtube.png" alt=""></a>
+</div>
+<div class="btnMenu">
+  <div class="barra"></div>
+  <div class="barra"></div>
+  <div class="barra"></div>
+</div>
+</nav>
+
+CSS
+.menu{
+  background-color: #444;
+  position: fixed;
+  top: 0px;
+  left: -100px;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.menu a{
+  display: block;
+  text-align: center;
+padding: 25px;
+transition: all 0.5s ease; /*ease=suave*/
+}
+
+.menu a:hover{
+background-color: #400;
+}
+
+.ativo{
+  background-color: #a00;
+}
+
+.barra{
+  background-color: #fff;
+  width: 50px;
+  height: 5px;
+  margin: 7.5px;
+}
+
+.btnMenu{
+  cursor: pointer;
+}
+
+.menuAberto{
+  left: 0px;
+}
+
+JAVASCRIPT
+const menus=document.querySelectorAll('[data-menu]');
+const cssAtivo='ativo';
+
+menus.forEach(function (e){
+e.addEventListener('click',function(){
+    for(i=0;i<menus.length;i++){
+        menus[i].classList.remove(cssAtivo);
+    }
+    e.classList.add(cssAtivo);
+})
+});
+
+const btnMenu=document.getElementsByClassName('btnMenu')[0];
+const menu=document.getElementsByClassName('menu')[0];
+
+btnMenu.addEventListener('click',function(){
+menu.classList.toggle('menuAberto');
+})
+
+95 - ACORDEON
+Cria um efeito de mostrar e ocultar informaçoes dentro de um paragrafo.
+HTML
+<button class="acordeon"> CFB CURSOS </button>
+<article class="painel">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus quisquam quae eaque odit, ut tempora rerum dolorem excepturi obcaecati nisi assumenda commodi quam consequatur repellendus voluptatibus placeat asperiores porro. Officia?
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus esse consequuntur veniam porro? Nemo nulla esse quod consequuntur assumenda eligendi totam est quaerat? Ea recusandae soluta dicta necessitatibus. Possimus, mollitia.
+</p>
+</article>
+
+CSS
+.acordeon{
+background-color: gray;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+font-weight: bold;
+transition:0.5s ;
+}
+
+.painel{
+padding: 0 18px;
+background-color: white;
+max-height: 0px;
+overflow: hidden;
+transition: max-height 0.5s ease-out;
+}
+
+.selecionado, .acordeon:hover{
+background-color: #ccc;
+}
+
+JAVASCRIPT
+const acordeonArray=document.getElementsByClassName('acordeon');
+
+for(var i=0;i < acordeonArray.length;i++){
+    acordeonArray[i].addEventListener('click',function(){
+    this.classList.toggle("selecionado");
+    const painel=this.nextElementSibling;
+    if(painel.style.maxHeight){
+        painel.style.maxHeight=null;
+    }else{
+        painel.style.maxHeight=painel.scrollHeight + "px";/*obtem a altura do elemento*/
+    }
+    });
+}
+
+96 - SESSÃO GUIA TABS PT1
+97 - SESSÃO GUIA TABS PT2
+Finalizado aula 
+HTML
+ <nav class="tabs">
+    <button onclick="AbrirTab(event,'C#')" id="primeiro" data-btnTabs> C# </button>
+    <button onclick="AbrirTab(event,'HTMLCompleto')" id="" data-btnTabs> Html Completo </button>
+    <button onclick="AbrirTab(event,'Arduino')" id="" data-btnTabs> Arduino </button>
+  </nav>
+
+  <article id="C#" class="conteudoTab"><!--area de contéudo-->
+<span class="fecharTab" onclick="this.parentElement.style.display='none'">x</span>
+<h2>C sharp</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quo ipsa quas aliquam quam maxime, assumenda nisi odio suscipit corrupti ex ullam dicta, necessitatibus dolores, esse voluptates mollitia labore provident.</p>
+  </article>
+
+  <article id="HTMLCompleto" class="conteudoTab"><!--area de contéudo-->
+  <span class="fecharTab" onclick="this.parentElement.style.display='none'">x</span>
+  <h2>Html Completo</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quam nulla dolorem aliquid at nemo? Rem, labore? Ad, natus cum, voluptatem ipsa accusantium perspiciatis iusto beatae quaerat quam ex asperiores.</p>
+  </article>
+
+  <article id="Arduino" class="conteudoTab"><!--area de contéudo-->
+  <span class="fecharTab" onclick="this.parentElement.style.display='none'">x</span>
+  <h2>Arduino</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit omnis dicta delectus amet temporibus non quas aspernatur doloremque vitae laboriosam maxime illo voluptate quia, neque iure illum, et quaerat?</p>
+  </article>
+
+**CSS
+body{
+  font-family: 'Kanit';
+}
+
+.tabs{
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+.tabs button{
+  background-color: inherit; /*copia formatação do elemento pai*/
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.7s;
+  font-size: 16px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 14px;
+}
+
+.tabs button:hover{
+  background-color: #ddd;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tabs button.active{
+  background-color: #ccc;
+}
+
+.conteudoTab{
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+}
+
+.fecharTab{
+float: right;
+cursor: pointer;
+font-size: 20px;
+}
+
+.fecharTab:hover{
+  color: red;
+}
+
+** JAVASCRIPT
+function AbrirTab(evt,nomeTab){
+    const conteudoTab=document.getElementsByClassName("conteudoTab");
+    for(var i=0;i < conteudoTab.length;i++){
+    conteudoTab[i].style.display="none"; // fechar as tabs
+    }
+    const btnTabs=document.querySelectorAll('[data-btnTabs]');
+    for(var i=0;i < btnTabs.length;i++){
+      btnTabs[i].classList.remove('ative');  
+    }
+    document.getElementById(nomeTab).style.display="block"; // ao clicar na tab mostra o texto
+}
+document.getElementById("primeiro").click();
+
+
+98 - MENU COM PESQUISA INTERNA
+Campo digitavel de pesquisa.
+HTML
+  <nav class="menuContainer">
+    <h2>CFB CURSOS</h2>
+    <input type="text" id="pesquisa" placeholder="Pesquisa..." title="Digite uma opção de menu" onkeyup="pesquisar()">
+    <ul id="menu">
+      <li><a href="#">Html e Html5</a></li>
+      <li><a href="#">Html Completo e Profissional</a></li>
+      <li><a href="#">Css</a></li>
+      <li><a href="#">Javascript</a></li>
+      <li><a href="#">Php</a></li>
+      <li><a href="#">C++</a></li>
+      <li><a href="#">QT Creator</a></li>
+      <li><a href="#">C# Completo</a></li>
+      <li><a href="#">Arduino</a></li>
+      <li><a href="#">Flash</a></li>      
+    </ul>
+  </nav>
+
+** CSS
+body{
+  font-family: 'Kanit';
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.menuContainer{
+  width: 300px;
+  padding: 15px 0px;
+  background-color: #bbb;
+}
+
+
+.menuContainer li a{
+padding: 10px;
+text-decoration: none;
+color: black;
+display: block;
+}
+
+.menuContainer li a:hover{
+background-color: #eee;
+}
+.menuContainer h2{
+  padding-left: 10px;
+}
+
+#pesquisa{
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+#menu{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+** JAVASCRIPT
+function pesquisar(){
+    var input,filtro,menu,menuItens,links;
+    input = document.getElementById("pesquisa");
+    filtro=input.value.toUpperCase();
+    menu=document.getElementById("menu");
+    menuItens=menu.getElementsByTagName("li");
+
+    for(var i=0;i<menuItens.length;i++){
+        links=menuItens[i].getElementsByTagName("a")[0];
+        if(links.innerHTML.toUpperCase().indexOf(filtro)>-1){
+menuItens[i].style.display="";
+        }else{
+            menuItens[i].style.display="none";
+        }
+    }
+}
+
+99 - MENU LATERAL OCULTO INTERATIVO
+HTML
+<aside id="menuOculto" class="menuOculto">
+  <a href="javascript:void(0)" class="btnFechar" onclick="fecharNav()">&times;</a>
+  <a href="#">Sobre</a>
+  <a href="#">Endereços</a>
+  <a href="#">Contatos</a>
+  <a href="#">Downloads</a>
+</aside>
+<section id="principal">
+  <span style="font-size: 30px; cursor: pointer;" onclick="abrirNav()">&#9776;</span>
+  <p>CFB CURSOS</p>
+</section>
+
+** CSS
+
+body{
+  font-family: 'Kanit';
+}
+
+*{
+  box-sizing: border-box;
+}
+.menuOculto{
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menuOculto a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #888;
+  display: block;
+  transition: 0.5s;
+}
+
+.menuOculto a:hover{
+  color: #fff;
+
+}
+
+.btnFechar{
+position: absolute;
+top: 0px;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#principal{
+  padding: 16px;
+  transition: marin-left 0.5s;
+}
+
+@media screen and(max-height:450px){
+  .menuOculto{
+    padding-top: 15px;
+  }
+  .menuOculto a{
+    font-size: 18px;
+  }
+}
+
+**JAVASCRIPT
+function abrirNav(){
+document.getElementById("menuOculto").style.width="250px";
+document.getElementById("principal").style.marginLeft="250px";
+}
+
+
+function fecharNav(){
+    document.getElementById("menuOculto").style.width="0";
+    document.getElementById("principal").style.marginLeft="0";
+}
+
+100 - HEADER AUTO AJUSTÁVEL
+Header altera seu proprio tamanho.
+HTML
+ <header>
+    <a href="#default" id="logo"> CFB CURSOS </a>
+    <nav id="menu">
+      <a href="#home" class="ativo"> Home </a>
+      <a href="#cursos" class=""> Cursos </a>
+      <a href="#sobre" class=""> Sobre </a>
+    </nav>
+  </header>
+
+  <section style="margin-top: 210px;padding: 15px 15px 2500px;font-size: 20px;">
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+    <br>CURSOS CFB</br>
+  </section>
+
+** CSS
+body{
+  font-family: 'Kanit';
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 90px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index:100 ;
+}
+
+header a{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 10px;
+}
+
+header #logo{
+font-size: 35px;
+font-weight: bold;
+transition: 0.5s;
+}
+
+header a:hover{
+  background-color: #ddd;
+  color: #000;
+  transition: 0.5s;
+}
+header a.ativo{
+  background-color: #800;
+  color: white;
+}
+
+#menu{
+  float: right;
+
+}
+
+** JAVASCRIPT
+window.onscroll=function(){
+    rolar();
+};
+
+function rolar(){
+if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+document.getElementsByTagName("header")[0].style.padding="30px 10px";
+document.getElementById("logo").style.fontSize="25px";
+}else{
+document.getElementsByTagName("header")[0].style.padding="80px 10px";
+document.getElementById("logo").style.fontSize="35px";
+}
+}
+
+101 - MENU COM ABAS LATERAIS RETRÁTIL INTERARATIVO
+HTML
+<aside class="aside">
+<a href="#" id="canal"> O Canal</a>
+<a href="#" id="cursos"> Cursos </a>
+<a href="#" id="contatos"> Contato </a>
+</aside>
+<article style="margin-left: 70px;">
+<h2>CFB CURSOS</h2>
+<p>youtube.com.br</p>
+</article>
+
+** CSS
+.aside a{
+position: absolute;
+left: -90px;
+transition: 0.2s;
+padding: 15px;
+width: 100px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+border-radius: 0 15px 15px 0;
+} 
+
+.aside a:hover{ /*realiza o efeito de retorno do menu*/
+  left: 0px;
+}
+
+#canal{
+  top: 20px;
+  background-color: #800;
+}
+
+#cursos{
+  top: 80px;
+  background-color: #080;
+
+}
+
+#contatos{
+  top: 140px;
+  background-color: #008;
+}
+
+102 - MENU ROLANTE FIXO NO TOPO
+O Menu rola no cabeçalho porém é fixo no topo.
+O Conteudo em javascript não funcionou devido algumas tags estarem obsoletas.
+
+103 - MENU ESTILO MOBILE
+<article class="container">
+  <section class="topo">
+    <a href="#home" class="ativo">CFB CURSOS</a>
+    <nav id="menus">
+      <a href="#sobre">Sobre</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contatos">Contatos</a>
+    </nav>
+    <a href="javascript:void(0);" class="btn_menu" onclick="controleMenu()">
+      <img src="icones/cardapio.png" alt="">
+    </a>
+
+
+  </section>
+  <section style="padding: 0px 16px;">
+    <h1>CFB CURSOS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat tempora perspiciatis! Eius excepturi debitis fugit ipsa quas dolor maiores fuga, ab quo. Aspernatur assumenda, consequuntur dicta quibusdam iure soluta?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem numquam, fuga doloribus, necessitatibus animi provident eligendi cumque iusto unde rerum rem pariatur facilis quis praesentium at cum sunt, eos perspiciatis?</p>
+  </section>
+
+</article>
+
+  <script src="script.js"></script><!--ligando script.js-->
+
+**CSS
+.container{
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 0 0 20px 20px; /*podendo colocar 4 medidas. as primeiras sao superiores e as 2 últimas inferiores*/
+}
+
+.topo{
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+#menus{
+ display: none;
+}
+
+.topo a{
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 16px;
+  font: 17px;
+  display: block;
+}
+.topo a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.btn_menu{
+  background-color: #000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+.ativo{
+  background-color: #45a;
+  color: white;
+}
+
+**JAVASCRIPT
+function controleMenu(){
+   const menu=document.getElementById("menus");
+   if(menu.style.display=="block"){
+    menu.style.display="none";
+   } else{
+    menu.style.display="block";
+   }
+}
+
+104 - DROP MENU
+<body>
+<nav class="menuDrop"></nav>
+<button class="btn_Drop" onclick="mostrarDropDown()">  Menu Dropdown </button>
+<div class="conteudoDrop">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+
+**CSS
+.menuDrop{
+  position: relative;
+  display: inline-block;
+}
+
+.btn_Drop{
+background-color: #008;
+color: #fff;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+
+.conteudoDrop{
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.conteudoDrop a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.conteudoDrop a:hover{
+background-color: #ddd;
+}
+
+.mostrarDropdown{
+  display: block;
+}
+
+.menuDrop:hover .btn_Drop{
+  background-color: #44f;
+}
+
+**JAVASCRIPT
+function mostrarDropDown(){
+    document.getElementsByClassName("conteudoDrop")[0].classList.toggle("mostrarDropdown");
+}
+
+105 - SLIDESHOW PT1
+Da aula 105 a 107 refere-se a slides, ha exemplo já criado.
+
+108 - GALERIA DE IMAGENS
+Serve como uma especie de menu, porem usando imagens para serem mostradas ao clicar.
+Podendo usar tambem no botão o evento onmouseover, mostrar a imagem ao posicionar a seta na imagem.
+**HTML
+<section class="galeria">
+  <img src="produtos/bike800x600.jpeg" alt="" onmouseover="mostrarImagem(this)" style="background-color: red;">
+  <img src="produtos/Queijo800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+  <img src="produtos/Veja800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+  <img src="produtos/Sofa800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+  <img src="produtos/BarraCereal800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+  <img src="produtos/KitVerao800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+  <img src="produtos/Arroz800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+  <img src="produtos/LustraMoveis800x600.jpeg" alt="" onclick="mostrarImagem(this)">
+</section>
+
+<section class="container">
+  <span onclick="this.parentElement.style.display='none';" class="btn_fechar">&times;</span><!--este comando faz com oculte a imagem-->
+  <img id="imagemGrande">
+</section>
+
+<section>
+  <p>Galeria de Imagens</p>
+</section>
+
+  <script src="script.js"></script><!--ligando script.js-->
+
+**CSS
+.galeria{
+display: inline-block;
+border: 1px solid black;
+width: 95%;
+margin: 25px;
+padding: 10px;
+text-align: center;
+box-shadow: 2px 2px 2px black;
+}
+
+.galeria img{
+  opacity: 0.5;
+  cursor: pointer;
+  width: 150px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.galeria img:hover{
+  opacity: 1;
+}
+
+.container{
+  position: relative;
+  display: none;
+  width: 60%;
+  margin: auto;
+}
+
+.container img{
+  width: 100%;
+}
+
+.btn_fechar{
+  position: absolute;
+top: 10px;
+right: 15px;
+color: white;
+font-size: 40px;
+cursor: pointer;
+}
+
+** JAVASCRIPT
+function mostrarImagem(img){
+var imagemGrande=document.getElementById("imagemGrande");
+imagemGrande.src=img.src; // pegando o src da imagem
+imagemGrande.parentElement.style.display="block";
+}
+
+109 - SOBREPOSIÇÃO DE IMAGENS
+Ao parar o mouse em cima da imagem, a mesma muda por outra imagem.
+HTML
+<section class="containerImg">
+  <img src="produtos/bike800x600.jpeg" alt="Logo da Marca" class="">
+  <section class="sobrePosicao">
+  <article class="textoImg">
+    <br>Bicleta 21 Marchas CANNON ADVENTURE</br>
+    <br>R$ 9.000,00 ou 10x SEM JUROS
+    <br>Quantidade em Estoque: 120 (ver promoção de Natal)
+    <br>Aceitamos os Cartões abaixo:
+    <img src="produtos/Bandeiras_Cartões.jpeg" alt="" id="tamband">
+    <p><a href="#" title="Participe do nosso Programa de Pontos, é rápido e fácil">&nbsp;&nbsp;Comprar R$&nbsp;&nbsp;
+    </a></p>
+</article>
+</section>
+</section>
+
+**CSS
+.containerImg{
+  position: relative;
+  width: 50%;
+  margin: 10px;
+}
+
+.containerImg img{
+  display: block;
+  width: 85%;
+  height: auto;
+}
+
+.sobrePosicao{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: #005a89;
+  overflow: hidden;
+  transition: 1.0s ease;
+}
+
+.containerImg:hover .sobrePosicao{
+opacity: 1;
+cursor: pointer;
+/*height: 100%; /*caso na clsse sobreposição o height =0, o efeito fica de cima para baixo*/
+}
+
+.textoImg{
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.textoImg a{
+  text-decoration: none;
+  color: white;
+}
+
+#tamband{
+  width: 350px;
+  height: 65px;
+  margin: auto;
+
+}
+
+.textoImg a:hover{
+  color: aquamarine;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px gray;
+  border-radius: 15px;
+  width: 50px;
+}
+
+110 - APLICANDO FILTRO EM IMAGENS
+<section>
+  <img src="produtos/notebook.jpeg" alt="">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro1">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro2">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro3">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro4">
+  <img src="produtos/notebook-sem_fundo.png" alt="" class="filtro5">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro6">
+  <img src="produtos/notebook-sem_fundo.png" alt="" class="filtro7">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro8">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro9">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro10">
+  <img src="produtos/notebook.jpeg" alt="" class="filtro11">
+</section>
+
+**CSS
+.filtro1{
+  filter: grayscale(50%); /*escala de cinza, 50%*/
+  -webkit-filter: grayscale(50%); /*escala de cinza*, colocar por segurança no safari*/
+}
+
+.filtro2{
+ filter: blur(2px);  /*blur realiza embaçamento*/
+ -webkit-filter:blur(2px);
+}
+
+.filtro3{
+  filter: brightness(300%);/*efeito de brilho*/
+  -webkit-filter: brightness(300%);
+}
+
+.filtro4{
+  filter: contrast(150%);/*efeito de contraste*/
+  -webkit-filter: contrast(150%);
+}
+
+.filtro5{
+  filter: drop-shadow(10px 10px 10px gray);/*efeito de sombra*/
+  -webkit-filter: drop-shadow(10px 10px 10px gray);
+}
+
+.filtro6{
+  filter: hue-rotate(90deg);/*efeito de giro da matix das cores*/
+  -webkit-filter: hue-rotate(90deg);
+}
+
+.filtro7{
+  filter: invert(100%);/*efeito de inversão das cores, chamado de modo negativo da foto*/
+  -webkit-filter: invert(100%);
+}
+
+.filtro8{
+  filter: opacity(30%);/*efeito de opacidade=transparencia*/
+  -webkit-filter: opacity(30%);
+}
+
+.filtro9{
+  filter: saturate(10%);/*efeito de saturação, caso esteja com '0' fica quase totalmente sem cor*/
+  -webkit-filter: saturate(10%);
+}
+
+.filtro10{
+  filter: sepia(100%);/*efeito de foto envelhecida*/
+  -webkit-filter: sepia(100%);
+}
+
+.filtro11{
+  filter: contrast(150%);/*efeito de contraste*/
+  -webkit-filter: contrast(150%) brightness(120%) sepia(75%); /*varios efeitos na mesma foto*/
+}
+
+111 - CAIXAS DE TEXTOS SOBRE IMAGENS
+<section class="container">
+  <img src="produtos/bike800x600.jpeg" alt="">
+  <div class="baixoesquerda">Baixo Esquerda</div>
+  <div class="topoesquerda">Topo Esquerda</div>
+  <div class="topodireita">Topo Direita</div>
+  <div class="baixodireita">Baixo Direita</div>
+  <div class="centro">Centro</div>
+
+</section>
+
+**CSS
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Kanit';
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 500px; /*largura da imagem*/
+  margin: auto;
+  position: relative;
+  color: white;
+
+}
+
+.container img{
+  width: 100%;
+}
+
+.baixoesquerda{
+  position: absolute;
+  bottom: 8;
+  left: 0;
+  text-align: center;
+  background-color: rgba(0, 0,0, 0.5);
+
+}
+
+.topoesquerda{
+position: absolute;
+top: 0;
+left: 0;
+text-align: center;
+background-color: rgba(0,0,0,0.5);
+
+}
+
+.topodireita{
+position: absolute;
+top: 0;
+right: 0;
+text-align: center;
+background-color: rgba(0,0,0,0.5);
+
+}
+
+.baixodireita{
+  position: absolute;
+ bottom: 8;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0,0, 0.5);
+
+}
+
+.centro{
+  position: absolute;
+top: 50%;
+left: 50%;
+transition: translate(-50%,-50%);
+text-align: center;
+background-color: rgba(0,0,0,0.5);
+
+}
+
+
+112 - IMAGEM DE FUNDO (FULL PAGE)
+Segue configurações para fazer o parallax
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Kanit';
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg{
+  background-image: url('imagens/kof_personagensTODOS.jpeg');
+  background-repeat: no-repeat; /*nao se repita*/
+  background-size: cover; /*cobre toda a área da página*/
+  background-position: center; /*posição*/
+  background-attachment: fixed; /*imagem noa rola na página*/
+  /*configurações de parallax*/
+}
+p{
+  color: white;
+}
+
+
+113 - ARREDONDANDO IMAGENS
+Posicionar o mouse a imagem retorna a ser quadrada
+  <img src="imagens/tkof96.jpeg" alt="" class="imgRedondo">
+
+**CSS
+.imgRedondo{
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  opacity: 0.4;
+}
+
+.imgRedondo:hover{
+  border-radius: 0;
+  transition: 0.5s ease;
+  cursor: pointer;
+  opacity: 1;
+}
+
+114 - CARTÕES DIGITAIS
+Cria um painel
+HTML
+ <section class="colunacartao"><!--conteudo do cartão-->
+    <div class="cartao">
+      <img src="produtos/IogurteTirol.jpeg" alt="" class="imagem">
+      <article class="textocartao">
+        <h2 class="titulo">Novo Iphone Apple</h2>
+        <p> Modelo A709 </p>
+        <p>Lançamento e novos recursos</p>
+        <p>apple.com/applebrasil</p>
+        <p><button class="botao">Canal</button></p>
+      </article>
+    </div>
+  </sectio
+
+**CSS
+.colunacartao{
+  float: left;
+  width: 25%;
+  margin-bottom: 15px;
+  padding: 0 8px;
+
+}
+
+.cartao{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.textocartao{
+  padding: 0 16px;
+
+}
+
+.textocartao::after, .linhacartao::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titulo{
+  outline-color: gray;
+}
+.botao{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 9px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.botao:hover{
+background-color: #444;
+
+}
+.imagem{
+  width: 75%;
+}
+
+@media screen and (max-width: 500px){
+  .colunacartao{
+    width: 100%;
+    display: block;
+    
+  }
+}
+
+
+115 - EFEITO SHAKE (TERREMOTO)
+<img src="produtos/olaf.jpeg" alt="" width="300px" class="tremidinha" title="Ai que frio gente!">
+<br>Posicione o mouse em cima do Olaf para fazer ele passar frio.
+
+**CSS
+.tremidinha:hover{
+  animation: tremer 0.3s;
+  animation-iteration-count: infinite; /*repetições*/
+
+}
+
+@keyframes tremer{
+  0%{transform: translate(1px,1px)rotate(0deg);}
+  10%{transform: translate(-1px,-2px)rotate(-1deg);}
+  20%{transform: translate(-2px,0px)rotate(1deg);}
+  30%{transform: translate(2px,2px)rotate(0deg);}
+  40%{transform: translate(1px,-1px)rotate(1deg);}
+  50%{transform: translate(-1px,2px)rotate(-1deg);}
+  60%{transform: translate(-2px,1px)rotate(0deg);}
+  70%{transform: translate(2px,1px)rotate(-1deg);}
+  80%{transform: translate(-1px,-1px)rotate(1deg);}
+  90%{transform: translate(1px,2px)rotate(0deg);}
+  100%{transform: translate(1px,-2px)rotate(-1deg);}
+}
+
+116 - GELERIA DE IMAGENS FILTRÁVEIS
+Menu filtrando imagens e mostrando qual botão ativo.
+HTML
+<section class="galeria">
+  <header id="cabecalhoGaleria">
+    <button class="btn ativo" onclick="gerenciarImagens('tudo')"> Tudo </button>
+    <button class="btn" onclick="gerenciarImagens('c1')"> Cursos 1 </button>
+    <button class="btn" onclick="gerenciarImagens('c2')"> Cursos 2 </button>
+    <button class="btn" onclick="gerenciarImagens('c3')"> Cursos 3 </button>
+  </header>
+
+  <article class="imagens">
+    <img src="produtos/bike800x600.jpeg" alt="" class="img c1">
+    <img src="produtos/bolacha.jpeg" alt="" class="img c1">
+    <img src="produtos/celular.jpeg" alt="" class="img c2">
+    <img src="produtos/espumaCare.jpeg" alt="" class="img c2">
+    <img src="produtos/IogurteTirol.jpeg" alt="" class="img c3">
+  </article>
+</section>
+
+**CSS
+.galeria{
+  max-width: 1300px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.imagens{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start ;
+}
+
+.img{
+  max-width: 30%;
+  padding: 10px;
+  }
+
+.ativo{
+  border: 1px solid black;
+  background-color: #f00;
+  color: white;
+  padding: 0 15px;
+
+}
+
+**JAVASCRIPT
+function gerenciarImagens(c){
+    var x,i,todasImagens;
+    x=document.getElementsByClassName("img");
+    for(i=0;i < x.length;i++){
+        x[i].style.display="none"; // oculta as imagens
+    }
+    if (c=='tudo') {
+        for(i=0;i < x.length;i++){
+            x[i].style.display="block"; //
+        }
+    } else {
+        x=document.getElementsByClassName(c);
+        for(i=0;i < x.length;i++){
+            x[i].style.display="block"; // 
+        }
+
+    }
+
+}
+
+
+//BOTÃO ATIVO
+var btns=document.getElementsByClassName("btn");
+for(i=0;i < btns.length;i++){ // verificando qual botão clicado
+   btns[i].addEventListener('click',function(){
+var btnAtual=document.getElementsByClassName("ativo")[0];
+btnAtual.className = btnAtual.className.replace("ativo","");
+this.className+=" ativo";
+   });
+}
+
+gerenciarImagens("tudo");
+
+
+117 - BOTÃO COM ANIMAÇÃO
+<button class="botao"><span> CFB - Cursos </span></button>
+
+**CSS
+.botao{
+  border-radius: 15px;
+  background-color: #51f;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  width: 240px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.5s;
+}
+
+.botao span{
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.botao span::after{
+  cursor: pointer;
+  content: "\00bb";
+  position: absolute;
+  opacity: 0; /*oculta as setas*/
+  top: 0;
+  right: -20px; /*deslocamento da seta*/
+  transition: all 0.5s;
+}
+
+.botao:hover span{ /*configura o span*/
+padding-right: 25px;
+}
+
+.botao:hover span:after{ /*configura o span*/
+  padding-right: 25px;
+  opacity: 1;
+  color: bisque;
+  font-weight: bold;
+  }
+
+118 - EXPANDIR/RETRAIR (botão leia mais)
+<h1>CFB CURSOS</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A error sapiente, aliquam praesentium<span id="pontos">...</span> eius<span id="mais"> nihil ducimus omnis animi, accusamus sunt numquam rerum sint cupiditate sequi itaque nesciunt quasi incidunt illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus, dicta accusamus aspernatur atque incidunt corporis odio repudiandae voluptatum molestias dolores impedit officiis eaque recusandae quasi rem qui. Illo, sit.</span></p>
+<button onclick="leiaMais()" id="btnLeiMais"> Leia Mais </button>
+
+**CSS
+#mais{
+  display: none;
+}
+
+** JAVASCRIPT
+function leiaMais(){
+    var pontos=document.getElementById("pontos");
+    var maisTexto=document.getElementById("mais");
+    var btnLeiMais=document.getElementById("btnLeiMais");
+
+    if(pontos.style.display==="none"){ //identico
+        pontos.style.display="inline";
+        maisTexto.style.display="none";
+        btnLeiMais.innerHTML=" Leia Mais "; // trocando o titulo do botão
+    }else{
+        pontos.style.display="none";
+        maisTexto.style.display="inline";
+        btnLeiMais.innerHTML=" Leia Menos ";
+    }
+}
+
+119 - ALERTA DE TECLA CAPS LOCK ATIVA
+<input type="text" name="" id="cxTexto" placeholder="Digite seu nome" autofocus>
+<p id="textoAlerta">Caps Lock ATIVADO, por favor desative.</p>
+
+**CSS
+#textoAlerta{
+  display: none;
+  color: red;
+}
+
+
+**JAVASCRIPT
+var cxTexto=document.getElementById("cxTexto");
+var textoAlerta=document.getElementById("textoAlerta");
+
+cxTexto.addEventListener('keyup',function(event){
+    if(event.getModifierState("CapsLock")){
+        textoAlerta.style.display="block";
+   
+    }else{
+        textoAlerta.style.display="none";
+
+    }
+})
+
+120 - MOSTRAR/OCULTAR SENHA
+Senha: <input type="password" id="senha" autofocus><br>
+<input type="checkbox" onclick="OcultarSenha()" id="check"> Mostra Senha
+
+**JAVASCRIPT
+function OcultarSenha(){
+    var senha=document.getElementById("senha");
+    var check=document.getElementById("check");
+    if(senha.type=="password"){ // mudando o tipo para texto
+senha.type="text";
+
+    }else{
+        senha.type="password";
+    }
+}
+
+121 - BACKGROUND ANIMADO
+Colocar video como plano de fundo.
+<video src="videos/Chuva.mp4" autoplay loop id="meuvideo"></video>
+ 
+<div class="conteudo">
+  <h1>Dificuldades para dormir</h1>
+  <p>Escute com toda a calma esse som de chuva, aos poucos tente ir reposando o corpo e com certeza terá uma ótima noite de sono.</p>
+  <button class="" onclick="pausa()" id="btnPausa"> Pausar </button>
+</div>
+
+** CSS
+
+#meuvideo{
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%; /*proporção da janela toda*/
+  min-height: 100%;
+  z-index: -1; /*permite mostrar conteúdos*/
+}
+
+.conteudo{
+position: fixed;
+bottom: 0;
+background: rgba(0,0,0,0.5);
+color: white;
+cursor: pointer;
+width: 100%;
+padding: 20px;
+}
+
+#btnPausa{
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(146, 5, 5);
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.6s;
+}
+
+#btnPausa:hover{
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(233, 15, 15);
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.6s;
+}
+
+
+** JAVASCRIPT
+var video=document.getElementById("meuvideo");
+var btn=document.getElementById("btnPausa");
+
+function pausa(){
+    if(video.paused){
+        video.play();
+        btn.innerHTML="Pausa"
+    }
+    else{
+        video.pause(); 
+        btn.innerHTML="Play"
+    }
+}
+
+
+122 - ROLAGEM SUAVE DA PÁGINA
+<section class="" id="sec1">
+  <h2>Section</h2>
+  <a href="#sec2">Clique aqui para rolar para área 2</a>
+</section>
+
+<section class="" id="sec2">
+  <h2>Section 2</h2>
+  <a href="#sec1">Clique aqui para rolar para área 1</a>
+</section>
+
+
+**CSS
+html{
+  scroll-behavior: smooth;  
+}
+
+#sec1{
+  height: 600px;
+  background-color: gray;
+  color: white;
+}
+
+#sec2{
+  height: 600px;
+  background-color: bisque;
+  color: white;
+}
+
+section a{
+  color: black;
+}
+
+123 - BARRA DE ROLAGEM PERSONALIZADA
+Manter conteudo normal do site.
+
+**CSS
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Kanit';
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{ /*configurando largura barra de rolagem*/
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track{ /*fundo*/
+  background-color: gray;
+}
+
+::-webkit-scrollbar-button{ /*fundo*/
+ background-color: red;
+
+
+}
+
+::-webkit-scrollbar-thumb{ /*barra de rolagem*/
+  background-color: #bbb;
+  border-radius: 20px;
+ }
+
+ ::-webkit-scrollbar-thumb:hover{ /*barra de rolagem*/
+  background-color: #ccc;
+ }
+
+124 - EFEITO DIGITAÇÃO DE TEXTO
+Cria um efeito de digitação.
+HTML
+<body onload="digitacao()">
+<button onclick="digitacao()">Clique Aqui</button>
+<p id="texto"></p>
+
+**JAVASCRIPT
+var i=0;
+var txt="CFB Curso de Html Completo e Profissional";
+var velocidade=50;
+
+function digitacao(){
+    if(i<txt.length){
+        document.getElementById("texto").innerHTML+=txt.charAt(i); /*pegar valor atual e concatenar com proximas letras*/
+        i++; //incremento 
+        velocidade=Math.floor(Math.random()*150); // velocidade de digitação
+        setTimeout(digitacao,velocidade); // chamando a função e a velocidade
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

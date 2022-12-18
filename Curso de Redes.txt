@@ -1,0 +1,495 @@
+Curso de Redes
+
+18 - CABO PAR TRANÇADO PT2
+Este cabo esta em desuso. Substituido pelo cabo categoria 5, que em breve sera substituido pelo categoria6.
+
+19 - CABO PAR TRANÇADO PT3
+Conectores rj45, utilizados em redes par trançado. Caso seja cat6, o conector também será de categoria igual. 
+Ha padroes para montar, usando testador de cabos
+19_3
+Cabos retos
+19_4
+19_5
+Para decorar os impares com impares e pares com pares.
+19_6
+Geralmente este processo já é feito automaticamente.
+
+20 - FIBRA ÓPTICA PT1
+As máquinas da empresa pode gerar campo eletromagnetico, interferndo no sinal da rede. O sinal chega a mais longe.
+20_1
+Sendo dividida em 2 módulos.
+20_2
+O nucleo é maior, a luz fica se debatendo dentro do cabo. Usar como backbone, interligando diversos andares de um prédio ou entre prédios(2km).
+20_3
+O caminho da luz é reto até a outra ponta.
+
+21 - FIBRA ÓPTICA PT2 CONECTIVIDADE
+Este conector possui um trave ao encaixar.
+21_1
+21_2
+Tambem possui uma trave fazendo clique ao encaixar.
+21-3
+Esse conector substitui o SC e mais de trabalhar. Usado para tecnologias full-duplex. Em alguns switch é necessário um adaptos SFP para poder usar o LC 
+Essas portas separadas são para maiores transferencias de dados.
+21-4
+Possui o mesmo tamanho de um rj45.
+
+22 - FIBRA ÓPTICA PT3 VELOCIDADE E DISTANCIA
+Tabela de velocidade e distancia da fibra.
+22_1
+
+23 - SERVIDOR DNS UBUNTU
+Todas as configurações servem tambem para o ubuntu server.
+-Rede
+abrir terminal, 
+ifconfig, proximo passo configurar ip fixo no servidor
+
+sudo vim /etc/network/interfaces
+auto eth0 
+iface eth0 inet static
+address 192.168.1.200
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
+digitar wq (salvar e sair)
+
+sudo vim /etc/hosts
+adicionar a entrada do servidor
+192.168.1.200 +nome da máquina (Ubuntu-32).boson.net Ubuntu-32(alias)
+wq
+hostname (nome da máquina)
+
+sudo vim /etc/hostname (editar nome do host)
+
+sudo reboot (reiniciar a máquina)
+abrir novamente o terminal
+ping www.google.com (ping no site do google)
+sudo vim /etc/resolv.conf (cliente dns) e senha 
+arquivo pode estar vazio. Após algumas configurações estas opções sao zeradas.
+nameserver 8.8.8.8 (dns do google) será provisório apenas para instalação de pacotes.
+
+*Instalação do servidor DNS (bind)
+sudo apt-get install bind9
+sudo /etc/init.d/bind9 status (verificar se esta rodando)
+cd /etc/bind (diretório)
+ls
+vim named.conf (abrir arquivo)
+
+24 - continuação da aula23
+*Configurar servidor
+sudo vim named.conf.local + senha (adiciona zonas dns)
+
+//zona de pesquisa direta
+zone "boson.net" {
+	type master;
+	file "/etc/bind/db.boson.net";
+	};
+
+// zona de pesquisa reversa
+zone "1.168.192.in-addr.arpa" (endereço de rede ip reverso){
+	type master;
+	file "/etc/bind/db.192";
+	};
+
+:wqdb.192
+
+* Editar arquivos e opções
+sudo vim named.conf.options
+retirar comentários forwarders (caso nao consiga fazer uma consulta no primeiro, sera encaminhado a consulta no servidor dns, no caso é do google)
+indicar 192.168.1.1; (roteador)
+	8.8.8.8;
+
+wq
+
+*Criar arquivos de Zonas
+suco cp db.local db.boson.net (renomeado)
+sudo cp db.127 db192
+sudo vim db.boson.net
+Na Linha soa (apagar localhost)
+Ubuntu-32.boson.net. root.boson.net.
+100: serial
+após o ';' pressionar enter
+boson.net.	IN	NS	Ubuntu-32.boson.net.
+boson.net.	IN	A	192.168.1.200
+Ubuntu-32	IN	A	192.168.1.200
+roteador 	IN	A	192.168.1.1
+vendas 		IN 	A	192.168.1.50
+www		IN	CHAME	boson.net. (opcional)
+:wq
+
+*Criar zona reversa
+sudo vm db.192
+apagar localhost Ubuntu-32.boson.net. root.boson.net.
+após ;
+tab					IN	NS			Ubuntu-32.
+1					IN	PTR(ponteiro de host)	roteador.boson.net.
+50(final do ip da máquina de vendas)	IN	PTR	vendas.boson.net.
+200	IN	PTR	Ubuntu-32.boson.net.
+
+
+// aula foi 'pulada' em breve curso de redes linux
+
+25 - CABO COAXIAL
+Possui diversas utilidades, para pcs estoa em desuso.
+25_1
+Onde são mais usados
+25_2
+Conectores
+25_3
+Tipos de Cabos
+25_4
+Banda base usa praticamente todo o meio para o time. Banda larga usa o meio para diversos serviços.
+
+26 - RFC´s
+Request for Comments (Requisição de comentários)
+26_1
+É documento sobre serviços e padroes da internet.
+26_2
+Processo
+26_3
+O RFC Histórico, nao é mais usado, caiu em desuso.
+26_4
+Tela do site
+26_5
+26_6
+A busca mais comum é por palavra-chave (ex.: icmp)
+26_7
+
+27 - MTU (MAXIMUM TRANSMITION UNITS)
+É o limite de bites de transmissão na rede, 1500 bytes.
+Quando o datagrama é maio que o mtu, o pacote é quebrado em várias partes sendo usando pelos protocolos tcp ou udp.
+27_1
+27_2
+Para descobrir o mtu de de uma rede windows:
+netsh interface ipv4 show subinterfaces
+Linux ifcongif
+27_3
+27_4
+Será sempre o menor valor em que pode trafegar, podendo variar dependendo da rota ate chegar aos hosts.
+27_5
+Quando o datagrama do host é maior do que o permitido é descartado automaticamente. Acontecendo retorno de mensagem, para o host diminua o tamanho por parte do host.
+27_6
+Usamos o ping para auxiliar que por padrão manda 32 bytes de dados.
+
+28 - PROTOCOLO ARP
+Protocolo de resolução de endereços. Conhecer o mac address auxilia na comunicação, usando o arp, permitindo o mac adrres através do ip.
+28_1
+28_2
+28_3
+28_4
+28_5
+Limpar arp: arp -d
+28_6
+ipconfig /release (limpa as configurações de ip)
+ipconfig /renew (força a receber o ip) 
+
+29 - PROTOCOLO ICMP(Original ou icmpv4) 
+Internet Control Message Protocol
+29_1
+29_2
+29_3
+29_4
+Para evitar loop infinito dentro da rede, as mensagens de erros podem se transformar em mensagens de informação.
+29_5
+29_6
+
+30 - COMO FUNCIONA O UTILITÁRIO TRACEROUT
+Traçando rotas.
+30_1
+30_2
+30_3
+30_4
+Geralmente o numero de saltos é 30, a cada salto retornado a rota é traçada e e zerada retornando.
+RTT´s(tempo de ir e voltar) é um conjunto de 3 pacotes.
+30_5
+tracert www.boson.treinamentos.com.br
+tracert /? oferece varias opções, inclusive aumentar numeros de saltos
+
+** algumas são 'puladas'
+
+33 - COMO FUNCIONA O PING
+Testar conectividade entre 2 hosts, envia mens icmp e recebe mens icmpreplay de confirmação.
+Se nao houver ping entre host nao ha conectividade entre os host ou  servidor nao aceita o ping  ou algum parametro.
+33_1
+geralmente no ping windows (4 mensagens).
+Linux ha limite de mensagens dentro do ping.
+33_2 
+opções de ping em linux
+33_3
+33_4
+33_5
+**Ping no windows
+33_6
+33_7
+Nesta aula houve diversos comandos de ping em linux.
+
+33 - BGINFO INFORMAÇÕES UTEIS NA AREA DE TRABALHO DOS USUÁRIOS (bônus)
+Software chamado bginfo.
+Permite colocar informações uteis na tela do usuário, nao necessitando de confirmação em outros locais.
+
+33 - PROTOCOLO TCP
+Camada de Transporte. Geralmente linkado ao ip pela sua importancia.
+TCP = Transmission Control Protocol, por estabelecer antes uma conexão para trocar dados entre si.
+tcp_1
+tcp_2
+tco_3
+Todo o segmento é encapusulado dentro de um datagrama IP.
+tcp_4
+tcp_5
+tcp_6
+Esta versão é bem mais recente, pesquisar RFC3168.
+tcp_7
+Nesta imagem o bit syn é o mais importante pois é ele que estabelece a conexão entre os hosts.
+tcp_8
+O Campo ponteiro de urgente esta entrando em desuso.
+tcp_9
+
+34 - HANDSHAKE DE TRES VIAS (APERTO DE MÃO)
+34_1
+34_2
+34_3
+34_4
+34_5
+34_6
+Há mais explicações no link mencionado.
+
+35 - PACKETH software para gerar e enviar pacotes de rede diversos, sendo possivel ajustar diversos parametros para testes e estudos de protocolos.
+https://packeth.sourceforge.net/packeth/Home.html
+
+35_1
+toda a aula foi feita em linux.
+
+36 - O QUE É UM SWITCH
+36_1
+36_2
+Cisco é referencia no quesito.
+36_3
+36_4
+O Switch permite a conexão de mais máquinas, indenpendente da topologia das rees. No caso da imagem é uma topologia estrela e o switch interligando as máquinas, pode varias o numero de portas.
+36_5
+36_6
+36_7
+36_8
+Ambiente SOHO (Small Office Home Office)
+36_9
+36_10
+36_11
+36_12
+
+37 - PROTOCOLO UDP
+37_1
+37_2
+37_3
+O Protocolo UDP oferece performance e velocidade de transmissão.
+37_4
+37_5
+
+38 - IPCONFIG DIAGNÓSTICO DE REDE
+Traz as configurações atuais de rede em uso, cache e renovação de concessão no dhcp.
+38_1
+
+39 - FRAGMENTAÇÃO DE DATAGRAMAS IP
+39_1
+MTU = unidade maxima de transmissão.
+39_2
+39_3
+39_4
+39_5
+Flag MF indica em 1 se virá mais pacotes, caso de 0 encerrou a transmissão.
+39_6
+39_7
+39_8
+39_9
+
+40 - ESTRUTURA DE IPV4
+40_1
+40_2
+40_3
+40_4
+40_5
+40_6
+40_7
+40_8
+40_9
+
+41 - MODELO OSI
+41_1
+41_2
+Traz um protocolo ideal para ser seguido nas redes de computadores.
+41_3
+As camadas são inumeradas de baixo pra cima.
+41_4
+É possivel fazer uma atualização sem interferir nas camadas do modelo osi.
+41_5
+41_6
+Encapsulamento é o empacotar dos dados.
+41_7
+PDU é a informação na placa de rede, datagrama seria um pocote nao confiavel.
+41_8
+41_9
+41_10
+41_11
+41_12
+41_13
+41_14
+Oferece acesso a aplicativos, do tipo e-mail, voice, etc
+41_15
+41_16
+
+42 - ENDEREÇAMENTO IPV4 E CLASSES DE ENDEREÇAMENTO
+42_1
+Ip indentifica cada interface de rede conectado a rede.
+42_2
+42_3
+42_4
+42_5
+Os dois primeiros octetos definem a rede.
+42_6
+42_7
+42_8
+42_9
+A Classe c serve para uma pequena qtde de host.
+42_10
+42_11
+Na pratica a classe é de 0-126(não podemos usar o 127 por ser endereço reservado).
+42_12
+-2, deve ser eliminado o primeiro e o ultimo. 255=broadcast.
+42_13
+
+43 - AULA DE LINUX
+
+44 - O QUE É DNS
+44_1
+Dns faz a tradução o endereço web no navegador e devolve como ip para a máquina, é um banco de dados com endereços de sites.
+44_2
+44_3
+Dominio delegado é um dominio gerenciado por alguém.
+44_4
+São 13 servidores de A até M.
+44_5
+44_6
+44_7
+44_8
+
+45 - COMO FUNCIONA A RESOLUÇÃO DE ENDEREÇOS
+45_1
+45_2
+Servidores possui diversas informações sobre sites e endereços referentes, chamado de mecanismo iterativo.
+45_3
+45_4
+45_5
+O roteador caseiro age como um servidor dns.
+45_6
+Ocorre a procura e os servidores trocam informações para redirecionar.
+45_7
+O cache armazena os ips dos sites procurados, para evitar o sobrecarregar os servidores, trabalham com ttl com tempo determinado para limpar o cache.
+
+46 - TIPOS DE REGISTROS DNS
+46_1
+46_2
+46_3
+46_4
+46_5
+No SOA ocorre a comparação entre servidores, havendo o resultado e a troca ou não de zona.
+46_6
+46_7
+46_8
+46_9
+faz o processo inverso, mando ip e retorna fqdn.
+46_10
+46_11
+Serve como um comentário.
+
+47 - ENDEREÇOS PRIVADO
+47_1
+Endereço publico = ip atribuido, de acordo com a Iana podemos fazer redes privadas e corporativas.
+Endereço Privado = ip para comunicaçao de um roteador, sao faixas especificas atribuidas pela Iana.
+47_2
+Endereços de APIPA mostram que hpa problemas na rede, servidor ou a propria máquina.
+47_3 
+É o endereço para testes, endereça a propria placa de rede.
+
+62 - QUAL A DIFERENÇA ENTRE SWITCH E ROTEADOR
+61_1
+Switch geralmente este em rede local, permitindo vários computadores acessarem entre si na rede.
+62_2
+Encaminhar pacotes de rede em rede até seu destino.
+62_3
+A NAT é um sistema de acesso de vários computadores na internet atraves de um unico Ip.
+62_4
+62_5
+62_6
+62_7
+62_8
+62_9
+
+63 - DIFERENÇA ENTRE MODEM E ROTEADOR
+63_1
+Transforma um sinal analogico em digital e vice-versa.
+Conectar uma rede local com a internet.
+O Modem extrai os dados originais quando o sinal chega.
+63_2
+A Modulação é a união de dois sinais para gerar o terceiro.
+63_3
+A onda portadora chamada de carrier, é alterada o seu formato de onda.
+63_4
+O Modem é posicionado entre o roteador e a internet. Sem o modem o roteador nao conseguiria se comunicar com a internet, servindo de tradutor.
+63_5
+63_6
+O Modem discado ocupava a linha telefonica, ou funcionava um ou o a conexão havia um barulho tipico de modem.
+63_7
+63_8
+Quanto mais longe da central telefonica a conexão se torna quase impossivel.
+63_9
+A conexão e compartilhada até um ponto, apos e dividida em varios pontos.
+63_10
+63_11
+63_12
+O Roteador nesse modelo é interno.
+63_13
+63_14
+O Modem nao foi criado para oferecer segurança.
+63_15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            

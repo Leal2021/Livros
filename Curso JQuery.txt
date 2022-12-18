@@ -1,0 +1,1546 @@
+CURSO DE JQUERY
+
+AULA 01 - INTRODUÇÃO AO JQUERY
+Jquery é uma biblioteca javascript. 
+No site oficial do jquery,https://jquery.com/ há toda a documentação para iniciar.
+No site podemos baixar ou usar pelo cdn.
+
+** INSTALAÇÃO DO JQUERY
+-salvar o arquivo
+-ok. dowload da biblioteca
+Usando na página
+<script src="jquery-3.6.1.min.js"></script>
+
+USAR CDN
+-site do cdn, https://releases.jquery.com/
+- clicar na ultima versão sendo uncompress
+- copiar o link  e colar na página
+Via cdn,o jquery busca on-line a biblioteca.
+
+Ou usar uma ou outra.
+Primeiro exemplo:
+<script>
+    $("p").css("color","red"); /*apontamento de tag com css, definindo cor*/
+</script>
+
+02 - PRIMEIROS CÓDIGOS EM JQUERY
+   <div id="calc">
+<label for="">Valor 1</label>
+<input type="text" id="v1" placeholder="Insira valor
+"><br>
+<label for="">Valor 2</label>
+<input type="text" id="v2" placeholder="Insira valor
+"><br>
+<label for="">Resultado</label><br>
+<input type="text" id="res" value="0"><br>
+<button id="btn_somarjs">Somar em JS</button>
+<button id="btn_somarjq">Somar em JQ</button>
+<button id="btn_limpar">Limpar campos</button>
+
+   </div>
+</body>
+
+<script>
+  let somarJS=document.getElementById("btn_somarjs").addEventListener("click",()=>{
+    let v1=document.getElementById("v1").value;
+    let v2=document.getElementById("v2").value;
+    soma=parseInt(v1)+parseInt(v2);
+    let res=document.getElementById("res").value=soma;
+    alert(soma);
+  })
+
+  let limparcampos=document.getElementById("btn_limpar").addEventListener("click",()=>{
+    document.getElementById("v1").value=" ";
+    document.getElementById("v2").value=" ";
+    document.getElementById("res").value=" ";
+    document.getElementById("v1").style.color="red";
+    document.getElementById("v1").style.backgroundColor="black";
+  });
+
+
+  $("#btn_somarjq").click(function(){
+    let v1=parseInt($("#v1").val());/*valor de v1*/
+let v2=parseInt($("#v2").val());
+let soma=v1+v2;
+$("#res").val(soma);
+$("#v1").focus();
+$("#v1").val("");
+$("#v2").val("");
+  })
+
+</script>
+
+03 - AS FORMAS CORRETAS DE INSERIR CÓDIGOS
+Os scripts em jquery devem ser colocados antes do fechamento do body, caso contrário não será validado pela renderização da página ou acima dentro da head.
+ex.
+ <script>
+  $(document).ready(function(){
+    $("p").text("gremio");
+  })
+ </script>
+
+04 - EVENTOS EM JQUERY PT1
+Usar Jquery Code snippets no code.
+<script>
+  $("#bloco").click(function(){ // evento de clique
+    $("#texto").text("Vamo vamo Grêmio."); // o que será inserido quando houver o clique
+  })
+  $("#texto").text("cfb cursos");
+</script>
+
+<style>
+  #bloco{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+  <div id="bloco"></div>
+<p id="texto"></p>
+
+
+<script>
+  $("#bloco").click(function(){
+    $("#texto").text("Vamo vamo Grêmio.");
+  })
+
+  $("#bloco").mouseenter(function(){ /*quando mouse estiver sobre a div*/
+    $("#texto").text("Mouse em cima da div.");
+    $("#texto").css("color","blue");
+  })
+
+  $("#bloco").mouseleave(function(){ /*quando mouse sair da div*/
+    $("#texto").text("Mouse saiu da div.");
+  })
+
+  $("#bloco").mousemove(function(){ /*movendo se mover sobre a div*/
+    $("#texto").text("Movendo a div.");
+  })
+</script>
+
+<body>
+  <label for="">Digite seu nome</label>
+  <input type="text" id="nome">
+<p id="texto"></p>
+
+
+<script>
+$("#nome").keyup(()=>{ /*keyuk ao pressionar a tecla*/
+  $("#texto").text($("#nome").val());/*foi pego o que foi digitado e colocado dentro do 'p'*/
+})
+ 
+</script>
+
+05 - USANDO FUNÇÃO ON PARA VÁRIOS EVENTOS
+Configuração de vários eventos para interação na página.
+<div id="bloco"></div>
+<p id="texto"> </p>
+<script>
+  $("#bloco").on({ /*após a inserção das chaves os eventos são adicionados*/
+click:()=>{$("#texto").text("Clique no quadrado")},
+mouseenter:()=>{$("#texto").text("Mouse entrou no quadrado")},
+mouseleave:()=>{$("#texto").text("Mouse saiu do quadrado")},
+dblclick:()=>{$("#texto").text("Doubleclick no quadrado")},
+dblclick:()=>{$("title").text("Doubleclick no quadrado"),$("body").css("background-color","black")}
+  })
+</script>
+
+06 - ACIONANDO TRIGGER EM JQUERY
+Ocorre a interceptação de um evento de outro elemento, sem que esteja associado a outro elemento na página. Ocorre duplicação do evento.
+<style>
+  #bloco{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: blueviolet;
+    cursor: pointer;
+  }
+
+  #bloco2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: dodgerblue;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+  <div style="display: flex;justify-content: space-around;">
+<div id="bloco"></div>
+<div id="bloco2"></div>
+</div>
+<p id="texto"> </p>
+<script>
+  $("#bloco").on({ /*após a inserção das chaves os eventos são adicionados*/
+click:()=>{$("title").text("Clique no quadrado")},
+mouseenter:()=>{$("title").text("Mouse entrou no quadrado")},
+mouseleave:()=>{$("title").text("Mouse saiu do quadrado")},
+dblclick:()=>{$("title").text("Doubleclick no quadrado"),$("body").css("background-color","black")}
+  })
+
+  $("#bloco2").click(()=>{ /*elemento novo*/
+$("#bloco").trigger('click'); /*interceptar evento de outro elemento*/
+  });
+
+07 - OBJETO EVENTO (manipulador de eventos)
+Obter a posição dos elementos na página.
+<body>
+  <p id="texto"></p>
+
+
+  <script>
+$(document).mousemove((event)=>{ /*document é o apontamento na página. o Event pode ser passado como objeto*/
+ /*event.pageX e pagey = posição x do mouse*/
+$('#texto').text('Mouse X: ' + event.pageX + " px" + '\n' + "Mouse y: " + event.pageY + "px")
+
+if(event.pageX >= 700){
+$("#texto").text("Ultrapassou os 700 pixels.")
+$("#texto").css("color","red");
+}
+}) 
+  </script>
+
+08 - USAR MÉTODO TARGET
+Saber quem disparou o evento e como usar.
+<body>
+<p id="texto1">CFB cursos</p>
+<br>
+<p id="texto 2">Curso de jquery</p>
+<br>
+<p id="resultado"></p>
+
+<script>
+  $('#texto1').click((event)=>{
+$('#resultado').text('Objeto clicado: ' + event.target.nodeName); /*mostra qual objeto recebe o click*/
+  })
+</script>
+
+exemplo2
+$(document).click((event)=>{
+  $('#resultado').text('Objeto clicado:' + event.target.tagName);/*a tagname passa o nome de qual tag recebeu click*/
+})
+</script>
+
+<script>
+$(document).click((event)=>{
+  $('#resultado').text('Objeto clicado:' + event.target.id);/*id como exemplo*/
+})
+</script>
+
+<script>
+$(document).click((event)=>{
+  $('#resultado').text('Objeto clicado:' + event.target.id);/*id como exemplo*/
+  if(event.target.id=="resultado"){
+    alert("Resultado foi clicado")
+  }
+})
+</script>
+
+09 - DESCOBRIR QUEM DISPAROU EVENTO E QUEM DISPAROU
+<p id="texto1">CFB cursos</p>
+<br>
+<div id="texto 2">Curso de jquery</div>
+<br>
+<p id="resultado"></p>
+
+
+<script>
+$(document).on({
+  click:()=>{$('#resultado').text(event.type + ':' + event.which)},
+  keydown:()=>{$('#resultado').text(event.type + ':' + event.which)
+if(event.which == 13 || event.which == 27){
+  alert("teclas de saída pressionada: " + event.which)
+}
+}/*even.which = mostra o numero da tecla pressionada no teclado*/
+})
+</script>
+
+10 - PARAR A PROPAGAÇÃO DO EVENTO
+No caso de elementos aninhados. Quando o elemento escolhido esta dentro de elementos pai.
+
+<body>
+<div style="border: 1px solid black;padding: 10px;">
+  <p style="border: 1px solid red;padding: 10px;">CFB Cursos</p>
+  <span style="border: 1px solid blue;padding: 10px;">Curso de Jquery</span>
+</div>
+
+<script>
+$('div').click(()=>{alert("Evento disparado no div")});
+$('p').click(()=>{event.stopPropagation();alert("Evento disparado no p")});
+$('span').click(()=>{event.stopPropagation();alert("Evento disparado no span")});/*evento posterior será cancelado automaticamente*/
+</script>
+
+11 - MÉTODO PARENT
+  $('p').parent().css({'border':'1px solid red'}); /*parent se refere ao elemento pai direto*/
+$('li').parents().css({'border':'1px solid blue'}) /*aponta para todos os elementos acima da hierarquia, todos que estão acima do elemento*/
+$('p').parentsUntil('div').css({'border':'1px solid green'});/*aponta até determinado elemento, será limitado ao determinado elemento*/
+
+12 - MÉTODOS CHILDREN E FIND
+Apontamento dos elementos filhos.
+
+$('ul').children().css({'border':'1px solid red'});/*inicializar pelo elemento base e dps o filho direto*/
+$('div').find('ul:first').css({'border':'1px solid red'});/*find especifica quem será encontrado, apartir do elemento base. Havendo 2 elementos podemos usar first ou last(ultimo). mas se apartir do elemento base quisermos selecionar todos os elementos marcamos com '*' dentro do find.*/
+
+13 - MMÉTODO SIBLINGS, NEXT E PREV
+Apontar para elementos irmãos da página
+<div>
+<span>
+  <h3>CFB Cursos</h3>
+  <p>Curso de JQuery</p>
+  <h2>Seletores de Parent</h2>
+  <p>Siblings</p>
+</span> 
+</div>
+
+<script>
+  $('h3').siblings().css({'color':'dodgerblue','font-size':'40px','background-color':'pink'});/*marca todos os irmãos que estão na mesma linha de hierarquia, apartir do elemento base*/
+
+ $('h3').siblings('p').css({'color':'dodgerblue','font-size':'40px','background-color':'pink'});/*tipo especifico apartir do elemento base*/
+
+ $('h3').next().css({'color':'dodgerblue','font-size':'40px','background-color':'pink'});/*aponta para o elemento irmão direto ou abaixo dele*/
+
+  $('h2').prev().css({'color':'dodgerblue','font-size':'40px','background-color':'pink'});/*aponta para o elemento irmão direto ou acima dele*/
+
+  $('h2').prevAll().css({'color':'dodgerblue','font-size':'40px','background-color':'pink'});/*aponta para todos os elementos irmãos direto ou acima dele*/
+
+$('h2').prevUntil().css({'color':'dodgerblue','font-size':'40px','background-color':'pink'});/*aponta para o limite de até, mesma ideia do parent*/
+</script>
+ 
+
+14 - MÉTODO PARA FILTRAGEM, FIRST,EQ E LAST
+$('p').first().css({'border':'1px solid blue'}) /*de todos os elementos, o primeiro será selecionado*/
+
+$('p').last().css({'border':'1px solid red'}) /*apontamento para o ultimo elemento 'p'*/
+
+$('p').eq(3).css({'border':'10px solid green'});/*conta como um array, iniciiando do zero*/
+
+15 - MÉTODOS DE FILTRO FILTER E NOT
+$('p').filter('.borda').css({'color':'red','text-transform':'capitalize'}) /*filtra atributos ou classes especificas, somente o elemento que tiver a classe determinada recebe a formatação, ocorre uma filtragem mais especifica*/
+
+$('p').not('.borda').css({'font-size':'40px'});/*filtra e insere a formatação nos elementos que nao possuem a classe determinada*/
+
+16 - MÉTODO TEXT, VAL E HTML
+São métodos para manipulação de elementos.
+**VAL
+<h2 id="caixa">cfb cursos</h2>
+<h2>Tecnologia</h2>
+<input type="text" id="nome">
+
+<script>
+    $('#nome').click(function(){
+alert("Texto: " + $(this).val()); /*this se refere ao objeto atual que será usado*/
+    })
+
+**TEXT
+<h2 id="caixa">cfb cursos</h2>
+<h2>Tecnologia</h2>
+<input type="text" id="nome">
+
+<script>
+    $('#nome').click(function(){
+alert("Texto: " + $('#caixa').text()); /*this se refere ao objeto atual que será usado*/
+    })
+
+** HTML
+    <div id="cx"><h2 id="caixa">cfb cursos</h2></div>
+
+<h2>Tecnologia</h2>
+<input type="text" id="nome">
+
+<script>
+
+    $('#cx').click(function(){
+alert("Texto: " + $(this).html()); /*retorna o conteudo html = linhas de comando do elemento*/
+    })
+</script>
+
+17 - OBTER E MANIPULAR ATRIBUTOS DOS ELEMENTOS
+$('#caixa').click(function(){
+   alert($(this).attr('id'));/*usamos o this pq é o mesmo elemento*/
+})
+
+$('#caixa').click(function(){
+   alert($(this).attr('style'));/*usamos o this pq é o mesmo elemento*/
+})
+**Exemplo com botões
+<style>
+    .vermelho{
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: whitesmoke;
+    }
+    .azul{
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        color: whitesmoke;
+    }
+</style>
+</head>
+
+<body>
+<div id="caixa" style="border: 1px solid black;width: 200px;height: 200px;" class="vermelho">
+    <h3>CFB CURSOS</h3>
+    <p>Curso de JQuery</p>
+    <br>
+    <button id="btn_vermelho">Vermelho</button>
+    <button id="btn_azul">Azul</button>
+</div>
+
+<script>
+$('#btn_vermelho').click(function(){
+ $('#caixa').attr('class','vermelho');/*substituição de classes*/
+})
+$('#btn_azul').click(function(){
+ $('#caixa').attr('class','azul');/*substituição de classes*/
+})
+</script>
+
+18 - FUNÇÕES HIDE E SHOW (EFEITOS)
+<script>
+$('#btn_mostrar').click(function(){
+ $('#caixa').show(2000);/*mostra o elemento, o valor dentro dos parenteses serve como tempo*/
+})
+$('#btn_ocultar').click(function(){
+ $('#caixa').hide(2000);/*oculta o elemento*/
+})
+</script>
+
+19 - FUNÇÃO TOOGLE
+Serve como uma opção booleana, ligado e desligado. Permitindo controlar a visibilidade do elemento.
+<script>
+$('#btn_mostrar').click(function(){
+ $('#caixa').toggle(1000);/*para funcionar corretamente deve tirar o tempo do  toggle*/
+ if($('#caixa').is(':visible')){
+    $('#btn_mostrar').text('Ocultar');
+ }
+ else{
+    $('#btn_mostrar').text('Mostrar');
+ }
+})
+
+20 - FUNÇÕES ANIMATE
+$('#btn_aumentar').click(function(){
+$('#caixa').animate({ 
+width:'500px',
+height:'500px'
+}) 
+})
+
+$('#btn_diminuir').click(function(){
+$('#caixa').animate({width:'200px'}).animate({height:'200px'}) /*o efeito será em 2 etapas com a animação aninhada*/
+})
+
+$('#btn_direita').click(function(){
+$('#caixa').animate({left:'500px'},{duration:1000,complete:function(){
+    alert("Movimentação terminou")/*houve uma função de callback após o comando do duration*/
+}}) 
+})
+
+$('#btn_esquerda').click(function(){
+$('#caixa').animate({left:'0px'},{duration:2000}) 
+})
+
+21 - TOOGLE ANIMATE
+O elemento caixa foi difinido com os seguntes parametros.
+    .caixa{
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+        background-color: dodgerblue;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        color: white;
+    }
+    $('#btn_tamanho').click(function(){
+$('#caixa').animate({width:'toggle',height:'toggle'})/*varia da posição inicial definida na class, o toggle alterna*/
+    })
+
+    $('#btn_mostrar').click(function(){
+        $('#caixa').animate({opacity:'toggle'},{duration:2000})
+    })
+
+22 - FUNÇÃO DELAY (espera)
+Gera uma espécie de atraso na animação ou evento ao elemento.
+    $('#btn_aumentar').click(function(){
+$('#caixa').delay(1000).animate({width:'500px'},{duration:2000}).delay(1000).animate({height:'500px'})/*delay gera o atraso na animação*/
+    })
+
+    $('#btn_diminuir').click(function(){
+        $('#caixa').delay(1000).animate({width:'200px'}).delay(500).animate({height:'200px'},{duration:2000})
+    })
+
+23 - FUNÇÕES FADEIN e FADEOUT (mostrar ou ocultar)
+São efeitos de forma gradativa ao elemento.
+   $('#btn_mostrar').click(function(){
+$('#caixa').fadeIn(2000);/*mostrar*/
+    })
+
+    $('#btn_ocultar').click(function(){
+        $('#caixa').fadeOut(2000);/*ocultar*/
+    })
+
+    $('#btn_ocultarM').click(function(){
+$('#caixa').fadeOut(1000).delay(1000).fadeIn(1000);
+    })
+
+24 - FUNÇÃO FADETO
+Permite controlar a opacidade atual até a definida pelo usuário.
+Possui o mesmo efeito do :hover do css.
+$('.item-menu').mouseover(function(){
+$(this).fadeTo(500,0.5); /*tempo e opacidade*/
+})
+
+$('.item-menu').mouseout(function(){
+$(this).fadeTo(500,1);
+})
+</script>
+
+25 - FUNÇÃO FADETOGGLE
+Neste exemplo criamos conteudo para menus. Ao clicar no menu, aparecerá informações.
+Segue exemplo abaixo:
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    .menu{
+       background-color: #ddd;
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .item-menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #128;
+      color: white;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+    .submenu{
+        display: none;
+        border: 1px solid black;
+        width: 100%;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+.itemSubMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #128;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+ 
+
+</style>
+</head>
+
+<body>
+<div id="menu" class="menu">
+    <div class="item-menu">Home</div>
+    <div id="menujquery" class="item-menu">jquery</div>
+    <div id="menucanvas" class="item-menu">canvas</div>
+    <div class="item-menu">python</div>
+    <div class="item-menu">arduino</div>
+</div>
+<div id="submenu_jquery" class="submenu">
+    <div class="itemSubMenu">Aulas Jquery</div>
+    <div class="itemSubMenu">Material Jquery</div>
+</div>
+<div id="submenu_canvas" class="submenu">
+    <div class="itemSubMenu">Aulas Canvas</div>
+    <div class="itemSubMenu">Material Canvas</div>
+</div>
+<div id="submenu_python" class="submenu">
+    <div class="itemSubMenu">Aulas Python</div>
+    <div class="itemSubMenu">Material Python</div>
+</div>
+<div id="submenu_arduino" class="submenu">
+    <div class="itemSubMenu">Aulas Arduino</div>
+    <div class="itemSubMenu">Material Arduino</div>
+</div>
+
+
+
+
+<script>
+$('.item-menu').mouseover(function(){
+$(this).fadeTo(500,0.5); /*tempo e opacidade*/
+})
+
+$('.item-menu').mouseout(function(){
+$(this).fadeTo(500,1);
+})
+
+$('#menujquery').click(function(){
+    $('#submenu_jquery').fadeToggle(1000); /*opacidade atual e vai para 0 e vice-versa*/
+    $('#submenu_jquery').css({'display':'flex'}) /*menus ao lado quando clicar*/
+    $('#submenu_canvas').hide();
+})
+
+$('#menucanvas').click(function(){
+    $('#submenu_canvas').fadeToggle(1000); /*opacidade atual e vai para 0 e vice-versa*/
+    $('#submenu_canvas').css({'display':'flex'}) /*menus ao lado quando clicar*/
+    $('#submenu_jquery').hide();
+ 
+})
+</script>
+
+26 - FUNÇÃO FINISH (interromper a animação)
+Avança a animação para o final.
+<style>
+.caixa{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+}
+
+</style>
+</head>
+
+<body>
+<p>
+    <button id="btnAumentar"> Aumentar </button>
+    <button id="btnDiminuir"> Diminuir </button>
+</p>
+<p>
+    <button id="btnFinalizar"> Finalizar </button>
+</p>
+<div id="caixa" class="caixa"></div>
+
+
+<script>
+    $('#btnAumentar').click(function(){
+    $('#caixa').animate({width:'800px'},{duration:5000});
+    })
+
+    $('#btnDiminuir').click(function(){
+    $('#caixa').animate({width:'100px'},{duration:5000});
+    })
+
+    $('#btnFinalizar').click(function(){
+$('#caixa').finish(); /*interrompe a animação e vai direto ao fim*/
+    })
+</script>
+
+27 - INFORMAÇÕES DA FILA DE ANIMAÇÕES
+<style>
+.caixa{
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+}
+
+</style>
+</head>
+
+<body>
+<p>
+    <button id="btnAumentar"> Aumentar </button>
+    <button id="btnDiminuir"> Diminuir </button>
+</p>
+<p>
+    <button id="btnFinalizar"> Finalizar </button>
+</p>
+<p id="info">0
+
+</p>
+<div id="caixa" class="caixa"></div>
+
+
+<script>
+    $('#btnAumentar').click(function(){
+    $('#caixa').animate({width:'800px'},{duration:5000,complete:function(){
+        $('#info').text($('#caixa').queue().length)
+    }});
+    /*contador de animações*/
+    $('#info').text($('#caixa').queue().length); 
+    })
+
+    $('#btnDiminuir').click(function(){
+    $('#caixa').animate({width:'100px'},{duration:5000,complete:function(){
+        $('#info').text($('#caixa').queue().length)
+    }});
+  
+    })
+
+    $('#btnFinalizar').click(function(){
+$('#caixa').finish(); /*interrompe a animação e vai direto ao fim*/
+    })
+</script>
+
+28 - FUNÇÕES SLIDEUP e SLIDEDOWN
+São efeitos deslizantes aos elementos.
+<style>
+*{
+ padding: 0;
+ margin: 0;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+#menus{
+    background-color: #888;
+    display: flex;
+    width: 100%;
+}
+.btnMenu{
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+#controle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #888;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+#controle button{
+    margin: 5px;
+}
+</style>
+</head>
+
+<body>
+<div class="menu" id="menu">
+    <div id="menus">
+        <button class="btnMenu">home</button>
+        <button class="btnMenu">cursos</button>
+        <button class="btnMenu">material</button>
+        <button class="btnMenu">contatos</button>
+        <button class="btnMenu">sobre</button>
+    </div>
+    <div id="controle">
+        <button id="btnCima"> Ocultar </button>
+        <button id="btnBaixo"> Mostrar </button>
+    </div>
+</div>
+
+
+<script>
+const cx=$('#menu');
+
+$('#btnCima').click(function(){
+$("#menus").slideToggle(2000);
+})
+
+$('#btnBaixo').click(function(){
+    $("#menus").slideDown(2000);
+})
+</script>
+
+29 - FUNÇÃO SLIDETOGGLE
+Simplifica as funções, como boolean.
+<script>
+const cx=$('#menu');
+
+$('#btnCima').click(function(){
+$("#menus").slideToggle(1000); /*mostra ou oculta conforme esta o estado do elemento*/
+})
+
+</script>
+
+30 - FUNÇÃO STOP (parar animações imediatamente)
+<style>
+    .caixa{
+        background-color: #f00;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: 50px;
+    }
+
+</style>
+</head>
+
+<body>
+<p>
+    <button id="btnAnimar">Animar</button>
+    <button id="btnProxima">Próxima</button>
+    <button id="btnParar">Parar</button>
+    <button id="btnFim">Fim</button>
+</p>
+<div id="caixa" class="caixa"></div>
+
+<script>
+    $('#btnAnimar').click(function(){
+   $('#caixa').animate({left:'800px'},{duration:2000})     
+   $('#caixa').animate({top:'400px'},{duration:2000})     
+   $('#caixa').animate({left:0},{duration:2000})     
+   $('#caixa').animate({top:'50px'},{duration:2000})     
+    })
+    $('#btnProxima').click(function(){
+ $('#caixa').stop(); /*stop interrompe a corrente e passa para a proxima animação da fila*/       
+    })
+    $('#btnParar').click(function(){
+        $('#caixa').stop(false,true); /*ha 2 parametros boolean, limpar a fila e pular para o fim
+        1° parametro (true) = limpa as animações
+        2° parametro (true) = desloca para o fim da animação
+        */     
+    })
+    $('#btnFim').click(function(){
+        $('#caixa').stop(true,false); /*true = limpa a fila e encerra as animações*/
+    })
+
+</script>
+
+31 - FUNÇÕES APPEND, APPENDTO
+Permite adicionar novos elementos a página.
+$('#btnAdicionar').click(function(){
+    $('#caixa').append("<div class='subcaixa'></div>"); /*adicionando o elemento, escolho aonde será adicionado*/
+})
+
+$('#btnAdicionar5').click(function(){
+    for(let i=0;i<5;i++){
+        r=Math.floor(Math.random()*255);
+    g=Math.floor(Math.random()*255);
+    b=Math.floor(Math.random()*255);
+    $('#caixa').append("<div class='subcaixa' style='background-color:rgb("+r+","+g+","+b+")'></div>"); /*adicionando o elemento, escolho aonde será adicionado*/
+    }
+    
+})
+
+**
+$('#btnAdicionar5').click(function(){
+    for(let i=0;i<5;i++){
+        r=Math.floor(Math.random()*255);
+    g=Math.floor(Math.random()*255);
+    b=Math.floor(Math.random()*255);
+    $("<div class='subcaixa' style='background-color:rgb("+r+","+g+","+b+")'></div>").appendTo($('#caixa')); /*adiciona depois ao elemento*/
+    }
+    
+})
+
+32 - FUNÇÕES PREPEND e PREPENTO
+<style>
+    .caixa{
+        background-color: #bbb;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px 0px 0x 0px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      
+    }
+    .subcaixa{
+        border: 1px solid black;
+        width: 100px;
+        height: 100px;
+        margin: 0px 0px 10px 10px;
+    }
+
+</style>
+</head>
+
+<body>
+<p>
+<button id="btnAdicionar"> Adicionar </button>
+<button id="btnAdicionar5"> Adicionar 5x </button>
+</p>
+<div id="caixa" class="caixa"></div>
+
+<script>
+    let r,g,b;
+    let num=0;
+$('#btnAdicionar').click(function(){
+    r=Math.floor(Math.random()*255);
+    g=Math.floor(Math.random()*255);
+    b=Math.floor(Math.random()*255);
+    $('#caixa').prepend("<div class='subcaixa' style='background-color:rgb("+r+","+g+","+b+")'>"+num+"</div>"); /*ao inves de adicionar no final, adiciona no inicio, ocorre uma especie de reverse*/
+num++
+})
+
+$('#btnAdicionar5').click(function(){
+    for(let i=0;i<5;i++){
+        r=Math.floor(Math.random()*255);
+    g=Math.floor(Math.random()*255);
+    b=Math.floor(Math.random()*255);
+    $("<div class='subcaixa' style='background-color:rgb("+r+","+g+","+b+")'>"+num+"</div>").prependTo($('#caixa')); /*adiciona depois ao elemento*/
+num++   
+}
+    
+})
+
+</script>
+
+33 - FUNÇÕES DE ADIÇÃO AFTER e BEFORE
+Insere elementos antes ou depois de uma determinada referencia, pode ser div, paragrafo, tabela, etc.
+<p>
+<button id="btnAdicionarAntes"> Adicionar Antes</button>
+<button id="btnAdicionarDepois"> Adicionar Depois </button>
+<button id="btnAdicionarTextoAntes"> Adicionar Texto Antes </button>
+<button id="btnAdicionarTextoDepois"> Adicionar Texto Depois </button>
+</p>
+<div id="caixa" class="caixa"></div>
+<div class="subcaixa" style='background-color: rgb(255,255,255);'>0</div>
+<div id="caixa2">CFB Cursos</div>
+
+<script>
+    let r,g,b;
+    let num=1;
+$('#btnAdicionarAntes').click(function(){
+    r=Math.floor(Math.random()*255);
+    g=Math.floor(Math.random()*255);
+    b=Math.floor(Math.random()*255);
+    $('#caixa').before("<div class='subcaixa' style='background-color:rgb("+r+","+g+","+b+")'>"+num+"</div>"); /*ao inves de adicionar no final, adiciona no inicio, ocorre uma especie de reverse*/
+num++
+})
+
+$('#btnAdicionarDepois').click(function(){
+    for(let i=0;i<5;i++){
+        r=Math.floor(Math.random()*255);
+    g=Math.floor(Math.random()*255);
+    b=Math.floor(Math.random()*255);
+    $("<div class='subcaixa' style='background-color:rgb("+r+","+g+","+b+")'>"+num+"</div>").after($('#caixa')); /*adiciona depois ao elemento*/
+num++   
+}
+    
+})
+
+$('#btnAdicionarTextoAntes').click(function(){
+
+    $('#caixa2').before("Curso de JQuery Antes"); /*adiciona antes do elemento referenciado neste caso e a div*/
+})
+
+$('#btnAdicionarTextoDepois').click(function(){
+    $('#caixa2').after("Curso de JQuery Depois"); /**adiciona depois do elemento referenciado neste caso e a div*/    
+})
+
+</script>
+
+34 - REMOVENDO FUNÇÕES REMOVE E EMPTY
+$('#btnRemover').click(function(){
+   $('#caixa').remove(); /*remove o elemento indicado da página, eliminando totalmente*/
+})
+
+$('#btnRemover').click(function(){
+    let div=$('#d0');
+   $(div).remove(); /*remove um item em especifico*/
+})
+
+$('#btnRemover').click(function(){
+    let div=$('#d0');
+   $('#d'+(num-1)).remove(); /*remove um item em especifico*/
+num-- /*decremento*/
+})
+
+$('#btnRemoverConteudo').click(function(){
+$('#caixa').empty();/*remove elementos filhos do elemento pai, porem mantem o elemento pai*/
+})
+
+35 - MANIPULANDO CSS INLINE DOS ELEMENTOS
+<style>
+    .caixa{
+        background-color: #bbb;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px 0px 0x 0px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+      
+    }
+    .subcaixa{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+
+</style>
+</head>
+
+<body>
+<p>
+    <button id="btnVerde"> Verde </button>
+    <button id="btnVermelho"> Vermelho </button>
+    <button id="btnAzul"> Azul </button>
+</p>
+<div class="caixa" id="caixa">
+    <div class="subcaixa" id="d0" style="background-color: rgb(255,255,255);"></div>
+</div>
+
+<script>
+    $('#btnVerde').click(function(){
+$('#caixa').css({'background-color':'green','color':'white'})
+alert($('#caixa').css('background-color')); /*desta forma é possivel saber se ha alguma aplicação ao elemento*/
+
+    })
+
+    $('#btnVermelho').click(function(){
+        $('body').css({'background-color':'red','color':'white'})       
+    })
+
+    $('#btnAzul').click(function(){
+        $('#caixa').css({'background-color':'blue','color':'white'})
+    })
+
+</script>
+
+36 - ADICIONAR OU REMOVER CLASSES
+<style>
+    .caixa{
+        background-color: #bbb;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px 0px 0x 0px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100px;
+      
+    }
+    .verde{
+        background-color: green;
+    }
+    .azul{
+        background-color: blue;
+    }
+
+</style>
+</head>
+
+<body>
+<p>
+    <button id="btnVerde"> Verde </button>
+    <button id="btnVermelho"> Vermelho </button>
+    <button id="btnAzul"> Azul </button>
+</p>
+<div id="caixa" class="caixa"></div>
+
+<script>
+    $('#btnVerde').click(function(){
+        $('#caixa').removeClass('azul'); /*remove a classe, permite a classe ser adicionada*/
+        $('#caixa').addClass('verde'); /*adiciona a classe*/
+    })
+
+    $('#btnAzul').click(function(){
+        $('#caixa').removeClass('verde');
+        $('#caixa').addClass('azul');
+    })
+</script>
+
+37 - FUNÇÃO TOGGLECLASS
+Serve como boolean, adicionando e removendo a classe.
+<script>
+    $('#btnVerde').click(function(){
+        $('#caixa').removeClass('azul'); /*remove a classe, permite a classe ser adicionada*/
+        $('#caixa').addClass('verde'); /*adiciona a classe*/
+    })
+    let alert=setInterval(function(){
+$('#caixa').toggleClass('verde') /*alterna, colocando e retirando*/
+
+     },1000)
+</script>
+
+38 - FUNÇÃO CLONE PARA CLONAR ELEMENTOS
+<script>
+    $('#btnClonar').click(function(){
+        $('#repositorio').clone().appendTo('body'); /*o que será clonado e aonde*/
+    })
+</script>
+
+39 - FUNÇÃO DETACH 
+Permite remover ou desanexar o elemento, porem retorna em uma variavel para ser usado posteriormente.
+<style>
+    .caixa{
+        background-color: #bbb;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px 0px 0x 0px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100px;
+      
+    }
+    .item{
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+        color: #fff;
+        font-size: large;
+    }
+    .cor1{
+        background-color: green;
+    }
+    .cor2{
+        background-color: blue;
+    }
+
+</style>
+</head>
+
+<body>
+<p>
+    <button id="btnReset"> Reset </button>
+    <button id="btnMudar"> Mudar </button>
+</p>
+<div class="caixa" id="caixa1">
+    <div class="item cor1" id="item1">1</div>
+    <div class="item cor2" id="item2">2</div>
+    <div class="item cor1" id="item3">3</div>
+    <div class="item cor2" id="item4">4</div>
+    <div class="item cor1" id="item5">5</div>
+</div>
+<div class="caixa" id="caixa2"></div>
+
+<script>
+    let itens=$(".item")
+    let i=0;
+    $('#btnMudar').click(function(){
+        let item=$(itens[i]).detach(); /*desanexa*/
+    i++
+    $('#caixa2').append(item);/*transferindo*/
+    })
+
+    $('#btnReset').click(function(){
+        for(let i=0;i<itens.length;i++){
+            let item=$(itens[i]).detach();
+            $('#caixa1').append(item);
+        }
+        i=0 /*zerando o indice*/
+    })
+</script>
+
+40 - FUNÇÃO HASCLASS
+Verifica se o elemento possui uma classe com retorno booleano.
+<script>
+   let itens=$(".caixa")
+   $('.btnFechar').click(function(e){ /*variavel representa o elemento que recebe o click*/
+$('#'+e.target.id).parent().addClass('ocultar'); /*filtragem ate chegar o id do elemento e adicionando a classe ocultar*/
+
+$('#btnReset').click(function(){
+    let itens=$(".caixa")
+    for(let i=0;i<itens.length;i++){
+        let item=$(itens[i])
+        if(item.hasClass('ocultar')) /*verificação se possui a classe*/
+    item.removeClass('ocultar')
+    }
+})
+   })
+
+</script>
+
+41 - PEGANDO A POSIÇÃO DO ELEMENTO TOP e LEFT
+<p>
+    <button id="btnPosicao">Posição</button><br><br>
+<label for="">Topo:</label>
+<input type="range" id="top" name="top" min="0" max="500">
+<label for="">Left:</label>
+<input type="range" id="left" name="top" min="0" max="500">
+</p>
+
+<div class="caixa" id="caixa" style="position: absolute;top: 100px;left:100px;background-color: tomato;">
+</div>
+
+<script>
+$('#btnPosicao').click(function(){
+    let t=$('#caixa').position().top /*pegando a posição do top*/
+    let l=$('#caixa').position().left 
+    alert('Top:' + t + " Left: " + l)
+})
+$('#top').change(function(e){
+let valor=document.getElementById(e.target.id).value /*localizacao do id*/
+$('#caixa').css({'top':valor+'px'})
+})
+
+$('#left').change(function(e){
+let valor=document.getElementById(e.target.id).value /*localizacao do id*/
+$('#caixa').css({'left':valor+'px'})
+})
+</script>
+
+42 - ALTERANDO TOP e LEFT
+<p>
+    <button id="btnPosicao">Posição</button><br><br>
+<label for="">Topo:</label>
+<input type="range" id="top" name="top" min="0" max="500">
+<label for="">Left:</label>
+<input type="range" id="left" name="top" min="0" max="500">
+</p>
+
+<div class="caixa" id="caixa" style="position: absolute;top: 100px;left:100px;background-color: tomato;">
+</div>
+
+<script>
+$('#btnPosicao').click(function(){
+    let pt=$('#caixa').position().top /*pegando a posição do top*/
+    let pl=$('#caixa').position().left 
+    let ot=$('#caixa').offset().top /*obter e definir valores*/
+    let ol=$('#caixa').offset().left
+    alert('Top P:' + pt + " Left P: " + pl+ "\ntop o:" +pt+ " Left o: "+pl)
+})
+$('#top').change(function(e){
+let valor=document.getElementById(e.target.id).value /*localizacao do id*/
+$('#caixa').offset({'top':valor})
+})
+
+$('#left').change(function(e){
+let valor=document.getElementById(e.target.id).value /*localizacao do id*/
+$('#caixa').offset({'left':valor})
+})
+</script>
+
+43 - REMOVER ATRIBUTOS OU REMOVER CLASSES DE UM ELEMENTO
+$('#btnRemoverAtributo').click(function(){
+    $('#caixa').removeAttr('style'); /*removendo o atributo,poder ser class, style*/
+})
+$('#btnRemoverClasse').click(function(){
+    $('#caixa').removeClass('borda'); /*removendo uma classe especifica*/
+})
+$('#btnAdicionarClasse').click(function(){
+    $('#caixa').addClass('borda'); /*adicionando classe especifica*/
+})
+
+44 - FUNÇÕES REPLACE e REPLACEALL
+Fazem substituições apontadas.
+    $('#btn_replace1').click(function(){
+$('<p>trocado</p>').replaceAll('.cor') /*faz a substituição da esquerda para a direita,insiro a informação e aonde será substituido*/
+    })
+
+    $('#btn_replace2').click(function(e){
+        $('<div>'+$(e.currentTarget).text()+'</div>').replaceAll(e.currentTarget)/**/
+    })
+
+    $('#btn_replace3').click(function(e){
+        $('.cor').replaceWith('<p>Trocado</p>') /*substitui da direita para a esquerda*/
+    })
+
+    $('#btn_replace4').click(function(e){
+        $(e.currentTarget).replaceWith('<div>'+$(e.currentTarget).text()+'</div>')
+    })
+</script>
+
+45 - FUNÇÕES SCROLLTOP e SCROLLTOP
+Definir posição da barra de rolagem.
+<script>
+$('#btn_rolar_left').click(function(){
+$('#texto').scrollLeft(15) /*desloca a barra de rolagem*/
+})
+
+$('#btn_rolar_top').click(function(){
+$('#texto').scrollTop(150)
+})
+
+$('#btn_pos_left').click(function(){
+alert($('#texto').scrollLeft()) /*obter a posição*/
+})
+
+$('#btn_pos_top').click(function(){
+alert($('#texto').scrollTop())
+})
+
+$('#btn_reset_top').click(function(){
+$('#texto').scrollLeft(0).scrollTop(0)
+})
+</script>
+
+46 - FUNÇÃO WRAP e UNWRAP
+Seria como empacotar e desempacotar.
+<div class="menu">
+    <button id="btn_pacote">Empacotar / Desempacotar</button>
+    <button id="btn_empacotarTudo">Empacotar Tudo</button>
+    <button id="btn_empacotarDepois">Empacotar Depois</button>
+</div>
+<p>CFB CURSOS</p>
+<p>CFB CURSOS</p>
+<p>CFB CURSOS</p>
+<p>CFB CURSOS</p>
+<p>CFB CURSOS</p>
+<script>
+    let elementosP=$('p')
+$('#btn_pacote').click(function(){
+    if(elementosP.parent().is('div')){
+        elementosP.unwrap() /*retirado o pai do elemento*/
+    }else{
+        elementosP.wrap("<div class='pacote'></div>")/*adicionado pai e classe*/
+    }
+})
+
+$('#btn_empacotarTudo').click(function(){
+    elementosP.wrapAll("<div class='pacote'></div>") /*pacote para todos os elementos*/
+
+})
+
+$('#btn_empacotarDepois').click(function(){
+    elementosP.wrapInner("<div class='pacote'></div>") /*inves de adicionar o pacote fora, adiciona de dentro do elemento*/
+
+})
+
+47 - FUNÇÕES EACH
+Permite aplicar uma função para elementos de uma lista.
+$('#btn_each').click(function(){
+    $('p').each(function(){
+        alert($(this).text())/*cada elementos recebe um alert*/
+    })
+})
+
+$('#btn_cor').click(function(){
+    $('p').each(function(){
+     $(this).addClass('pacote') /*houve função com interação com elemento de retorno*/
+    })
+})
+</script>
+
+48 - FUNÇÃO GET
+Permite obter informações de determinado elemento.
+$('#btn_get').click(function(){
+    console.log($('p').get()) /*detalhamento sobre o elemento*/
+})
+
+$('#btn_get').click(function(){
+    let elemento=$('p').get()
+    console.log(elemento[0].id) /*como retorna como array*/
+})
+
+<div class="menu">
+    <button id="btn_get">Função Each()</button>
+</div>
+<div id="elementos" class="caixa"></div>
+
+<div>
+    <p id="p1">Curso de JQuery</p>
+    <p id="p2">Curso de JQuery</p>
+    <p id="p3">Curso de JQuery</p>
+    <p id="p4">Curso de JQuery</p>
+    <p id="p5">Curso de JQuery</p>
+</div>
+
+
+
+<script>
+$('#btn_get').click(function(){
+$('#elementos').append($('p').get()) /*obtendo os elementos e adicionado em outro lugar*/
+})
+</script>
+
+49 - FUNÇÃO INDEX
+Retorna a posição do elemento na página em relação ao código.
+<div class="caixa" id="caixa">
+    <p id="p1">CFB Cursos</p>
+    <p id="p1">CFB Cursos</p>
+    <p id="p2">Curso de JQuery</p>
+    <p id="p3">Função index()</p>
+    <p id="p4">cfbcursos.com.br</p>
+    <p id="p5">youtube.com/cfbcursos</p>
+</div>
+<p id="p1">CFB Cursos</p>
+<p id="p1">CFB Cursos</p>
+<p id="p2">Curso de JQuery</p>
+<p id="p3">Função index()</p>
+<p id="p4">cfbcursos.com.br</p>
+<p id="p5">youtube.com/cfbcursos</p>
+
+<script>
+$('p').click(function(){
+    alert($(this).index()); /*como foi usado function usamos o this, a função index retona a posição do elemento na página.*/
+})
+</script>
+
+50 - FUNÇÕES NOCONFLICT
+permite mudar o seletor padrão do Jquery ($) caso esteja dando conflito com outra linguagem.
+<script>
+let cfb=$.noConflict() /*seletor padrao se torna cfb*/
+
+cfb('p').click(function(){
+    alert(cfb(this).index()); /**/
+})
+cfb('h4').click(function(){
+    alert(cfb(this).index()); /**/
+})
+</script>
+
+51 - FUNÇÃO LENGHT
+Retorna a qtde de elementos dentro de um container.
+<div class="caixa" id="caixa">
+    <h4 id="p1">CFB Cursos</h4>
+    <h4 id="p1">CFB Cursos</h4>
+    <h4 id="p2">Curso de JQuery</h4>
+    <h4 id="p3">Função index()</h4>
+    <h4 id="p4">cfbcursos.com.br</h4>
+    <h4 id="p5">youtube.com/cfbcursos</h4>
+</div>
+<p id="p1">CFB Cursos</p>
+<p id="p1">CFB Cursos</p>
+<p id="p2">Curso de JQuery</p>
+<p id="p3">Função index()</p>
+<p id="p4">cfbcursos.com.br</p>
+<p id="p5">youtube.com/cfbcursos</p>
+<button id="btn_p"> Qtde de P</button>
+<button id="btn_h4"> Qtde de H4</button>
+
+<script>
+$('#btn_p').click(function(){
+    alert($('p').length)
+})
+
+$('#btn_h4').click(function(){
+    alert($('h4').length)
+})
+</script>
+
+52 - FUNÇÃO TOARRAY
+Permite converter elementos em array natural do javascript.
+$('#p_para_caixa2').click(function(){
+   console.log($('p').toArray()); /*mostra em array e id os elementos*/
+})
+
+<div class="caixa" id="caixa1">
+    <h4 id="p1">CFB Cursos</h4>
+    <h4 id="p1">CFB Cursos</h4>
+    <h4 id="p2">Curso de JQuery</h4>
+    <h4 id="p3">Função index()</h4>
+    <h4 id="p4">cfbcursos.com.br</h4>
+    <h4 id="p5">youtube.com/cfbcursos</h4>
+</div>
+
+<button id="p_para_caixa2"> Qtde de P</button>
+<button id="h4_para_caixa2"> Qtde de H4</button>
+<div class="caixa2" id="caixa">
+    <p id="p1">CFB Cursos</p>
+<p id="p1">CFB Cursos</p>
+<p id="p2">Curso de JQuery</p>
+<p id="p3">Função index()</p>
+<p id="p4">cfbcursos.com.br</p>
+<p id="p5">youtube.com/cfbcursos</p>
+</div>
+
+<script>
+     let ep=$('p').toArray()
+    let eh=$('h4').toArray()
+$('#p_para_caixa2').click(function(){
+    $('#caixa2').append(ep)
+    $('#caixa1').append(eh)
+
+})
+$('#h4_para_caixa2').click(function(){
+      $('#caixa2').append(eh)
+   $('#caixa1').append(ep)
+
+})
+</script>
+
+53 - ENTENDENDO LARGURA E ALTURA
+Obtendo larguras e alturas de um elemento.
+<style>
+   .caixa{
+    background-color: #ddd;
+   width: 200px;
+   height: 250px;
+   padding: 10px;
+   border: 5px solid black;
+   margin: 5px;
+   }
+ 
+</style>
+</head>
+
+<body>
+   <div style="display: flex;">
+<div id="caixa1" class="caixa">
+    CFB Cursos
+</div>
+<div id="info" class="caixa"></div>
+<img src="Imagens/Clark96.gif" alt="">
+</div>
+    
+    <script>
+        let cx=$('#caixa1')
+     $('#info').html(
+    'width:' + (cx.width() + ' <br>Height:' + cx.height() + ' <br>InnerWidth:' + cx.innerHeight() + '<br>InnerHeight: ' + cx.innerHeight() + '<br>OuterWidth: ' + cx.outerWidth() + '<br>OuterHeight: ' + cx.outerHeight() + '<br>OuterWidth: ' + cx.outerWidth(true))  /*repassando informação de largura, altura, border. Caso a informação tenha true, seria o valor total, somando margin e padding*/
+
+     )   
+    </script>
+
+54 - MODIFICANDO LARGURA E ALTURA
+Setando as informações.
+$('#btn_alterar').click(function(){
+        cx.width(300)
+        cx.height(350)
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

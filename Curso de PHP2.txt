@@ -1,0 +1,333 @@
+CURSO DE PHP2 
+
+01 - INTRODUÇÃO AO PHP 8 (AVANÇADO)
+02 - VÁRIAS FORMA DE UTILIZAR ECHO
+<?php
+
+# VÁRIAS FORMA DE UTILIZAR ECHO
+/*
+É a instrução mais usada para apresentar conteúdo PHP numa página web. Também podemos usar o print, mas é ligeiramente mais lento e tem menos potencial. Podemos usar o echo com ou sem parenteses.
+*/
+?>
+
+<?php
+
+ <?php echo $nome.' '.$apelido?><br>
+    <?php echo "$nome $apelido"?><br>
+    <?php echo $nome, " " ,$apelido?><br>
+    <h3>Olá: <?=$apelido?></h3>
+    <?php
+    echo "<h3 class=\"texto-vermelho\">$nome $apelido</h3>";
+
+    echo '<h3 class="texto-vermelho">',"$nome $apelido","</h3>"?>
+    <p>Nome do Cliente: <?= "<strong>$nome $apelido</strong>"?></p>
+    <p><?=substr($apelido,0,4)?></p>
+
+03 - PRINT EM VEZ DE ECHO
+# PRINT
+/*
+O Print é uma construção da linguagem PHP muito semelhante ao eco.
+As principais são:
+1. print apenas aceita um argumento.
+2. prinot retorna sempre o valor 1 = verdadeiro.
+*/
+
+$nome='joao';
+$apelido='Ricardo';
+print "$nome $apelido<br>"; # válido
+// print $nome,'',$apelido;  # inválido
+if(print($nome)){ //se imprimir nome imprima tambem o apelido
+    print(" $apelido");
+}
+echo "<br>";
+print strlen($apelido); // imprimir quantos caracteres ha na variavel
+echo "<br>";
+
+?>
+
+04 - CICLOS DE PHP NO HTML
+/*
+A escrita de código de PHP deve ser o mais simples possivel para facilitar a leitura do fluxo. Por outro lado, devemos procurar criar condiçoes para rapidamente alterar o aspecto visual dos dados que apresentamos
+*/
+<?php
+
+//usando so o php
+for ($i=100; $i < 120;$i++){
+    echo "<p>$i</p>";
+}
+?>
+   <hr>
+
+   <!--Html + php-->
+   <?php
+for($i = 100;$i < 120;$i++):?> <!-- os ':' subsitui as chaves-->
+<p class="cor"><?=$i?></p>
+<?php endfor;?>
+<br>
+<!--apresentar lista de nomes com php-->
+<?php
+echo '<ul>';
+$nomes=[1,2,3];
+foreach($nomes as $nome){
+    echo "<li>$nome</li>";
+}
+echo "</ul>";
+
+?>
+
+<br>
+<!--lista de nomes com html e php, recomenda a estrutura abaixo-->
+<ol type="i"> <!--abro a lista-->
+<?php foreach($nomes as $nome):?>
+    <li><?=$nome?></li>
+    <?php endforeach;?>
+</ol>
+
+05 - INSTRUÇÕES E CONDICIONIAIS DO PHP NO HTML
+Forma mais simplificada de usar condições de IF e Else.
+<?php
+if($apresentar){
+    echo '<p>Este paragráfo é para ser apresentado';
+}else{
+    echo '<p>Não existe nada para apresentar';
+}
+?>
+
+<?php if($apresentar):?>
+<p>Este paragráfo é para ser apresentado</p>
+<?php else:?>
+<p>Não existe nada para apresentar</p>
+<?php endif;?>
+
+06 - EXERCÍCIO DE CONSTRUIR UMA TABELA HTML APARTIR DE UM ARRAY
+Forma correta de monstar uma tabela unindo html e php.
+    <table border="5">
+        <thead>
+        <tr><th>Nome</th>
+        <th>Gênero</th>
+        <th>Pais</th>   
+        <th>Signo</th>   
+    </tr>
+</thead>
+
+<tbody>
+<?php foreach($dados as $item):?>
+    <tr>
+        <td><?=$item[0] ?></td>
+        <td><?=$item[1] ?></td>
+        <td><?=$item[2] ?></td>
+        <td><?=$item[3] ?></td>
+
+    </tr>
+    <?php endforeach;?>
+    <br>
+</tbody>
+    </table>
+    <?php
+   print_r($dados[0][3]) ;
+   echo "<br>";
+   echo $dados[1][3];
+    ?>
+
+07 - TRIM, LTRIM, RTRIM E PARAMETRO
+<?php
+# TRIM
+# Remove espeaços e outros caracteres do inicio e do final de uma string.
+$a=' Isto é uma string';
+$a=trim($a);
+echo $a;
+
+#LTRIM E RTRIM
+# Removem espaços e outros caracteres do inicio ou final da string.
+$b= " Hoje acordei cedo! ";
+echo "<br>";
+echo $b;
+
+# Podemos usar um segundo parametro nestas funções.
+$c="abcdef";
+echo trim($c, 'a'); // indica qual caracter sera removido
+echo "<br>";
+echo $c;
+
+# podemos usar para limpar post de um formulário
+$usuario = trim($_POST['usuario']); // limpa se tiver algum espaço, proibido usar em senha.
+?>
+
+08 - MAISCULAS E MINUSCULAS
+# MAIUSCULAS E MINUSCULAS
+$a = "joão ribeiro";
+$b="ANA CAROLINA";
+$c="Francisco Santos Silvério";
+
+# STROUPPER
+# Transforma uma string em maiuscula
+echo strtoupper($a); // acontece erro com acentuação
+echo mb_strtoupper($a); // a função mb é um módulo que ativa funções multibyte relacionada ao sistema de caracteres.
+
+#  ATIVANDO O MODO MB
+# Abrir o laragon, menu php (botão direito), php.ini, ctrl+f  e digitar mbstring, tirar o comentário extension=mbstring e salvar, e reiniciar o apache no reload.
+
+
+# STRLOWER
+# Transforma todo o texto em minuscula
+echo "<br>";
+echo strtolower($b);
+
+# DEFINIÇÃO TIPO CAPITALIZE
+echo "<br>";
+echo ucfirst('joão luis'); // uppercasefirst
+echo "<br>";
+echo lcfirst('João Ribeiro'); // 
+echo "<br>";
+echo ucwords('luciano leal'); // tipo capitalize padrão
+echo "<br>";
+$d="luciano leal rodrigues";
+echo ucwords($d);
+
+09 - STRLEN
+# STRLEN (Tamanho da string)
+# realiza a contagem de caracteres dentro da string
+
+$a ="uma frase para teste";
+echo strlen($a); // retorna d a qtde
+
+# Quando for nula ou vazia
+$c=null;
+$b='';
+echo "<br>";
+echo strlen($c); // retorna zero
+echo strlen($b);
+
+# No caso de variaveis booleanas
+$sim=true;
+$nao=false;
+echo "<br>";
+echo strlen($sim); // nesta caso retorna 1, pela conversão implicita
+
+# Strlen nao funciona em arrays
+# Palavras acentudas sao contadas 2x
+echo "<br>";
+$nome="João";
+echo strlen($nome); // conta a palavra acentuada como 2x
+echo "<br>";
+echo mb_strlen($nome); // utilizando funções mb_ faz a contagem correta
+
+10 - STR REPEAT e STR PAD PARA OUTPUTS MONOSPACED
+# O PHP contém uma função muito simples de usar para criar strings com m determinado número de repetições concatenadas.
+
+$a = str_repeat('-',20); # simbolo e n de repetições
+echo $a;
+$b= str_repeat('-|',20);
+echo $b;
+echo "<br>";
+
+$valor=100;
+echo str_pad($valor,'30','.',STR_PAD_LEFT); // preencha a esquerda
+echo "<br>";
+echo str_pad($valor,'30','.',STR_PAD_RIGHT); // preencha a direita
+echo "<br>";
+echo str_pad($valor,'30','.',STR_PAD_BOTH); // preencha ambos os lados
+echo "<br>";
+echo "<pre>";
+$valores=[100,2100,0,45750];
+foreach($valores as $valor1){
+    echo str_pad($valor1,'30','=>%%',STR_PAD_LEFT) .PHP_EOL; // serve tb como br
+}
+
+11 - SRT_CONTAINS, STR_STARTS, WITH e STR_ENDS_WIT
+# Nas regras de negócios do nosso código vamos necessitar usar funções que permitem verificar qual o conteúdo de uma string. Se contém outra string, se conecta pela letra x, termina com y ou quantas letras 'A'
+# O PHP oferece varias funções para essa finalidade
+
+$a = "Esta frase é usada para testes.";
+# str_contains = verifica se uma string existe dentro da outra, retorna true ou false.
+
+$b='para';
+if (str_contains($a,$b)){
+    echo "Sim";
+}else{
+    echo "Não";
+}
+echo "<br>"; 
+$c="USA";
+if(str_contains($a,$b)){ // esta função é case insensitive
+echo "Sim";
+}else{
+    echo "Não";
+}
+echo "<br>";
+$c="ua";
+if(str_contains($a,$c)){
+    echo "Sim";
+}else{
+    echo "Não";
+}
+
+# Para percebermos se uma string começa ou acaba com uma determinada strgind, usamos as funções str_ends_with() e str_starts_with(), ambas são case sensitive
+if (str_starts_with($a, 'E')){
+    echo "<br>Sim, inicia";
+}else{
+    echo "Não, inicia por outra letra.";
+}
+
+if(str_ends_with($a, 'te.')){
+    echo "<br> Sim";
+}else{
+    echo "<br> Não"; // sera esta opção porque a frase termina com 'tes.', ou seja, falta um 's'
+}
+
+12 - FUNÇÃO SUBSTR
+#  A Função SUBSTR (substring) é usada com muita frequencia para capturarmos uma parte de uma string, seja para criar uma nova variável ou simplemente para apresentar uma parte de uma string. 
+
+$a = "Esta frase é para testes.";
+$b = substr($a,5,10); // inicio e pegar após
+
+echo $b; // mostra frase é p
+$c = mb_substr($a,-10); // valor negativo, inicia pela direita
+echo "<br>".$c;
+echo "<br>";
+$d="Luciano";
+$e=mb_substr($d,0,-5);
+echo "<br>".$e; // retorna Lu
+
+13 - EXPLODE e IMPLODE
+# EXPLODE
+# Permite transformar uma string num array de strings, recorrendo a um caracter de separação.
+$str_nomes='Joao,carlos,ana,antonio';
+$nomes= explode(',',$str_nomes,2); // o separador deve ser igual, o array será separado em duas partes.
+
+# IMPLODE
+# Permite colar numa strinf um conjunto de um array
+$nomes=['joao','carlos','ana','antonio'];
+$str_nomes=implode('|',$nomes); // a barra sera inserida entre os elementos
+
+# No PHP tem uma função que é um alias do implode, join(), funciona da mesma forma que o implode.
+
+14 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

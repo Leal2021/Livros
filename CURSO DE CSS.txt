@@ -1,0 +1,975 @@
+CURSO DE CSS
+CSS é uma linguagem de formatação de páginas.
+01 - INSERINDO CSS NA PÁGINA
+Há 3 maneiras de incorporar o css na página. Por link, inline e incorporado.
+<style> = incorporado
+</style>
+
+<a href="#" style="color:red"> = inline, apenas a tag recebe a formatação
+<link rel="stylesheet" href="estilo.css"> = linkando uma página fora para servir de repositório de formatação.
+Ordem
+Incorporado,externo, inline
+
+02 - SELETORES
+Para usarmos os seletores, podemos usar ids, classes.
+p{ // forma de criar o seletor
+};
+
+#p1{ // seletor para id e ganha prioridade
+  
+}
+
+.txt{ // criação de classe
+  
+}
+
+h2,h3{ // indicação de várias tags
+  color: blueviolet;
+}
+
+03 - CORES EM CSS
+04 - BACKGROUND PT1
+ background-image: url(imagens/kof_personagensTODOS.jpeg);
+  background-size: cover; /*aumenta a imagem no tamanho da tela, ou podemos colocar em a medida em pixels = 400px largura  50px altura*/
+  background-repeat: no-repeat; /*não repete*/
+  background-position: right top; /*desloca a imagem para a direita, podemos indicar valores em pixels 500px=vertical e 400 na horizontal*/
+  background-repeat: repeat-x; /*repete a imagem na posição x = linha, posição y = coluna*/
+
+05 - BACKGROUND PT2
+#d1,#d2,#d3{
+border: 10px dotted black;
+padding: 35px 10px; /*espaçamento interno do elemento*/
+background-color: #0f0;
+}
+
+#d1{
+background-clip: border-box; /*inicia o background apartir da borda*/
+}
+
+#d2{
+  background-clip: padding-box; /*adiciona uma borda e após isso insere o background*/
+}
+
+#d3{
+  background-clip: content-box; /*é necessário ter informação, o background será inserido na informação*/
+}
+
+06 - BACKGROUND PT3
+Configurações individuais de imagens em plano de fundo.
+  background-image: url(imagens/The_King_of_Fighters_logo.jpeg),url(imagens/kof_personagensTODOS.jpeg);
+  background-repeat: no-repeat, repeat;
+  background-size: 300px,500px;
+  background-attachment: scroll,fixed; /*fixed=mantém a imagem estatica no fundo, scroll=rola normal*/
+
+07 - BACKGROUND PT4
+  background: #ddd url(imagens/The_King_of_Fighters_logo.jpeg) repeat-x 0px 0px /100%; /*insere cor e imagem no plano de fundo, no repeat-x valor ocorre o deslocamento,repeat-x 0px 0px /150px define tamanho,repeat-x 0px 0px /100% cria uma imagem responsiva*/
+
+08 - BORDAS PT1
+São configurações individuais.
+#d1{
+  width: 300px;
+  height: 300px;
+  background-color: #ddd;
+  border-style: outset; /*estilo da borda, dotted,double,dashed,grove=3d,ridge=3d com cores invertidas,inset=baixo relevo,outset=alto relevo,none=retira,hidden=oculta*/
+  border-width: 20px; /*largura da borda*/
+  border-color: rgb(75, 83, 80); /*cor da borda*/
+}
+
+ou 
+border: 1px solid black;
+
+09 - BORDAS PT2
+  border-top: 10px solid black; /*border-top somente a borda superior recebe a formatação*/
+  border-bottom: 10px outset red; /*inferior*/
+  border-right: 10px double green; /*direita*/
+  border-left: 10px groove yellowgreen; /*esquerda*/
+
+10 - BORDAS PT3
+#d1{
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  border-radius: 10%; /*controlando as 4 posições,caso colocamos em %*/
+}
+
+11 - BORDAS PT4
+12 - CORES RBG E TRANSPARENCIA ALPHA
+  background:rgba(148, 201, 170, 0.712); /**rgba traz a opção alpha para transparência*/
+
+13 - MARGENS E CENTRALIZAÇÃO
+A div possui margem zero por padrão.
+  margin: 10px 200px 300px 20px; /*sup,direita,inferior, esquerda*/
+  /*quando for individual*/
+  margin-top: ; /*cima*/
+  margin-right: ; /*direita*/
+  margin-bottom: ; /*baixo*/
+  margin-left: ; /*esquerda*/
+**Para centralizar é necessário o width.
+margin: auto; /*centraliza automaticamente*/
+
+14 - PADDING
+Representa a margem interna dos elementos.
+padding: 75px 25px 100px 500px; /*margem de dentro ao elemento, quando tiver dois valores=cima e baixo, com 4 valores=cima,direita,baixo,esquerda*/
+
+15 - PREENCHIMENTO GRADIENTE
+Tipo Linear
+background:linear-gradient(to top,blue,black); /*começa para direita iniciando em azul e terminando em preto, não há limite de cor. to right, to bottom, to left, to top*/
+
+Tipo Gradiente
+background:radial-gradient(circle,#f00 20%,#ff0 50%); /*define a qtde das cores, tendo variações circle*/
+**variação
+background:repeating-radial-gradient(circle,#f00 20%,#ff0 50%); /*define a qtde das cores, tendo variações circle*/
+
+**elemento com background
+background: linear-gradient(90deg,blue 0%,black 80%);
+-webkit-text-fill-color: transparent; /*adiciona transparencia*/
+-webkit-background-clip: text; /*clip corta para mostrar somente a área de texto*/
+
+16 - SOMBRA
+  text-shadow: 3px 5px 5px black,
+  -2px -2px 0 red,-3px -3px 0 black; /*distancia horizontal,vertical,blur(embaçamento). É possivel adicionar mais sombras*/
+
+box-shadow: 9px 5px 0px gray, 14px 9px 0px red; /*semelhante ao text-shadow*/
+
+17 - FORMATAÇÕES DE TEXTO
+text-align: left; /*left, right e justify*/
+  text-decoration: none; /*underline=linha em baixo,overline=linha em cima,line-through=riscado*/
+  text-transform: capitalize; /*uppecase=maiusculas,lowercase=minusculas*,capitalize=primeira letra de cada palavra em maiuscula*/
+  text-indent: 50px /*paragráfo*/;
+  letter-spacing: 2px; /*distancia entre letras*/
+  line-height: 2; /*altura da linha, '2' seria um espaçamento de 2 linhas*/
+  word-spacing: 10px; /*espaço entre palavras*/
+  direction: ltr; /*left to right e rtl=right to left*/
+  text-align-last: center; /*alinha a ultima linha,center,left,right*/
+}
+
+div{
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  white-space: normal; /*nowrap não quebra linhas no espaço,normal=quebra no espaço*/
+  overflow: auto; /*oculta tudo que transborda no body ou container, auto cria uma barra de rolagem*/
+  word-break: break-all; /*quebra palavra para se adaptar ao container*/
+}
+18 - FORMATAÇÕES PARA FONTE
+p{
+  font-family: Arial,Verdana,sans-serif; /*conjunto de fonte disponiveis, sendo um grupo de fontes, caso nao encontre a primeira, tenta usar a segunda. Caso a fonte tenha nome composto usamos aspas.*/
+  font-style: oblique; /*itálico,normal,oblique*/
+  font-weight: bold; /*negrito, há bolder e números de negrito, lighter retira o negrito*/
+  font-size: 25px;  /*tamanho*/
+  font-variant: small-caps; /*texto em maiusculo, porém o que estava em maiusculo antes tem tamanho um pouco maior*/
+}
+
+**Fonte 
+@font-face { /*tipo de fonte personalizada**/
+  font-family: 'teste'; /*nome escolhido*/
+  src: url(fontes/GreatVibes-Regular.ttf); /*caminho da fonte*/
+}
+
+**Google Fonts
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+e copiamos o link com o nome da fonte
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+e copiar nome da fonte
+
+19 - FORMATAÇÕES DE LINKS
+a{
+text-decoration: none; /*retira o sublinhado*/
+color: black;
+font-size: 20px;
+}
+
+a:hover{ /*mouse posicionado em cima do link*/
+color: dodgerblue;
+font-size: 21px;
+cursor: pointer; /*seta do mouse*/
+}
+
+20 - CRIANDO MENUS HTML COM LINKS
+21 - TRANSFORMAÇÕES PT1
+   /* transform: translate(200px,10px); /*desloca x =linha e y=coluna*/
+   /*transform: rotate(45deg); /*rotação do elemento*/
+transform: scale(2) translate(200px,10px); /*dobra de tamanho agregado com outra tranformação*/
+transform: skewx(20deg); /*inclina em x,sendo valor negativo inclina para direita*/
+transform: skewy(120deg); /*inclina na vertical*/
+transform: matrix(2,0,0,2,0,0);
+
+22 - TRANSFORMAÇÕES PT2
+23 - FORMATAÇÕES DE LISTA
+  list-style-type: disc; /*estilo do marcador,disc,circle,square*/
+  list-style-image: url(icones/home.png); /*insere imagem personalizada*/
+  vertical-align: middle;
+
+24 - FORMATAÇÕES DE TABELAS
+table,td,th{
+  border: 1px solid black; /*borda externa*/
+  border-collapse: collapse; /*retira espaçamento entre os elementos*/
+
+}
+
+table{
+  width: 600px;
+  table-layout: fixed; /*distribui a largura igual pra toda a tabela*/
+}
+
+td,th{
+  width: 200px;
+  height: 50px;
+  vertical-align: middle;/*centraliza*/
+  text-align: center;
+}
+
+th{
+  background-color: rgb(25, 92, 70);
+  color: white;
+}
+
+tr:nth-child(even){ /*even = par*/
+background-color: #ddd;
+}
+
+25 - OUTLINE
+É uma linha externa ao elemento, porém não ocupa espaço.
+
+26 - DISPLAY PT1
+Determinam a posição e organização dos elementos na tela.
+Div é display block.
+span display inline block
+
+  display: none; /*oculta os elementos*/
+  display: inline-block; /*em linha porem mantem a mesma configuração do block*/
+
+27 - DISPLAY PT2
+  display: table-cell; /*se transforma em célula de tabela, permite usar configurações de centralização*/
+  vertical-align: middle;
+  text-align: center;
+
+  line-height: 100px /*auxilia pra centralizar*/;
+  text-align: center;
+
+Transforma as informações em uma tabela
+ol{
+  display: table; 
+
+}
+
+ul{
+  display: table-row; /*linha*/
+}
+
+li{
+  display: table-cell; /*coluna*/
+}
+
+28 - DISPLAY PT3
+Display Flex
+  display: flex; /*tornando flexivel, função parecida com menu*/
+  flex-wrap: nowrap;
+  display: -webkit-flex; /*chrome antigo*/
+  display: -moz-flex; /*versão antiga do mozila*/
+  min-width: 500px; /*diminui até a medida escolhida*/
+}
+
+div{
+  border: 1px solid black;
+  flex:1; /*configurando o elemento para flexivel, ajustando-se ao container e ficando responsivo*/
+}
+
+29 - DISPLAY PT4
+ justify-content:center; /*alinhamento dos elementos,esq=flex-start,direita=flex-end,center*/
+  align-items: center;/*alinhamento vertical,alinhamento dos elementos,esq=flex-start,direita=flex-end,center*/
+  flex-direction: column;/*direção dos elementos,row e columm ambos possuem a opção reverse*/
+
+30 - DISPLAY PT5
+div{
+  border: 1px solid black;
+  height: 50px;
+/*  flex:0 1 auto; grow shrink e basics*/
+  flex-grow: 1; /*controla a capacidade de expansão-esticar*/
+  flex-shrink: 0; /*elemento tem capacidade de contrair*/
+
+}
+
+#d1{
+order: 1; /*configura o elemento fiho dentro do container*/
+width: 100px;
+flex-grow: 1;
+}
+
+#d2{
+  order: 2;
+  flex-basis: 25%; /*qtde ocupada na área aonde se encontra, 100% ocupa toda a área*/
+  width: 100px;
+}
+
+#d3{
+  order: 3;
+  width: 100px;
+}
+
+
+#d4{
+  order: 4;
+  width: 100px;
+}
+
+#d5{
+  order: 5;
+  width: 100px;
+}
+
+#d6{
+  width: 100px;
+  flex-shrink: 0;
+  order: 6; /*ocorre a troca de lugar*/
+}
+
+31 - DESAFIO DISPLAY FLEX
+32 - SOLUÇÃO DO DESAFIO AULA 31
+HTML
+<header>
+    <h1>Cabeçalho do Site</h1>
+</header>
+
+<nav>
+    <a href="#">Menu 1</a>
+    <a href="#">Menu 2</a>
+    <a href="#">Menu 3</a>
+    <a href="#">Menu 4</a>
+    <a href="#">Menu 5</a>
+    <a href="#">Menu 6</a>
+</nav>
+
+<section>
+    <div>CFB 1</div>
+    <div>CFB 2</div>
+    <div>CFB 3</div>
+    <div>CFB 4</div>
+    <div>CFB 5</div>
+    <div>CFB 6</div>
+    <div>CFB 7</div>
+    <div>CFB 8</div>
+    <div>CFB 9</div>
+    <div>CFB 10</div>
+</section>
+<footer>
+    <p>Canal CFB CURSOS</p>
+</footer>
+
+CSS
+
+body{
+ font-family: 'Kanit';
+}
+
+
+header,section,nav,footer{
+  display: flex;
+}
+
+header{
+  height: 150px;
+}
+
+nav{
+  justify-content: flex-end; /*alinhamento na direita*/
+  background-color: tomato;
+  flex-wrap: wrap;
+}
+
+nav a{
+  width: 150px;
+  height: 50px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section div{
+  border: 1px solid black;
+  flex: 1;
+  margin: 5px;
+  min-width: 100px;
+  min-height: 100px;
+  max-width:200px ;
+  max-height:200px ;
+}
+footer{
+  background-color: #888;
+  color: white;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+33 - PROPRIEDADES POSITION e Z-INDEX
+Permite posicionamento mais direto na tela, indicando posição x e y.
+position: absolute; /*permite posicionar o elemento usando top e left*/
+  top: 50px; /*topo*/
+  left: 50px; /*direita*/
+
+  position: relative; /*se posiciona em relação ao elemento anterior, tendo duas divs, a posição ocorre após a primeira sendo que a posição do primeiro seja static*/
+
+position: fixed; /*não importa o elemento ou container, mas sim a janela da página*/
+  top: 50px;
+  left: 50px;
+
+34 - PROPRIEDADE FLOAT e CLEAR
+Configura elementos flutuantes na página.
+  float: left;
+
+  clear: both; /*permite cancelar o float*/
+
+35 - OVERFLOW
+O comportamento de elementos que excedem o container.
+  overflow: auto; /*visible é o valor padrão,hidden oculta o que sai do container, scroll cria barras de rolagem, auto verifica aonde é necessário as barra de rolagem*/
+
+36 - PSEUDO ELEMENTOS (after, before)
+Permite configurar o antes ou depois de um elemento.
+p::before{ /*antes do elemento p*/
+  content:url(icones/youtube.png); /*definição do contéudo que será inserido,ex="Aulas de CSS 2022 ",url(icones/youtube.png)*/
+color: red;
+}
+p::after{ /*inserção no final*/
+content: " Aulas grátis";
+}
+
+p.cfb::before{ /*criação de classe, esta limitado aos elementos p que usam a classe cfb*/
+
+}
+
+37 - PSEUDO ELEMENTOS(first letter, first line, selection)
+Permite configuração de primeira letra, formatação de primeira linha e o visual do texto selecionado.
+
+p::first-letter{ /*formatação de primeira letra*/
+  color: red;
+  font-size: 40px;
+}
+
+p::first-line{ /*formatação da primeira linha , porém sofre a influência da resposividade*/
+  color: green;
+}
+
+::selection{ /*elemento nao indicado, porem funciona em toda a página*/
+  color: orangered;
+  background-color: black;
+  }
+
+  ::-moz-selection{ /*mozila*/
+    color: orangered;
+    background-color: black;
+  }
+
+38 - TRANSITION PT1
+Trabalhar com animações na página. Faz a transição de um estado para outro escolhido.
+  transition: width 2s,height 2s,background-color 2s; /*efeito direto*/
+  transition-timing-function: cubic-bezier(0.5,0,0.5,1); /*linear velocidade constante, ease=iniciar devagar e aumenta no meio e desacelera no fim. Ease in=acelera no inicio, ease out*/
+}
+
+p:hover{
+  width: 500px;
+  height:120px;
+  background-color: #f00;
+  color: white;
+}
+
+39 - TRANSITION PT2
+  transition-delay: 0.5s; /*atraso antes de iniciar*/
+
+  transition: width 1s,height 1s,background-color 1s, transform 1s; /*efeito direto*/
+
+40 - ANIMATION
+@keyframes anima1 {
+  from{ /*de onde*/
+left: 0px;
+  }
+  to{ /*para onde*/
+left: 500px;
+  }
+}
+
+img{
+  position: relative;
+  left: 500px; /*posição já definida da imagem*/
+  animation-name: anima1; /*chamando a animação*/
+  animation-duration: 3s; /*tempo de duração*/
+animation-delay:1s; /*espera entre animações*/
+}
+
+@keyframes anima1 {
+  from{ /*de onde*/
+left: 0px;top:0px; /*diagonais*/
+  }
+  to{ /*para onde*/
+left: 500px; top:500px;
+  }
+}
+
+@keyframes anima1 {
+  from{ /*de onde*/
+background-color: black;
+border-radius: 0;
+
+  }
+  to{ /*para onde*/
+background-color: dodgerblue;
+border-radius: 15px;
+
+  }
+}
+
+41 - ANIMATION PT2
+  animation-iteration-count: 2; /*número de repetições ou usar infinite*/
+  animation-play-state: running; /*estado da animação, paused*/
+  animation-direction: alternate; /*reverse sentido antihorário, alternate serve como toogle*/
+
+42 - COLUNA
+  columns: 2; /*determina numero de colunas*/
+  column-gap: 50px; /*distancia entre colunas*/
+  column-rule: 1px outset black; /*insere linha entre as colunas*/
+
+  -webkit-columns: 2;
+  -moz-columns: 2;
+
+43 - RESIZE
+Permite redimensionar div em tempo real.
+  overflow: auto;
+  resize: both; /*redimensionar na horizontal. Usar em conjunto com  o overflow*/
+
+Para controlar a imagem, coloque dentro da div.
+
+44 - BOX-SIZING
+Esta relacionada a um tamanho de um elemento.
+ box-sizing: border-box; /*content-box é o padrão,border-box nao adiciona valor ao padding e borda*/
+
+45 - FILTER PT1
+Definição de cores na imagem
+ filter: grayscale(100%);/*escale de cinza*/
+  filter: blur(2px); /*embessamanto*/
+ filter: brightness(500%); /*brilho*/
+  filter: contrast(200%); /*contraste*/
+
+46 - FILTER PT2
+  filter: drop-shadow(10px 10px 0px green); /*sombra projetada.distX distY tam cor*/
+ filter: hue-rotate(45deg); /*grau de rotação de cores da matiz*/
+  filter: invert(100%); /*inversão de cores*/
+ filter: opacity(0.5); /*controle de opacidade=transparência*/
+  filter: saturate(50%); /*saturação da imagem,destaque das cores*/
+ filter: sepia(90%); /*efeito de envelhecimento*/
+
+47 - FILTER PT3
+Usando vários filtros na mesma configuração.
+  filter: sepia(90%) brightness(100%)saturate(80%) drop-shadow(2px 2px 2px black);
+
+48 - @MEDIA LAYOUT RESPONSIVO PT1
+É o layout que se adapta a diversos dispositivos diferentes. Media é considerado valor booleano.
+São regras de adaptação as telas.
+@media screen and (min-width:0px) and (max-width:400px){ /*especificação da tela*/
+  body{
+    background-color: red;
+  }
+}
+
+@media screen and (min-width:401px) and (max-width:800px) and (orientation:portrait){ /*orientação da página*/
+  body{
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width:801px) and (max-width:1200px){
+  body{
+    background-color: green;
+  }
+}
+
+49 - @MEDIA LAYOUT RESPONSIVO PT2
+Exmplo prático
+HTML
+<section>
+    <nav>
+        <ul>
+            <li>Menu</li>
+            <li>Menu</li>
+            <li>Menu</li>
+        </ul>
+    </nav>
+    <article>
+        <h1>Canal CFB</h1>
+        <p>Canal voltado para área de informática</p>
+        <div>
+        <h2>PlayList publicada</h2>
+        <ul>
+            <li>C++</li>
+            <li>Html / Html5</li>
+            <li>PHP</li>
+            <li>CSS</li>
+            <li>Photoshop</li>
+            <li>Flash</li>
+            <li>Unity</li>          
+        </ul>
+    </div>
+    <div>
+        <h1>Em breve</h1>
+        <ul>
+            <li>Arduino</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>C#</li>
+            <li>Desenvolvimento para Android</li>
+        </ul>
+    </div>
+    </article>
+</section>
+**CSS
+nav{
+  width: 200px;
+  float: left;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  background-color: #D55;
+  color: #FFF;
+  border: 1px solid black;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+article{
+  margin-left: 216px;
+}
+
+@media screen and (min-width:0px) and (max-width:500px){ /*celular*/
+  nav{
+    width: 100%;  
+  }
+
+  nav li{
+    font-size: 20px;
+  }
+  article{
+    margin-left: 5px;
+  }
+}
+
+50 - @MEDIA LAYOUT RESPONSIVO PT3
+Exemplo de site
+    <header>
+        <img src="Locadora/Logo01.jpeg" alt="">
+        <nav>
+            <a href="#" class="btnmenu" target="_self">Home</a>
+            <a href="#" class="btnmenu" target="_self">Carros</a>
+            <a href="#" class="btnmenu" target="_self">Contato</a>
+            <a href="#" class="btnmenu" target="_self">Localização</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="Locadora/Banner01.jpeg" alt="Imagem não encontrada">
+    </section>
+    <section class="buscador">
+       
+        <p>Encontre o veículo:</p>
+        <form action="#" name="f_buscado" method="post">
+<div>
+    <label for="">Selecione a Marca</label>
+    <select name="marca" id="id_marca">
+        <option value="">Sem Marcas</option>
+        <option value="">Ford</option>
+        <option value="">Volkswagen</option>
+    </select>
+</div>
+<div>
+    <label for="">Selecione o Modelo</label>
+    <select name="modelo" id="id_modelo">
+        <option value="">Sem Modelo</option>
+    </select>
+</div>
+<input type="submit" name="f_submit" id="" value="Buscar" class="btnmenu">
+        </form>
+    </section>
+    <section id="destaques">
+        <a href="#" class="destaque" target="_self" title="Mostrar Veículos"><img src="Locadora/carro.png" alt="Imagem não encontrada"></a>
+        <a href="#" class="destaque" target="_self" title="Página de contato Veículos"><img src="Locadora/contato.png" alt="Imagem não encontrada"></a>
+        <a href="#" class="destaque" target="_self" title="Nossa Localização"><img src="Locadora/pin-de-localizacao.png" alt="Imagem não encontrada"></a>
+    </section>
+    <footer>
+        <p>Desenvolvido por: RecallTI  - Todos os direitos reservados.</p>
+    </footer>
+**css
+
+body{
+ font-family: 'Kanit';
+ background-color: #FFF;
+ overflow: scroll;
+ overflow-x: hidden;
+}
+
+*{ /*reset básico*/
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: black;
+}
+
+header,section,footer{
+display: flex;
+justify-content: space-between;/*divisão igual entre os elementos*/
+padding-left: 10px;
+padding-right: 10px;
+}
+
+header{
+  background-color: #000;
+  align-items: center;
+}
+
+header img{ /*imagem de cima ligada ao menu*/
+width: 201px;
+height: 111px;
+margin: 10px 0px;
+}
+
+header nav{
+  display: flex;
+}
+
+.btnmenu{
+  text-decoration: none;
+  display: flex;
+  width: 120px;
+  height: 30px;
+  margin: 2px;
+  padding: 1px 5px 1px 5px;
+  background-color: #222;
+  border-radius: 10px;
+  color: #bbb;
+  font-size: 10px;
+  cursor: pointer;
+  border: 0px;
+  text-transform: uppercase;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnmenu:hover{
+  background-color: blue;
+  color: #fff;
+}
+
+.banner{
+  padding: 0px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscador{
+  margin: 10px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buscador p{
+  width: 800px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.buscador form{
+  width: 800px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.destaque{
+  margin: auto;
+  padding: 50px;
+  background: #000;
+  border-radius: 100%;
+}
+
+.destaque:hover{
+  background-color: #c22;
+}
+
+footer{
+  margin-top: 10px;
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer p{
+  color: white;
+}
+
+@media screen and (max-device-width:450px){
+header,section,footer{
+  padding-left: 3%;
+  padding-right: 3%;
+
+}
+
+header{
+  flex-direction: column;
+}
+header img{
+  width: 100%;
+  height: 100%;
+}
+
+header nav {
+  flex-direction: column;
+  width: 100%;
+}
+
+.btnmenu{
+  width: 100%;
+  height: 80px;
+  font-size: 30px;
+}
+
+.banner{
+  display: none;
+}
+
+.buscador form, p.buscador{
+width: 100%;
+}
+.buscador p,select,label{
+  font-size: 30px;
+}
+  
+}
+
+
+}
+51 - UNIDADES DE MEDIDAS(pixels e em)
+font-size: 16px; /*px unidade de mediada(16px medidade padrão)*/
+html{
+  font-size: 30px;
+}
+
+p{
+  font-size: 2em; /*n de vzs o elemento pai=fonte de origem, nesse exemplo é o html*/
+}
+
+52 - UNIDADE DE MEDIDA (rem e %)
+REM
+html{
+  font-size: 30px;
+}
+
+#p1{
+font-size: 1rem; /*diretamente ao elemento raiz(html), não importa a formatação dos outro elementos. 1rem = 1 vzs o elemento rais. As unidades de medida não são exlusivas de tamanho de fonte.*/
+}
+
+%
+div{
+  border: 1px solid black;
+  height: 500px;
+width: 500px;
+}
+
+53 - UNIDADES DE MEDIDAS (vw, vh e ex)
+  border: 1px solid black;
+  width: 1vw; /*vw=Largura, o valor refere-se a % que será ocupada, 1/100, valor total seria 100vw*/
+  height: 1vh;/*vh=altura da tela*/
+
+54 - UNIDADES DE MEDIDA (cm,mm,pc,in)
+PT
+font-size: 25pt; /*unidade absoluta, 1pt=1,3333px*/
+
+PC
+  font-size: 4pc; /*1pc=16px*/
+
+CM
+width: 1cm; /*medida em centimetro*/
+height: 1cm;
+
+MM
+  width: 10mm; /*medida em milimetros*/
+  height: 10mm;
+
+POLEGADA
+ width: 1in; /*medida em polegada, 1polegada = 2,54cm*/
+  height: 1in;
+
+55 - INHERIT e INITIAL
+Inherit usa valor definido no elemento pai.
+h1,p{
+color: inherit; /*busca a cor do elemento pai direto*/
+}
+
+h1,p{
+color: initial; /*usar a cor inicial da propriedade que é preto*/
+}
+
+56 - não tem
+57 - CSS FLEXBOX (display flex)
+Main axis = eixo principal
+Cross axis = eixo secundário
+
+  display: flex; /*display flex permite criar menus automaticamente*/
+
+58 - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

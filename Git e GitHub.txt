@@ -1,0 +1,431 @@
+nenafilha22
+
+GIT E GITHUB
+Git é sistema de controle de versões, documenta todas as alterações no desenvolvimento do projeto. Seu criador e Linux Torvalds.
+Github serve como um rede social, onde os projetos sao colocados, onde podem ser baixados e comentados por outros usuários. Sendo os mais populares
+
+POR QUE É IMPORTANTE?
+As empresas mais importantes de tecnologia usam a ferramenta.
+
+VANTAGENS
+-Backup = gera uma cópia na nuvem.
+-Controle de Versões = documenta e armezena cada alteração do código. Podendo recuperar versões anteriores
+-Trabalhar em Equipe = projeto pode ser clonado e a equipe trabalhar.
+-Portfolio = contribuir com todos os seus projetos, sendo reconhecido para contratações ou empregadores, como ferramentas e como operam.
+
+INSTALAÇÃO DO GIT
+-ir no site hhtps://git.scm.com
+
+COMANDOS BÁSICOS
+-git version //mostra a versão
+git config --global user.name "luciano leal" // usuário
+git config --global user.email "luciano.leal2009@hotmail.com" //email do usuário
+git config user.name
+git config user.email
+git config core.editor // configuração do editor
+pwd = comando mostra aonde esta atualmente
+cd /c = desloca para a unidade C
+mkdir = cria pasta
+touch = cria arquivo
+
+03 - COMANDOS BÁSICOS (REPOSITORIO LOCAL)
+Ao criar uma pasta, botão direito dentro dela, Git Bash Here.
+Menu Exibir, itens ocultos.
+**Iniciar Repositório:
+git init //inicia o repositor, sera criada uma pasta .git(pasta oculta)
+ls -a //lista diretórios ocultos, é dentro da pasta .git que o projeto será armazenado.
+
+**GRAFO DE COMMITS
+Todas as alterações serão representadas pelo grafo, é uma estrutura interligada.
+git status // retorna se ha algum arquivo para enviar ao repositorio.
+**Commit é o comentário
+
+**PARA ADICIONAR
+-git add + nome do arquivo
+- git add * //adiciona todos os arquivos
+
+**COLOCAR OS ARQUIVOS NO CONTAINER
+git commit -m "comentário sobre a ação ou arquivos"
+git log //mostra todas as informações sobre o arquivos que estão dentro do container(commit)
+git log --oneline //lista de forma ordenada e simplificada os commits do projeto, mostrando apenas os primeiros setes digitos do hash total
+
+04 - RASTREAMENTO E RECUPERAÇÃO DE VERSÃO
+É através do Head que é possível a recuperação. Head é o ponto onde se encontra o  projeto.
+git commit -am "" //adiciona o arquivo e cria o commit
+git log --graph //mostra o desenho do gráfico do versionamento
+git branch //mostra qual ramos esta o projeto
+
+RASTREAR
+git checkout + hash desejado 
+
+ULTIMA VERSÃO DO PROJETO
+git checkout master //retorna para o head master do projeto
+
+DESFAZER ALTERAÇÕES
+git diff //mostra o que foi alterado 
+git checkout + nome do arquivo, retorna a última modificação
+git reset --hard + hash desejado
+
+05 - CRIANDO RAMIFICAÇÕES
+Permite que testes e alterações seja feitas sem alterar o projeto original.
+git checkout -b + nome da ramificação
+git log --oneline --graph --all //mostra as ramificações do projeto
+git merge + ramo //funde o ramo desejado ao master
+
+06 - CRIANDO PRIMEIRO REPOSITÓRIO
+git remote //verifica o repositório
+
+**após acessar o site do git
+clicar no sinal de '+' e new repository, confirmando como publico
+git remote add origin https://github.com/Leal2021/git.git
+
+07 - PROBLEMAS DE AUTENTICAÇÃO
+Ao adicionar arquivos no repositório pode acontecer erros de push. erro 403
+-abrir o gerenciador de credenciais
+-credenciais do windows
+-credenciais genéricas
+-remover
+
+08 - COMO CRIAR UM REPOSITÓRIO E CLONAR NO WINDOWS
+Após criar o repositório no Git.
+-ir em Code
+-copiar o link
+-abrir o explorador de arquivos do windows
+-escolher o local ou pasta
+-git bash here
+- digitar git clone + link copiado
+ls -a //mostra arquivos ocultos
+git push //envia os arquivos ao repositório
+
+09 - CONFIGURAÇÃO NO WINDOWS/LINUX
+10 - CRIAR E EDITAR ARQUIVOS
+Sincronizar as mudanças feitas dentro do repositório, diretamente com o git aberto. Cada mudança foi realizada com a incrementação e criação de pastas e arquivos.
+- git pull //sincroniza as mudanças 
+
+11 - TRABALHANDO COM VÁRIOS PROJETOS LOCAIS
+12 - FORK E PULL REQUEST
+FORK = clona o repositório, sem interferencia no projeto original
+PUL REQUEST = permite alterações no projeto, porém o dono se permite aceitar ou não as mudanças.
+São cópias de repositórios, sendo necessário outra conta no git hub.
+-abrir o perfil
+-clicar em fork (clone do projeto)
+**continuar a aula após criar uma nova conta
+13 - GIT COMO PORTFÓLIO E CURRICULUM
+As empresas buscam profissionais atraves do github.
+-explore
+-na barra de pesquisa: digitar ex.: language:java
+-pode ser usada uma pesquisa mais refinada
+ex.: language:delphi location:brazil,RS,Gravataí
+
+** OUTRA MANEIRA
+-explore e clicar em Topics
+-procurar o tópico desejado
+
+**CONFIGURAR O PERFIL
+-preencher os dados e incluir o location ex.: Gravataí,RS,Brazil
+-se necessário criar um novo repositório, e adicionar uma licença: mit
+
+**ADICIONAR UMA LICENÇA QUANDO O REPOSITÓRIO JÁ EXISTIR
+-create new file
+-usar a palavra chave: LICENSE e será aberto diversos templates de licensas disponiveis
+-choose license template (escolher MIT) e clicar em Review and Submit
+-commit new file
+
+**INSERIR EMOTION NA DESCRIÇÃO
+-abrir o repositório
+-settings
+-na descrição inserir :computer: (inserir um icone de computador ao lado do nome)
+para inserir outros emoji, ir ao google e digitar emoji github
+-no item topics inserir 
+-add files, upload files(inserir arquivos relacionados ao assunto)
+-após adicionar fazer commit
+-após personalizar o arquivo readme.md (serve como uma capa de livro para o repositório)
+
+14 - PERSONALIZAR O README.MD
+Serve como um documento detalhado sobre os arquivos que estão no repositório. Com a extensão .md(mark down,linguagem de conversão de texto para o html).
+
+NO ARQUIVO README.MD
+-cada hastag representa um cabeçalho(h1 = #,h2=##)
+-inserir gif
+![homer faceiro](https://github.com/Leal2021/linguagem-C/blob/main/homer.gif)
+
+EXEMPLO DE ALTERAÇÃO DE README.MD
+# Linguagem C
+## Primeiros comandos em C - Dicas e Truques
+Vamos aprender de forma simples e clara a Linguagem C, sendo ela a mãe de todas as linguagens.
+
+![homer faceiro](https://github.com/Leal2021/linguagem-C/blob/main/homer.gif)
+### Assistir ao video de introdução
+![imagens youtube](https://github.com/Leal2021/linguagem-C/blob/main/youtube-jpg.jpg)
+### Site da Recall
+[site da recall](https://recallti.netlify.app/)
+
+README PARA PROJETOS DE SOFTWARE / WEB SITE
+-titulo
+-começando ou instruções do projeto
+-pre reuquisitos
+-instalação
+-execução de testes
+-frameworks (quais ferramentas foram usadas)
+-orientações
+-contribuições
+-versão
+-autores
+-licenca
+-agradecimentos
+//site para pesquisa de comandos em markdown 
+https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md
+
+15 - USANDO KANBAN (cartão ou sinalização)
+TO DO (A FAZER)- IN PROGRESS (FAZENDO) - DONE (FEITO)
+-escolher o repositório
+-projects
+-deixar a visualização em border
+-usar a linguagem markdown para formatar o kanban
+
+16 - ABRINDO UMA ISSUE E INTERAGINDO COM KANBAN
+É um aviso ou solicitação ao desenvolvedor do projeto hospedado no github. Podem ser também dicas ou correções.
+-é necessário outra conta
+-escolher o repositório e clicar em issues
+-antes de criar deve-se verificar se já existe uma issue aberta ou resolvida.
+-new issue
+-title (titulo da issue)
+-decription (descrição do item), aceita a markdown
+-submit issue
+-após retornar aos repositórios e clicar em issue
+-ir em label e selecionar (bug)
+-na parte de projects
+-add cards (é possivel puxar a issue assinalada) e adicionando o item ao projeto ja aberto.
+-após solucionar a issue, basta fechar, será considerada resolvida.
+
+17 - SELOS DINÂMICOS E METADADOS SHIELDS IO
+- ir ao site shields.io
+-escolher qual selo
+-colocar nome do usuário e nome do repositório
+-copy badge url = copy markdown
+-voltar ao repositório e acessar readme.md
+-antes da primeira linha, colar o código gerado 
+-o repositório recebeu o selo sobre tamanho e atualiza em tempo real
+
+ALGUNS SELOS
+ANALISYS = git language count = contador de quantas linguagens ha no projeto
+git hub top language(mostra qual linguagem predominantes)
+
+18 - PERSONALIZAÇÃO DO PERFIL DO GIT HUB
+-criar um repositório com o mesmo nome do perfil.
+-após criar, editar o o readme, será mostrado alguns exemplos para melhorias no template.
+-acessar o repositório generator e procurar pelo link.
+
+19 - HOSPEDAR SITE NA PLATAFORMA GITHUB
+Há algumas limitações, porém ainda é recurso e grande utilidade.
+-criar um repositório
+-colocar palavras chaves
+-add file, upload file
+-após ir em settings, git hub pages
+//procurar outro video sobre hospedagem pelo github
+
+20 -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
