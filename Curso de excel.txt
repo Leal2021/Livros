@@ -293,7 +293,48 @@ Foi gerada uma folha de pagamento no excel, como forma de prática.
 - Menu Desenvolvedores, Macro, Iniciar Gravação
 - Seleciona toda a tabela secundária, Menu Página Inicial e clicar na borracha e depois para gravação.
 
-39 - FLUXO DE CAIXA
+39 - FLUXO DE CAIXA COM MACROS
+Foi realizado um exercicio junto a gravação de macro.
+- ctrl + c na descrição
+- ctrl + c no valor
+- inserir uma linha nova na entrada
+- na planilha de Fluxo, delete na descrição e valor.
+
+Aula 40 - SEGMENTAÇÃO DE DADOS
+Sugere uma otimização na planilha. Nessa opção é necessário transformar a planilha em tabela, por assim, receberá mais opções para ser usada e formatações e funções.
+- Menu Página Inicial, Formatar como Tabela (escolher qualquer modelo pronto)
+Após a tabela ser inserida, Menu Design, Inserir Segmentação de Dados.
+Aparecerá opções para marcar, e assim será filtrado opções conforme a necessidade.
+
+** Filtro Padrão
+- Menu Dados, Filtro
+
+41 - Tabela com Gráfico Dinamico e SEGMENTAÇÃO DE DADOS
+
+42 - VINCULO ENTRE PLANILHAS
+Ocorre quando as planilhas troquem informações entre si.
+- criar uma pasta, colocar o sinal de '=' e pressinar e escolher a planilha, porem somente funcionará as planilhas abertas para atualização das informações.
+
+43 - BARRA DE ROLAGEM
+Inserir barra de rolagem dentro de uma planilha.
+Após criar a planilha, uma rolagem será inserida, facilitando o uso e a localização das informações.
+- Botão direito na barra criada, formatar Controle.
+- Menu Desenvolvedores, barra de rolagem:
+- Valor atual = 1
+- valor mínimo = 1
+- Valor máximo (total de dados da planilha)
+** Para mostrar a rolagem completa
+- clicar no segundo item =E2+1, e fazer a alça de preenchimento.
+
+** Criando Barras de Dados
+- Menu Página Inicial, Formatação Condicional, Nova Regra
+- Estilo de Formatação (Barra de Dados),  marcar 'Mostrar Barra Somente'
+
+44 - FUNÇÕES FINANCEIRAS
+Permite deiversos tipos de cálculos, como juros anuais, etc
+
+45 - 
+
 
 
 
