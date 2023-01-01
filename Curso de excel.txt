@@ -331,9 +331,87 @@ Após criar a planilha, uma rolagem será inserida, facilitando o uso e a locali
 - Estilo de Formatação (Barra de Dados),  marcar 'Mostrar Barra Somente'
 
 44 - FUNÇÕES FINANCEIRAS
-Permite deiversos tipos de cálculos, como juros anuais, etc
+Permite diversos tipos de cálculos, como juros anuais, etc
 
-45 - 
+45 - FLUXOGRAMA
+É uma estrutura gráfica de uma hierarquia.
+- Menu Inserir, Smart Art
+
+** Adicionar mais
+- Menu Design, Adicionar Forma (Escolher qual posição)
+
+46 - JUROS SIMPLES
+
+47 - PLANILHA DE PREVISÃO
+Muito usado para prever alguma ação da bolsa.
+- Menu Dados, Planilha de Previsão
+
+48 - ATINGIR META
+São teste de hipoteses.
+- Menu Dados, Teste de Hipoteses, Atingir Meta.
+Definir célula = marcar a célula que já contém o valor.
+Para valor = o que quero atingir
+Alternando célula = onde será mexido para chegar ao valor desejado.
+
+49 - GERENCIADOR DE CENÁRIOS
+Serve para otimizar as previsões pessimistas.
+- Menu Dados, Testes de Hipoteses, Gerenciador de Cenários.
+- clicar em adicionar.
+- Nome do cenário - escolha do usuário.
+- Células variantes - são as células que causam impacto na tabela.
+- antes de clicar em ok, clicar em adicionar (mais cenários).
+Esta opção permite inserir novos cenários como:
+pessimista (com queda de lucro e compra de qtde)
+otimista.
+
+** Inserir Botão para mostrar os cenários
+- Menu Arquivo, opções, Barra de ferramentas de acesso rápido, abrir 'Escolher comandos em'  e clicar em fora da faixa de opções, procurar por cenário e adicionar.
+
+50 - MENU LATERAL COM LINK
+É muito parecido com atalhos no autoformas.
+- Botão direito, hiperlink, colocar neste documento, escolher qual planilha será aberta.
+
+** Ocultar as planilhas em abas
+- Menu Arquivo, opções, Avançado, em opções de exibição desta pasta, desmarcar "Marcar guia de planilha".
+
+51 - DICAS UTÉIS
+Função Transpor
+Ao copiar os dados, colar com o botão direito e escolher transpor. As alterações não são afetadas pelas alterações.
+A Função transpor transforma uma tabela em matriz.
+
+Ocultar Dado
+- selecionar a célular, ctrl + 1, ir em personalizado e colocar ';' em tipo, assim será ocultado.
+
+Controles de Acesso
+Antes devemos habilitar opções, Menu Arquivo, opções, Personalizar faixa de opções e colocar todos os comandos, ao lado direito, clicar em novo grupo, após clicar em renomear.
+- procurar por Controle de Alterações e depois adicionar.
+- Menu Revisão, Controlar Alterações
+- marcar controlar alterações ao editar
+- Quando, geralmente deixa Todas
+- Autor, também deixar todos, porem é possivel marcar opções mais diretas
+- Onde = qual tabela será guardada
+- marcar realçar alterações na tabela (opcional), após isso a cada alteração é mostrada nos comentários.
+
+** Aceitar ou Rejeitar Alterações
+- Menu Revisão, Controlar Alterações, Aceitar ou Rejeitar alterações
+- podendo aceitar uma a uma ou todas de uma vez.
+
+** Menu revisão, controlar alterações, realçar alterações
+- marcar "Listar alterações em uma nova planilha"
+- será gerada um relatório com todas as alterações ocorridas na tabela
+
+** Eliminar Linhas em branco
+Pode ocorrer que dentro da tabela tenha linhas em branco.
+- Selecionar toda a planilha e ctrl + g, especial.
+- marcar "Em branco" (será selecionado todas as células em branco) e após ctrl + - para excluir.
+
+** Criar Novas guias
+- menu arquivo, opções, personalizar faixa de opções, clicar em nova guia e renomear.
+- criar novos grupos e adicionar as ferramentas desejadas.
+
+52 - GRÁFICO COM INDICADORES
+Inserir Símbolos - menu inserir, simbolos (fonte arial possui simbolos).
+Foi criado um gráfico para mostrar as altas e baixas de uma suposta tabela.
 
 
 
