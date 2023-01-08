@@ -413,6 +413,56 @@ Pode ocorrer que dentro da tabela tenha linhas em branco.
 Inserir Símbolos - menu inserir, simbolos (fonte arial possui simbolos).
 Foi criado um gráfico para mostrar as altas e baixas de uma suposta tabela.
 
+53 - IMPRESSÃO DE PLANILHAS
+ctrl + p = chama a sessão de impressão.
+- ajustar planlha em uma página (insere a planilha dentro de uma página)
+- configurar página
+	- inserir data e hora, numero de páginas etc
+
+54 - MACRO
+Prestar atenção quando for somar, podendo conter células ocultas.
+
+**Macro para filtrar
+- antes de iniciar a macro, inserir filtro (clicando em um cabeçalho da planilha e fltro)
+- iniciar a gravação da macro
+- filtrar apenas pelo item desejado (celular)
+- após realizar a soma dos valores desejados
+- parar gravação e atribuir a macro ao botão
+
+55 - DASHBOARD
+Após a tabela criada.
+- criar uma tabela dinamica (ctrl + shift + barra de espaço, seleciona toda a tabela)
+- após criar a tabela dinamica
+-selecionar e criar em segmentação de dados (marcar a opção desejada, esta opção permite criar botões com vinculos na tabela).
+
+** Criar conexões na Segmentação de dados pela tabela dinamica
+- botão direito no titulo da segmentação, conexões de relatório e marcar o nº desejado de tabelas dinamicas existentes na planilha.
+
+Na sequencia será colocado uma linha de tempo.
+- clicar na tabela, Menu Analisar, Inserir linha de tempo.
+Esta opção permite filtrar por numero determinado de dias ou meses, porem fazer a mesma conexão entre tabelas dinamicas.
+
+56 - NOVA FUNCIONALIDAE DENTRO DE FUNÇÕES
+A Versão do office 365, é uma versão de assinante e ja esta disponibilizada.
+A Função Se.
+A novidade desta função, fica desnecessário a abertura de uma nova condição SE.
+=ses(A3=D3;"Fria";A3=D4;"Fria") na vesão 2016 a função Ses nao está disponivel, mas apartir da versão 2019 funciona normal. E para finalizar a fórmula não precisa fechar o numero de pareentes, torna-se mais prática porque será apenas um parenteses.
+
+
+58 - FUNÇÃO PARAMETRO (não ha aula 57)
+Esta substituido as fuções SE e PROCV.
+=parâmetro(A3;"A";"Ótimo";"B";"Bom";A3;"C";"regular";A3;"D";"Péssimo")
+Nesta operação a função parametro esta substituindo a função Se, no office 2016 nao esta disponivel esta opção.
+
+59 - FUNÇÃO CONCAT e UNIR TEXTO
+São duas novas funções.
+
+60 - FUNÇÃO ÉERRO e ÉRROS
+
+
+
+
+
 
 
 
