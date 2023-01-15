@@ -1,0 +1,26 @@
+{
+  "version": "1.2",
+  "default_core_path": "",
+  "default_core_name": "",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "items": [
+    {
+      "path": "/recalbox/share/screenshots/Zelda II - 2c - The Shadow of Link-800101-021118.png",
+      "label": "",
+      "core_path": "builtin",
+      "core_name": "imageviewer",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/screenshots/xmvsf-800101-025219.png",
+      "label": "",
+      "core_path": "builtin",
+      "core_name": "imageviewer",
+      "crc32": "",
+      "db_name": ""
+    }
+  ]
+}

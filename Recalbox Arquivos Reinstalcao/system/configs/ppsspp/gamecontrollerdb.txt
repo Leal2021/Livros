@@ -1,0 +1,1 @@
+03000000790000000600000010010000,Microntek              USB Joystick          ,platform:Linux,b:b1,righty:a3,rightx:a2,a:b2,x:b3,righttrigger:b7,rightstick:b11,leftshoulder:b4,dpup:h0.1,start:b9,dpdown:h0.4,rightshoulder:b5,dpright:h0.2,lefttrigger:b6,leftstick:b10,guide:b8,y:b0,lefty:a1,leftx:a0,back:b8,dpleft:h0.8,

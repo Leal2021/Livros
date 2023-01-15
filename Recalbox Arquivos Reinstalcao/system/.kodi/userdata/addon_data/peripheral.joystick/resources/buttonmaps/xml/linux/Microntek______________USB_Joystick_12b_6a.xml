@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<buttonmap>
+	<device axiscount="6" buttoncount="12" name="Microntek              USB Joystick          " provider="linux">
+		<configuration/>
+		<controller id="game.controller.default">
+			<feature button="1" name="b"/>
+			<feature name="rightstick">
+				<up axis="-3"/>
+				<down axis="+3"/>
+				<left axis="-2"/>
+				<right axis="+2"/>
+			</feature>
+			<feature button="2" name="a"/>
+			<feature button="3" name="x"/>
+			<feature button="7" name="righttrigger"/>
+			<feature button="11" name="rightthumb"/>
+			<feature button="4" name="leftbumper"/>
+			<feature axis="-5" name="up"/>
+			<feature button="9" name="start"/>
+			<feature axis="+5" name="down"/>
+			<feature button="5" name="rightbumper"/>
+			<feature axis="+4" name="right"/>
+			<feature button="6" name="lefttrigger"/>
+			<feature button="10" name="leftthumb"/>
+			<feature button="10" name="guide"/>
+			<feature button="0" name="y"/>
+			<feature name="leftstick">
+				<up axis="-1"/>
+				<down axis="+1"/>
+				<left axis="-0"/>
+				<right axis="+0"/>
+			</feature>
+			<feature button="8" name="back"/>
+			<feature axis="-4" name="left"/>
+		</controller>
+	</device>
+</buttonmap>

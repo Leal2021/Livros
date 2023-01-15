@@ -1,0 +1,4 @@
+Powering on HDMI with explicit settings (CEA mode 4)
+Powering on HDMI with preferred settings
+/usr/bin/fba2x --configfile /recalbox/share/system/configs/fba/fba2x.cfg --logfile /recalbox/share/system/logs//fba2x.log /recalbox/share/roms/neogeo/kof99p.zip
+running command: /usr/bin/fba2x --configfile /recalbox/share/system/configs/fba/fba2x.cfg --logfile /recalbox/share/system/logs//fba2x.log /recalbox/share/roms/neogeo/kof99p.zip

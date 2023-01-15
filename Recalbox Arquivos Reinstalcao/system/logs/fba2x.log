@@ -1,0 +1,47 @@
+Setting player 1 input
+Setted J_A : 2
+Setting player 2 input
+Setted J_A : 2
+Setting player 3 input
+Setted J_A : 200
+Setting player 4 input
+Setted J_A : 200
+Configured joystick GPIO Controller 1 at 0 for player 1
+Configured joystick GPIO Controller 2 at 1 for player 2
+Checking if joystick at 0 is configured for player 0 : 0
+Checking if joystick at 1 is configured for player 0 : 0
+Checking if joystick at 1 is configured for player 1 : 1
+Found 2 joysticks
+Attempt to initialise 'The King of Fighters '99 - millennium battle (prototype)'
+Screen Size: 320 x 224
+251-c1p.bin  ... 8192Kb graphics  (OK)
+251-c2p.bin  ... 8192Kb graphics  (OK)
+251-c3p.bin  ... 8192Kb graphics  (OK)
+251-c4p.bin  ... 8192Kb graphics  (OK)
+251-c5p.bin  ... 8192Kb graphics  (OK)
+251-c6p.bin  ... 8192Kb graphics  (OK)
+251-c7p.bin  ... 8192Kb graphics  (OK)
+251-c8p.bin  ... 8192Kb graphics  (OK)
+sfix.sfx     ...  128Kb BIOS  graphics  (OK)
+251-s1p.bin  ...  128Kb graphics  (OK)
+251-p1p.bin  ... 1024Kb program  (OK)
+251-p2p.bin  ... 4096Kb program  (OK)
+251-m1.bin   ...  128Kb program  (OK)
+251-v1.bin   ... 4096Kb sound  (OK)
+251-v2.bin   ... 4096Kb sound  (OK)
+251-v3.bin   ... 4096Kb sound  (OK)
+251-v4.bin   ... 2048Kb sound  (OK)
+asia-s3.rom  ...  128Kb BIOS  program  (OK)
+sm1.sm1      ...  128Kb BIOS  program  (OK)
+000-lo.lo    ...   64Kb BIOS  (OK)
+Lets go!
+ALSA: Period size: 736 frames
+ALSA: Buffer size: 2940 frames
+ALSA: Period size: 2944 bytes
+ALSA: Buffer size: 11760 bytes
+Finished emulating
+---- Shutdown Finalburn Alpha plus ----
+
+ALSA: FIFO Underrun: 1
+ALSA: FIFO Overrun: 21
+ALSA: Snd Underrun 0

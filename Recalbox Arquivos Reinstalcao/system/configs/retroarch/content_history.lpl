@@ -1,0 +1,810 @@
+{
+  "version": "1.2",
+  "default_core_path": "",
+  "default_core_name": "",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "items": [
+    {
+      "path": "/recalbox/share/roms/neogeo/kof2000n.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Winning Eleven - World Soccer 2002.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# PT-BR #/Sunset Riders (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mame/# KONAMI #/ssriders.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mame2003_plus_libretro.so",
+      "core_name": "MAME 2003-Plus",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mame/# KONAMI #/ssridersabd.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mame2010_libretro.so",
+      "core_name": "MAME 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Alundra.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/nes/# DYNAVISION #/10-Yard Fight.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fceunext_libretro.so",
+      "core_name": "FCEUmm",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Mortal Kombat II (USA) (Rev 1).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Final Fight 2 (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kof96h.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/xmvsf.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbalpha_libretro.so",
+      "core_name": "FB Alpha",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Gran Turismo.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gba/FIFA Soccer 07 (USA, Europe) (En,Fr,De,Es).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mgba_libretro.so",
+      "core_name": "mGBA",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/Davis Cup Tennis ~ Davis Cup World Tour (USA, Europe) (July 1993).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/Davis Cup II (USA) (Proto).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# PT-BR #/Super Mario World (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/mshvsf.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/sfz2al.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbalpha_libretro.so",
+      "core_name": "FB Alpha",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Soccer Shootout (Europe).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/nes/## HACKS ##/Zelda II - 2c - The Shadow of Link.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fceunext_libretro.so",
+      "core_name": "FCEUmm",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/wswanc/Dicing Knight. (Japan).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mednafen_wswan_libretro.so",
+      "core_name": "Mednafen WonderSwan",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gba/Barbie Horse Adventures - Blue Ribbon Race (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mgba_libretro.so",
+      "core_name": "mGBA",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/## HACKS ##/Top Gear 2009 (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mame/# KONAMI #/ssriders.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mame2003_libretro.so",
+      "core_name": "MAME 2003 (0.78)",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari2600/Mysterious Thief, A (USA) (Proto).a26",
+      "label": "",
+      "core_path": "/usr/lib/libretro/stella_libretro.so",
+      "core_name": "Stella",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari2600/Zoo Fun (Europe).a26",
+      "label": "",
+      "core_path": "/usr/lib/libretro/stella_libretro.so",
+      "core_name": "Stella",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mame/# MIDWAY #/umk3.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mame2003_libretro.so",
+      "core_name": "MAME 2003 (0.78)",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Barbie Super Model (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/mvsc.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gba/Barbie - The Princess and the Pauper (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mgba_libretro.so",
+      "core_name": "mGBA",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Barbie Vacation Adventure (USA) (Proto).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/wswanc/Dark Eyes - Battle Gate (Japan).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mednafen_wswan_libretro.so",
+      "core_name": "Mednafen WonderSwan",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/## HACKS ##/Mortal Kombat 2.5.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/## HACKS ##/Kaizo Mario World 1.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# PT-BR #/International Super Star Soccer Deluxe - Futebol Brasileiro 2008 (BR) v1.00.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Resident Evil 1 Director's Cut.img",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/dino.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari2600/Freeway (USA).a26",
+      "label": "",
+      "core_path": "/usr/lib/libretro/stella_libretro.so",
+      "core_name": "Stella",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Street Fighter Alpha 2 (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/wswanc/Alchemist Marie & Elie - Futari no Atelier (Japan).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mednafen_wswan_libretro.so",
+      "core_name": "Mednafen WonderSwan",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mastersystem/# TECTOY #/Turma da Monica na Terra dos Monstros (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mastersystem/# TECTOY #/Turma da Monica em - O Resgate (Wonder Boy III The Dragon's Trap) (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gba/Barbie and the Magic of Pegasus (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mgba_libretro.so",
+      "core_name": "mGBA",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Resident Evil 2 [Claire Disc].PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Twisted Metal2.img",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/SOR2WorldWarrior107.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/SOR2WorldWarrior107.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/genesisplusgx_libretro.so",
+      "core_name": "Genesis Plus GX",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/Swamp Thing (USA) (Proto).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Twisted Metal 2.img",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/resident1.img",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/sfa2.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Marvel vs. Capcom - Clash of the Super Heroes.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Resident Evil - Director's Cut.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/prboom/doom1_shareware.wad",
+      "label": "",
+      "core_path": "/usr/lib/libretro/prboom_libretro.so",
+      "core_name": "PrBoom",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/Barney's Hide & Seek Game (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kf2k2mp2.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Resident Evil 2 [Leon Disc].PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mastersystem/# TECTOY #/20 em 1 (Brazil).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mastersystem/# TECTOY #/Aladdin (E) [!] [T-BR] [T-Unknown Master G-Monkey's Traducoes] [V-1.0 P-99% A-2010].zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Smurfs Travel the World, The (Europe) (En,Fr,De,Es).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Smurfs, The (Europe) (En,Fr,De,Es,It).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/nes/Popeye (World) (Rev A).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fceunext_libretro.so",
+      "core_name": "FCEUmm",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Super Street Fighter II (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/sfa3.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Resident Evil 3 - Nemesis.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kogplus.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/Bug's Life (Taiwan) (En) (Unl).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kf2k2plc.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kof99.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/xmcota.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbalpha_libretro.so",
+      "core_name": "FB Alpha",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/msh.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kf2k3bl.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kf2k3bla.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kof2003.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kof2003h.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbneo_libretro.so",
+      "core_name": "FinalBurn Neo",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/neogeo/kf2k3bl_2003.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mame2015_libretro.so",
+      "core_name": "MAME 2015",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Mortal Kombat (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gbc/Barbie - Pet Rescue (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/gambatte_libretro.so",
+      "core_name": "Gambatte",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gba/Barbie as the Island Princess (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mgba_libretro.so",
+      "core_name": "mGBA",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Killer Instinct (USA) (Rev 1).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari7800/Basketbrawl (1990) (Atari).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/prosystem_libretro.so",
+      "core_name": "ProSystem",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/International Superstar Soccer (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari7800/Alien Brigade (1990) (Atari).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/prosystem_libretro.so",
+      "core_name": "ProSystem",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari2600/Enduro (USA).a26",
+      "label": "",
+      "core_path": "/usr/lib/libretro/stella_libretro.so",
+      "core_name": "Stella",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/nes/Barbie (USA) (Rev A).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fceunext_libretro.so",
+      "core_name": "FCEUmm",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/megadrive/Battle Squadron (USA, Europe).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# PT-BR #/X-Men - Mutant Apocalypse (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Super Mario All-Stars + Super Mario World (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# PT-BR #/Killer Instinct (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/gba/Barbie Superpack (USA).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mgba_libretro.so",
+      "core_name": "mGBA",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/Street Fighter EX (World) (Unl) (Pirate).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/atari2600/Pac-Man (USA).a26",
+      "label": "",
+      "core_path": "/usr/lib/libretro/stella_libretro.so",
+      "core_name": "Stella",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/sf2hf.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbalpha_libretro.so",
+      "core_name": "FB Alpha",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/fba_libretro/sf2koryu.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/fbalpha_libretro.so",
+      "core_name": "FB Alpha",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# SUPER FAMICOM (JP) #/RPG Tsukuru - Super Dante (J).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/snes/# PT-BR #/Panic in Naka Yoshi World (BR).zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/snes9x2010_libretro.so",
+      "core_name": "Snes9x 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/mame/sftm.zip",
+      "label": "",
+      "core_path": "/usr/lib/libretro/mame2010_libretro.so",
+      "core_name": "MAME 2010",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/segacd/Shadow of the Beast II (USA).chd",
+      "label": "",
+      "core_path": "/usr/lib/libretro/picodrive_libretro.so",
+      "core_name": "PicoDrive",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Dino Crisis.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    },
+    {
+      "path": "/recalbox/share/roms/psx/Need for Speed - High Stakes.PBP",
+      "label": "",
+      "core_path": "/usr/lib/libretro/pcsx_rearmed_libretro.so",
+      "core_name": "PCSX-ReARMed",
+      "crc32": "",
+      "db_name": ""
+    }
+  ]
+}

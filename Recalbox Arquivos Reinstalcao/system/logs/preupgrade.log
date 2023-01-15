@@ -1,0 +1,26 @@
+[     7361.12] ------------ Will process to the recalbox upgrade from https://recalbox-releases.s3.nl-ams.scw.cloud/stable ------------
+[     7366.37] Need 336712101
+[     7366.41] Needed size for upgrade : 328820kb
+[     7366.46] Will download 328820kb of files in /recalbox/share/system/upgrade where 1852668kb is available. Free disk space after operation : 1523848kb
+[     7369.94] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/boot.tar.xz downloaded
+[     7427.46] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/root.tar.xz downloaded
+[     7428.52] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/boot.tar.xz.sha1 downloaded
+[     7429.58] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/root.tar.xz.sha1 downloaded
+[     7432.95] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/root.list downloaded
+[     7434.14] boot.tar.xz checksum verified
+[     7449.07] root.tar.xz checksum verified
+[     7532.91] /lib/modules successfully upgraded!
+[     7534.74] /boot successfully upgraded!
+[      354.34] ------------ Will process to the recalbox upgrade from https://recalbox-releases.s3.nl-ams.scw.cloud/stable ------------
+[      359.97] Need 386390862
+[      359.98] Needed size for upgrade : 377334kb
+[      360.00] Will download 377334kb of files in /recalbox/share/system/upgrade where 1830740kb is available. Free disk space after operation : 1453406kb
+[      367.47] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/boot.tar.xz downloaded
+[      487.86] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/root.tar.xz downloaded
+[      489.41] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/boot.tar.xz.sha1 downloaded
+[      505.88] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/root.tar.xz.sha1 downloaded
+[      509.67] https://recalbox-releases.s3.nl-ams.scw.cloud/stable/v2/upgrade/rpi3/root.list downloaded
+[      511.30] boot.tar.xz checksum verified
+[      530.45] root.tar.xz checksum verified
+[      636.79] /lib/modules successfully upgraded!
+[      638.73] /boot successfully upgraded!

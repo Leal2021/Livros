@@ -1,0 +1,1540 @@
+[        3.30] Wifi option disabled
+[       71.39] [        3.30] Wifi option disabled
+onblaze
+[       71.42] ADDING user defined to /recalbox/share/system/recalbox.conf : system.fbcp.enabled=0
+[       71.45] ADDING user defined to /recalbox/share/system/recalbox.conf : system.splash.length=0
+[       71.48] ADDING user defined to /recalbox/share/system/recalbox.conf : system.manager.enabled=1
+[       71.51] ADDING user defined to /recalbox/share/system/recalbox.conf : system.manager.version=2
+[       71.54] ADDING user defined to /recalbox/share/system/recalbox.conf : system.security.enabled=0
+[       71.57] ADDING user defined to /recalbox/share/system/recalbox.conf : system.api.enabled=0
+[       71.60] ADDING user defined to /recalbox/share/system/recalbox.conf : emulationstation.menu=default
+[       71.63] ADDING user defined to /recalbox/share/system/recalbox.conf : emulationstation.selectedsystem=favorites
+[       71.66] ADDING user defined to /recalbox/share/system/recalbox.conf : emulationstation.bootongamelist=0
+[       71.69] ADDING user defined to /recalbox/share/system/recalbox.conf : emulationstation.hidesystemview=0
+[       71.72] ADDING user defined to /recalbox/share/system/recalbox.conf : emulationstation.gamelistonly=0
+[       71.75] ADDING user defined to /recalbox/share/system/recalbox.conf : emulationstation.forcebasicgamelistview=0
+[       71.78] ADDING user defined to /recalbox/share/system/recalbox.conf : system.emulators.specialkeys=default
+[       71.81] ADDING user defined to /recalbox/share/system/recalbox.conf : kodi.enabled=1
+[       71.84] ADDING user defined to /recalbox/share/system/recalbox.conf : kodi.atstartup=0
+[       71.87] ADDING user defined to /recalbox/share/system/recalbox.conf : kodi.xbutton=1
+[       71.90] ADDING user defined to /recalbox/share/system/recalbox.conf : kodi.videomode=default
+[       71.93] ADDING user defined to /recalbox/share/system/recalbox.conf : hyperion.enabled=0
+[       71.96] ADDING user defined to /recalbox/share/system/recalbox.conf : system.hostname=RECALBOX
+[       71.99] ADDING user defined to /recalbox/share/system/recalbox.conf : wifi.enabled=0
+[       72.02] ADDING user defined to /recalbox/share/system/recalbox.conf : wifi.region=US
+[       72.05] ADDING user defined to /recalbox/share/system/recalbox.conf : system.samba.enabled=1
+[       72.08] ADDING user defined to /recalbox/share/system/recalbox.conf : system.virtual-gamepads.enabled=1
+[       72.11] ADDING user defined to /recalbox/share/system/recalbox.conf : system.ssh.enabled=1
+[       72.14] ADDING user defined to /recalbox/share/system/recalbox.conf : audio.device=auto
+[       72.17] ADDING user defined to /recalbox/share/system/recalbox.conf : audio.volume=90
+[       72.20] ADDING user defined to /recalbox/share/system/recalbox.conf : audio.bgmusic=1
+[       72.23] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.bluetooth.enabled=1
+[       72.26] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.bluetooth.ertm=0
+[       72.29] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.ps3.enabled=1
+[       72.32] FORCING : controllers.ps3.driver=bluez
+[       72.34] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.gpio.enabled=0
+[       72.37] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.gpio.args=map=1,2
+[       72.40] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.steam.enabled=0
+[       72.43] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.db9.enabled=0
+[       72.47] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.db9.args=map=1
+[       72.50] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.gamecon.enabled=0
+[       72.53] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.gamecon.args=map=1
+[       72.56] ADDING user defined to /recalbox/share/system/recalbox.conf : controllers.xarcade.enabled=1
+[       72.59] ADDING user defined to /recalbox/share/system/recalbox.conf : system.language=en_US
+[       72.62] ADDING user defined to /recalbox/share/system/recalbox.conf : updates.enabled=1
+[       72.65] ADDING user defined to /recalbox/share/system/recalbox.conf : updates.type=stable
+[       72.68] ADDING user defined to /recalbox/share/system/recalbox.conf : global.videomode=CEA 4 HDMI
+[       72.71] ADDING user defined to /recalbox/share/system/recalbox.conf : global.shaderset=none
+[       72.74] ADDING user defined to /recalbox/share/system/recalbox.conf : global.integerscale=0
+[       72.77] ADDING user defined to /recalbox/share/system/recalbox.conf : global.ratio=auto
+[       72.80] ADDING user defined to /recalbox/share/system/recalbox.conf : global.smooth=1
+[       72.83] ADDING user defined to /recalbox/share/system/recalbox.conf : global.rewind=1
+[       72.86] ADDING user defined to /recalbox/share/system/recalbox.conf : global.autosave=0
+[       72.90] ADDING user defined to /recalbox/share/system/recalbox.conf : global.retroachievements=0
+[       72.93] ADDING user defined to /recalbox/share/system/recalbox.conf : global.retroachievements.hardcore=0
+[       72.96] ADDING user defined to /recalbox/share/system/recalbox.conf : global.inputdriver=auto
+[       72.99] ADDING user defined to /recalbox/share/system/recalbox.conf : global.demo.systemlist=3do,amigacd32,atari2600,atari5200,atari7800,daphne,fba_libretro,fds,gamegear,gba,lynx,mame,mastersystem,megadrive,neogeo,nes,ngpc,pcengine,sega32x,sg1000,snes
+[       73.02] ADDING user defined to /recalbox/share/system/recalbox.conf : global.translate=1
+[       73.05] ADDING user defined to /recalbox/share/system/recalbox.conf : global.translate.from=auto
+[       73.08] ADDING user defined to /recalbox/share/system/recalbox.conf : global.translate.to=auto
+[       73.11] ADDING user defined to /recalbox/share/system/recalbox.conf : snes.core=snes9x2010
+[       73.14] ADDING user defined to /recalbox/share/system/recalbox.conf : neogeo.emulator=libretro
+[       73.17] ADDING user defined to /recalbox/share/system/recalbox.conf : neogeo.core=fbneo
+[       73.20] ADDING user defined to /recalbox/share/system/recalbox.conf : n64.videomode=DMT 4 HDMI
+[       73.23] ADDING user defined to /recalbox/share/system/recalbox.conf : dreamcast.videomode=DMT 4 HDMI
+[       73.26] ADDING user defined to /recalbox/share/system/recalbox.conf : global.netplay=1
+[       73.30] ADDING user defined to /recalbox/share/system/recalbox.conf : global.netplay.port=55435
+[       73.33] ADDING user defined to /recalbox/share/system/recalbox.conf : global.netplay.systems=fba_libretro,mame,mastersystem,megadrive,neogeo,nes,pcengine,sega32x,sg1000,snes,supergrafx
+[       73.36] ADDING user defined to /recalbox/share/system/recalbox.conf : global.netplay.lobby=http://lobby.libretro.com/list/
+[       73.40] UPDATE done !
+[       88.61] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       88.74] Running MIGRATIONS…
+[       88.77] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       88.79] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       88.81] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       88.83] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       88.85] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       88.87] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       88.89] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       88.92] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       88.94] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       88.96] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       88.99] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       89.11] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       89.67] starting new log
+[       89.68] converting dos to unix carriage return characters
+[       89.72] setting audio volume to 90
+[       89.73] setting hostname to RECALBOX
+[       89.74] setting timezone to Europe/Paris
+[       89.76] setting keyboard layout to en
+[       89.76] ---- recalbox-config.sh ----
+[       89.78] setting audio volume : 90
+[       89.77] cannot open file en
+[       89.74] Simple mixer control 'PCM',0
+[       89.74]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       89.74]   Playback channels: Mono
+[       89.74]   Limits: Playback -10239 - 400
+[       89.74]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       89.88] Setting volume for numid=3
+[       89.90] Setting volume for numid=2
+[       89.91] Setting volume for numid=1
+[       89.93] Setting volume for numid=5
+[       89.74] amixer: Control default element write error: Operation not permitted
+[       89.74] 
+[       89.95] Setting volume for numid=4
+[       90.07] Restoring ALSA mixers configuration
+[       90.11] setting audio to auto
+[       90.13] ---- recalbox-config.sh ----
+[       90.15] setting audio output mode : auto
+[       90.12] numid=3,iface=MIXER,name='PCM Playback Route'
+[       90.12]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       90.12]   : values=0
+[       90.22] starting emulationstation with lang = en_US
+[       90.39] ---- recalbox-config.sh ----
+[       93.49] Starting S92switch
+[       93.52] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       93.75] Starting S94manager
+[       93.78] ... Starting manager v2
+[       98.22] starting xarcade2jstick
+[       98.25] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[        3.23] Wifi option disabled
+[       13.33] [        3.23] Wifi option disabled
+es
+[       13.41] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       13.51] Running MIGRATIONS…
+[       13.52] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       13.54] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       13.55] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       13.56] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       13.57] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       13.59] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       13.60] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       13.61] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       13.63] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       13.64] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       13.66] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       13.77] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       14.06] starting new log
+[       14.07] converting dos to unix carriage return characters
+[       14.10] setting hostname to RECALBOX
+[       14.11] setting audio volume to 90
+[       14.12] setting timezone to Europe/Paris
+[       14.12] setting keyboard layout to en
+[       14.15] ---- recalbox-config.sh ----
+[       14.13] cannot open file en
+[       14.17] setting audio volume : 90
+[       14.13] Simple mixer control 'PCM',0
+[       14.13]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       14.13]   Playback channels: Mono
+[       14.13]   Limits: Playback -10239 - 400
+[       14.13]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       14.23] Setting volume for numid=3
+[       14.25] Setting volume for numid=2
+[       14.26] Setting volume for numid=1
+[       14.27] Setting volume for numid=5
+[       14.13] amixer: Control default element write error: Operation not permitted
+[       14.13] 
+[       14.29] Setting volume for numid=4
+[       14.30] Restoring ALSA mixers configuration
+[       14.33] setting audio to auto
+[       14.35] ---- recalbox-config.sh ----
+[       14.37] setting audio output mode : auto
+[       14.34] numid=3,iface=MIXER,name='PCM Playback Route'
+[       14.34]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       14.34]   : values=0
+[       14.43] starting emulationstation with lang = en_US
+[       14.58] ---- recalbox-config.sh ----
+[       17.44] Starting S92switch
+[       17.46] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       17.68] Starting S94manager
+[       17.70] ... Starting manager v2
+[       22.48] starting xarcade2jstick
+[       22.54] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[        3.33] Wifi option disabled
+[       11.95] [        3.33] Wifi option disabled
+es
+[       12.04] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.14] Running MIGRATIONS…
+[       12.16] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.17] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.18] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.20] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.21] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.22] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.24] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.25] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.26] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.27] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.30] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.41] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.71] starting new log
+[       12.71] converting dos to unix carriage return characters
+[       12.76] setting audio volume to 90
+[       12.76] setting hostname to RECALBOX
+[       12.77] setting keyboard layout to en
+[       12.78] setting timezone to Europe/Paris
+[       12.80] ---- recalbox-config.sh ----
+[       12.82] setting audio volume : 90
+[       12.79] cannot open file en
+[       12.77] Simple mixer control 'PCM',0
+[       12.77]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.77]   Playback channels: Mono
+[       12.77]   Limits: Playback -10239 - 400
+[       12.77]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.90] Setting volume for numid=3
+[       12.91] Setting volume for numid=2
+[       12.93] Setting volume for numid=1
+[       12.94] Setting volume for numid=5
+[       12.77] amixer: Control default element write error: Operation not permitted
+[       12.77] 
+[       12.96] Setting volume for numid=4
+[       12.97] Restoring ALSA mixers configuration
+[       13.01] setting audio to auto
+[       13.02] ---- recalbox-config.sh ----
+[       13.04] setting audio output mode : auto
+[       13.01] numid=3,iface=MIXER,name='PCM Playback Route'
+[       13.01]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       13.01]   : values=0
+[       13.11] starting emulationstation with lang = en_US
+[       13.29] ---- recalbox-config.sh ----
+[       15.90] Starting S92switch
+[       15.91] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.03] Starting S94manager
+[       16.06] ... Starting manager v2
+[       21.12] starting xarcade2jstick
+[       21.23] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       79.77] ---- recalbox-config.sh ----
+[       79.90] ---- recalbox-config.sh ----
+[       88.21] Stopping S94manager
+[       88.36] Stopping S92switch
+[       88.37] script /recalbox/scripts/powerswitch.sh already stopped !
+[       88.84] Stopping Emulationstation
+[       88.92] Saving ALSA mixers configuration
+[       89.08] Stopping S13fbcp
+[       89.23] recalbox.conf saved to /boot partition
+[        3.27] Wifi option disabled
+[       11.79] [        3.27] Wifi option disabled
+es
+[       11.88] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.98] Running MIGRATIONS…
+[       12.01] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.02] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.03] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.06] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.10] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.11] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.15] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.26] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.58] starting new log
+[       12.59] converting dos to unix carriage return characters
+[       12.63] setting audio volume to 90
+[       12.64] setting hostname to RECALBOX
+[       12.66] setting timezone to Europe/Paris
+[       12.67] ---- recalbox-config.sh ----
+[       12.67] setting keyboard layout to pt
+[       12.69] setting audio volume : 90
+[       12.65] Simple mixer control 'PCM',0
+[       12.65]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.65]   Playback channels: Mono
+[       12.65]   Limits: Playback -10239 - 400
+[       12.65]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.78] Setting volume for numid=3
+[       12.79] Setting volume for numid=2
+[       12.81] Setting volume for numid=1
+[       12.82] Setting volume for numid=5
+[       12.65] amixer: Control default element write error: Operation not permitted
+[       12.65] 
+[       12.84] Setting volume for numid=4
+[       12.85] Restoring ALSA mixers configuration
+[       12.89] setting audio to auto
+[       12.91] ---- recalbox-config.sh ----
+[       12.93] setting audio output mode : auto
+[       12.90] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.90]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.90]   : values=0
+[       12.99] starting emulationstation with lang = pt_BR
+[       13.19] ---- recalbox-config.sh ----
+[       15.80] Starting S92switch
+[       15.82] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.96] Starting S94manager
+[       15.97] ... Starting manager v2
+[       21.02] starting xarcade2jstick
+[       21.14] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       40.54] ---- recalbox-config.sh ----
+[       40.68] ---- recalbox-config.sh ----
+[      159.12] ---- recalbox-config.sh ----
+[      159.18] recalbox.conf saved to /boot partition
+[      169.40] ---- recalbox-config.sh ----
+[      169.53] ---- recalbox-config.sh ----
+[      200.68] Stopping S94manager
+[      200.84] Stopping S92switch
+[      200.85] script /recalbox/scripts/powerswitch.sh already stopped !
+[      201.23] Stopping Emulationstation
+[      201.29] Saving ALSA mixers configuration
+[      201.43] Stopping S13fbcp
+[      201.55] recalbox.conf saved to /boot partition
+[        3.27] Wifi option disabled
+[       11.80] [        3.27] Wifi option disabled
+es
+[       11.88] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.99] Running MIGRATIONS…
+[       12.01] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.03] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.04] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.08] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.11] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.12] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.17] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.28] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.57] starting new log
+[       12.58] converting dos to unix carriage return characters
+[       12.61] setting hostname to RECALBOX
+[       12.63] setting audio volume to 90
+[       12.64] setting timezone to Europe/Paris
+[       12.65] setting keyboard layout to pt
+[       12.66] ---- recalbox-config.sh ----
+[       12.68] setting audio volume : 90
+[       12.64] Simple mixer control 'PCM',0
+[       12.64]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.64]   Playback channels: Mono
+[       12.64]   Limits: Playback -10239 - 400
+[       12.64]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.77] Setting volume for numid=3
+[       12.78] Setting volume for numid=2
+[       12.80] Setting volume for numid=1
+[       12.81] Setting volume for numid=5
+[       12.64] amixer: Control default element write error: Operation not permitted
+[       12.64] 
+[       12.82] Setting volume for numid=4
+[       12.84] Restoring ALSA mixers configuration
+[       12.87] setting audio to auto
+[       12.89] ---- recalbox-config.sh ----
+[       12.91] setting audio output mode : auto
+[       12.88] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.88]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.88]   : values=0
+[       12.98] starting emulationstation with lang = pt_BR
+[       13.18] ---- recalbox-config.sh ----
+[       15.77] Starting S92switch
+[       15.78] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.92] Starting S94manager
+[       15.93] ... Starting manager v2
+[       21.01] starting xarcade2jstick
+[       21.13] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       42.31] ---- recalbox-config.sh ----
+[       42.45] ---- recalbox-config.sh ----
+[       57.54] ---- recalbox-config.sh ----
+[       57.56] (re)configure wifi
+[       59.16] Wifi option enabled, trying to configure
+[       67.89] ---- recalbox-config.sh ----
+[       67.96] recalbox.conf saved to /boot partition
+[      114.00] ---- recalbox-config.sh ----
+[      146.47] ---- recalbox-config.sh ----
+[      146.49] (re)configure wifi
+[      148.12] Wifi option enabled, trying to configure
+[      156.73] ---- recalbox-config.sh ----
+[      156.80] recalbox.conf saved to /boot partition
+[      160.67] ---- recalbox-config.sh ----
+[      160.74] recalbox.conf saved to /boot partition
+[      170.46] ---- recalbox-config.sh ----
+[      170.67] ---- recalbox-config.sh ----
+[      178.57] ---- recalbox-config.sh ----
+[      178.72] ---- recalbox-config.sh ----
+[      676.84] ---- recalbox-config.sh ----
+[      676.90] recalbox.conf saved to /boot partition
+[      712.54] ---- recalbox-config.sh ----
+[      738.26] ---- recalbox-config.sh ----
+[      738.33] recalbox.conf saved to /boot partition
+[      753.16] ---- recalbox-config.sh ----
+[      753.36] ---- recalbox-config.sh ----
+[     1092.14] ---- recalbox-config.sh ----
+[     1092.27] ---- recalbox-config.sh ----
+[     1140.42] ---- recalbox-config.sh ----
+[     1140.44] disable wifi
+[     1141.09] ---- recalbox-config.sh ----
+[     1141.16] recalbox.conf saved to /boot partition
+[     1310.30] Stopping S94manager
+[     1310.46] Stopping S92switch
+[     1310.47] script /recalbox/scripts/powerswitch.sh already stopped !
+[     1310.84] Stopping Emulationstation
+[     1310.90] Saving ALSA mixers configuration
+[     1311.04] Stopping S13fbcp
+[     1311.18] recalbox.conf saved to /boot partition
+[        3.27] Wifi option disabled
+[       11.80] [        3.27] Wifi option disabled
+es
+[       11.89] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.00] Running MIGRATIONS…
+[       12.03] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.04] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.08] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.11] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.12] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.15] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.17] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.28] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.57] starting new log
+[       12.58] converting dos to unix carriage return characters
+[       12.62] setting audio volume to 93
+[       12.62] setting hostname to RECALBOX
+[       12.64] setting keyboard layout to pt
+[       12.65] setting timezone to Europe/Paris
+[       12.66] ---- recalbox-config.sh ----
+[       12.68] setting audio volume : 93
+[       12.63] Simple mixer control 'PCM',0
+[       12.63]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.63]   Playback channels: Mono
+[       12.63]   Limits: Playback -10239 - 400
+[       12.63]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.76] Setting volume for numid=3
+[       12.77] Setting volume for numid=2
+[       12.78] Setting volume for numid=1
+[       12.80] Setting volume for numid=5
+[       12.63] amixer: Control default element write error: Operation not permitted
+[       12.63] 
+[       12.81] Setting volume for numid=4
+[       12.83] Restoring ALSA mixers configuration
+[       12.86] setting audio to auto
+[       12.88] ---- recalbox-config.sh ----
+[       12.90] setting audio output mode : auto
+[       12.87] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.87]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.87]   : values=0
+[       12.97] starting emulationstation with lang = pt_BR
+[       13.16] ---- recalbox-config.sh ----
+[       15.96] Starting S92switch
+[       15.98] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.11] Starting S94manager
+[       16.13] ... Starting manager v2
+[       20.98] starting xarcade2jstick
+[       21.06] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      319.64] ---- recalbox-config.sh ----
+[      346.43] ---- recalbox-config.sh ----
+[      354.53] ---- recalbox-config.sh ----
+[      422.77] Stopping S94manager
+[      422.89] Stopping S92switch
+[      422.90] script /recalbox/scripts/powerswitch.sh already stopped !
+[      423.25] Stopping Emulationstation
+[      423.31] Saving ALSA mixers configuration
+[      423.43] Stopping S13fbcp
+[      423.55] recalbox.conf saved to /boot partition
+[        3.26] Wifi option disabled
+[       11.82] [        3.26] Wifi option disabled
+es
+[       11.90] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.01] Running MIGRATIONS…
+[       12.03] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.06] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.10] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.12] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.14] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.16] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.18] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.30] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.60] starting new log
+[       12.61] converting dos to unix carriage return characters
+[       12.64] setting hostname to RECALBOX
+[       12.64] setting audio volume to 93
+[       12.68] [       12.68] setting timezone to Europe/Parissetting keyboard layout to pt
+
+[       12.69] ---- recalbox-config.sh ----
+[       12.72] setting audio volume : 93
+[       12.66] Simple mixer control 'PCM',0
+[       12.66]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.66]   Playback channels: Mono
+[       12.66]   Limits: Playback -10239 - 400
+[       12.66]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.80] Setting volume for numid=3
+[       12.81] Setting volume for numid=2
+[       12.83] Setting volume for numid=1
+[       12.84] Setting volume for numid=5
+[       12.66] amixer: Control default element write error: Operation not permitted
+[       12.66] 
+[       12.86] Setting volume for numid=4
+[       12.87] Restoring ALSA mixers configuration
+[       12.90] setting audio to auto
+[       12.92] ---- recalbox-config.sh ----
+[       12.94] setting audio output mode : auto
+[       12.91] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.91]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.91]   : values=0
+[       13.01] starting emulationstation with lang = pt_BR
+[       13.21] ---- recalbox-config.sh ----
+[       16.08] Starting S92switch
+[       16.09] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.24] Starting S94manager
+[       16.26] ... Starting manager v2
+[       21.08] starting xarcade2jstick
+[       21.25] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      755.83] ---- recalbox-config.sh ----
+[      755.96] ---- recalbox-config.sh ----
+[      783.45] ---- recalbox-config.sh ----
+[      783.46] (re)configure wifi
+[      785.05] Wifi option enabled, trying to configure
+[      789.33] Configuring wifi for SSID: Luciano
+[      793.83] ---- recalbox-config.sh ----
+[      796.95] ---- recalbox-config.sh ----
+[      796.96] (re)configure wifi
+[      798.60] Wifi option enabled, trying to configure
+[      802.88] Configuring wifi for SSID: Luciano
+[      807.40] ---- recalbox-config.sh ----
+[      807.46] recalbox.conf saved to /boot partition
+[      819.33] ---- recalbox-config.sh ----
+[      819.39] recalbox.conf saved to /boot partition
+[      886.81] ---- recalbox-config.sh ----
+[      887.01] ---- recalbox-config.sh ----
+[      922.73] ---- recalbox-config.sh ----
+[      982.70] ---- recalbox-config.sh ----
+[      982.82] ---- recalbox-config.sh ----
+[     1017.43] ---- recalbox-config.sh ----
+[     1017.55] ---- recalbox-config.sh ----
+[     1041.99] ---- recalbox-config.sh ----
+[     1042.01] disable wifi
+[     1042.69] ---- recalbox-config.sh ----
+[     1042.75] recalbox.conf saved to /boot partition
+[     1808.11] Stopping S94manager
+[     1808.26] Stopping S92switch
+[     1808.27] script /recalbox/scripts/powerswitch.sh already stopped !
+[     1808.62] Stopping Emulationstation
+[     1808.68] Saving ALSA mixers configuration
+[     1808.80] Stopping S13fbcp
+[     1808.92] recalbox.conf saved to /boot partition
+[        3.28] Wifi option disabled
+[       11.83] [        3.28] Wifi option disabled
+es
+[       11.92] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.02] Running MIGRATIONS…
+[       12.05] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.06] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.10] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.11] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.14] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.15] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.17] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.20] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.31] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.62] starting new log
+[       12.63] converting dos to unix carriage return characters
+[       12.66] setting audio volume to 94
+[       12.67] setting hostname to RECALBOX
+[       12.69] setting timezone to Europe/Paris
+[       12.70] setting keyboard layout to pt
+[       12.71] ---- recalbox-config.sh ----
+[       12.72] setting audio volume : 94
+[       12.68] Simple mixer control 'PCM',0
+[       12.68]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.68]   Playback channels: Mono
+[       12.68]   Limits: Playback -10239 - 400
+[       12.68]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.81] Setting volume for numid=3
+[       12.82] Setting volume for numid=2
+[       12.84] Setting volume for numid=1
+[       12.85] Setting volume for numid=5
+[       12.68] amixer: Control default element write error: Operation not permitted
+[       12.68] 
+[       12.87] Setting volume for numid=4
+[       12.88] Restoring ALSA mixers configuration
+[       12.92] setting audio to auto
+[       12.94] ---- recalbox-config.sh ----
+[       12.96] setting audio output mode : auto
+[       12.93] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.93]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.93]   : values=0
+[       13.02] starting emulationstation with lang = pt_BR
+[       13.22] ---- recalbox-config.sh ----
+[       16.02] Starting S92switch
+[       16.04] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.23] Starting S94manager
+[       16.29] ... Starting manager v2
+[       20.99] starting xarcade2jstick
+[       21.02] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      170.16] Stopping S94manager
+[      170.32] Stopping S92switch
+[      170.33] script /recalbox/scripts/powerswitch.sh already stopped !
+[      170.70] Stopping Emulationstation
+[      170.76] Saving ALSA mixers configuration
+[      170.89] Stopping S13fbcp
+[      171.02] recalbox.conf saved to /boot partition
+[        3.25] Wifi option disabled
+[       11.80] [        3.25] Wifi option disabled
+es
+[       11.89] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.00] Running MIGRATIONS…
+[       12.02] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.04] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.06] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.08] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.10] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.12] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.15] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.18] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.30] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.59] starting new log
+[       12.60] converting dos to unix carriage return characters
+[       12.64] setting audio volume to 94
+[       12.64] setting hostname to RECALBOX
+[       12.66] setting timezone to Europe/Paris
+[       12.67] setting keyboard layout to pt
+[       12.68] ---- recalbox-config.sh ----
+[       12.70] setting audio volume : 94
+[       12.67] Simple mixer control 'PCM',0
+[       12.67]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.67]   Playback channels: Mono
+[       12.67]   Limits: Playback -10239 - 400
+[       12.67]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.79] Setting volume for numid=3
+[       12.80] Setting volume for numid=2
+[       12.82] Setting volume for numid=1
+[       12.83] Setting volume for numid=5
+[       12.67] amixer: Control default element write error: Operation not permitted
+[       12.67] 
+[       12.85] Setting volume for numid=4
+[       12.86] Restoring ALSA mixers configuration
+[       12.89] setting audio to auto
+[       12.91] ---- recalbox-config.sh ----
+[       12.93] setting audio output mode : auto
+[       12.91] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.91]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.91]   : values=0
+[       13.00] starting emulationstation with lang = pt_BR
+[       13.17] ---- recalbox-config.sh ----
+[       15.98] Starting S92switch
+[       15.99] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.14] Starting S94manager
+[       16.17] ... Starting manager v2
+[       21.05] starting xarcade2jstick
+[       21.22] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       71.15] ---- recalbox-config.sh ----
+[       71.28] ---- recalbox-config.sh ----
+[      182.25] ---- recalbox-config.sh ----
+[      182.37] ---- recalbox-config.sh ----
+[      410.10] Stopping S94manager
+[      410.24] Stopping S92switch
+[      410.25] script /recalbox/scripts/powerswitch.sh already stopped !
+[      410.63] Stopping Emulationstation
+[      410.69] Saving ALSA mixers configuration
+[      410.82] Stopping S13fbcp
+[      411.35] recalbox.conf saved to /boot partition
+[        3.26] Wifi option disabled
+[       11.79] [        3.26] Wifi option disabled
+es
+[       11.87] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.97] Running MIGRATIONS…
+[       12.01] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.02] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.06] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.08] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.10] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.14] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.16] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.18] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.21] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.24] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.36] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.80] starting new log
+[       12.81] converting dos to unix carriage return characters
+[       12.84] setting audio volume to 94
+[       12.85] setting hostname to RECALBOX
+[       12.86] setting timezone to Europe/Paris
+[       12.87] setting keyboard layout to pt
+[       12.88] ---- recalbox-config.sh ----
+[       12.90] setting audio volume : 94
+[       12.85] Simple mixer control 'PCM',0
+[       12.85]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.85]   Playback channels: Mono
+[       12.85]   Limits: Playback -10239 - 400
+[       12.85]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.97] Setting volume for numid=3
+[       12.98] Setting volume for numid=2
+[       13.00] Setting volume for numid=1
+[       13.01] Setting volume for numid=5
+[       12.85] amixer: Control default element write error: Operation not permitted
+[       12.85] 
+[       13.02] Setting volume for numid=4
+[       13.04] Restoring ALSA mixers configuration
+[       13.07] setting audio to auto
+[       13.09] ---- recalbox-config.sh ----
+[       13.10] setting audio output mode : auto
+[       13.08] numid=3,iface=MIXER,name='PCM Playback Route'
+[       13.08]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       13.08]   : values=0
+[       13.17] starting emulationstation with lang = pt_BR
+[       13.30] ---- recalbox-config.sh ----
+[       15.95] Starting S92switch
+[       15.96] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.10] Starting S94manager
+[       16.12] ... Starting manager v2
+[       21.17] starting xarcade2jstick
+[       21.36] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       99.44] ---- recalbox-config.sh ----
+[       99.50] recalbox.conf saved to /boot partition
+[      119.80] ---- recalbox-config.sh ----
+[      119.94] ---- recalbox-config.sh ----
+[      146.33] ---- recalbox-config.sh ----
+[      573.98] Stopping S94manager
+[      574.14] Stopping S92switch
+[      574.14] script /recalbox/scripts/powerswitch.sh already stopped !
+[      574.54] Stopping Emulationstation
+[      574.59] Saving ALSA mixers configuration
+[      574.72] Stopping S13fbcp
+[      574.85] recalbox.conf saved to /boot partition
+[        3.23] Wifi option disabled
+[       11.86] [        3.23] Wifi option disabled
+es
+[       11.94] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.05] Running MIGRATIONS…
+[       12.08] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.10] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.12] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.15] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.16] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.18] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.19] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.20] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.24] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.35] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.66] starting new log
+[       12.66] converting dos to unix carriage return characters
+[       12.70] setting audio volume to 94
+[       12.70] setting hostname to RECALBOX
+[       12.74] setting timezone to Europe/Paris
+[       12.74] setting keyboard layout to pt
+[       12.75] ---- recalbox-config.sh ----
+[       12.77] setting audio volume : 94
+[       12.72] Simple mixer control 'PCM',0
+[       12.72]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.72]   Playback channels: Mono
+[       12.72]   Limits: Playback -10239 - 400
+[       12.72]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.86] Setting volume for numid=3
+[       12.87] Setting volume for numid=2
+[       12.89] Setting volume for numid=1
+[       12.91] Setting volume for numid=5
+[       12.72] amixer: Control default element write error: Operation not permitted
+[       12.72] 
+[       12.92] Setting volume for numid=4
+[       12.94] Restoring ALSA mixers configuration
+[       12.97] setting audio to auto
+[       12.99] ---- recalbox-config.sh ----
+[       13.01] setting audio output mode : auto
+[       12.98] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.98]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.98]   : values=0
+[       13.08] starting emulationstation with lang = pt_BR
+[       13.23] ---- recalbox-config.sh ----
+[       16.17] Starting S92switch
+[       16.18] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.34] Starting S94manager
+[       16.35] ... Starting manager v2
+[       21.14] starting xarcade2jstick
+[       21.31] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      185.18] Stopping S94manager
+[      185.32] Stopping S92switch
+[      185.32] script /recalbox/scripts/powerswitch.sh already stopped !
+[      185.71] Stopping Emulationstation
+[      185.77] Saving ALSA mixers configuration
+[      185.90] Stopping S13fbcp
+[      186.03] recalbox.conf saved to /boot partition
+[        3.25] Wifi option disabled
+[       11.67] [        3.25] Wifi option disabled
+es
+[       11.75] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.85] Running MIGRATIONS…
+[       11.88] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.89] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.90] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.91] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.93] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.94] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.95] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.96] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       11.98] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       11.99] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.01] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.12] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.40] starting new log
+[       12.40] converting dos to unix carriage return characters
+[       12.43] setting hostname to RECALBOX
+[       12.44] setting audio volume to 93
+[       12.45] enabling mk_arcade_joystick_rpi
+[       12.46] setting timezone to Europe/Paris
+[       12.47] setting keyboard layout to pt
+[       12.48] ---- recalbox-config.sh ----
+[       12.48] ---- recalbox-config.sh ----
+[       12.50] setting audio volume : 93
+[       12.50] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.45] Simple mixer control 'PCM',0
+[       12.45]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.45]   Playback channels: Mono
+[       12.45]   Limits: Playback -10239 - 400
+[       12.45]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.58] Setting volume for numid=3
+[       12.52] [       12.53] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.59] Setting volume for numid=2
+[       12.61] Setting volume for numid=1
+[       12.62] Setting volume for numid=5
+[       12.45] amixer: Control default element write error: Operation not permitted
+[       12.45] 
+[       12.64] Setting volume for numid=4
+[       12.65] Restoring ALSA mixers configuration
+[       12.68] setting audio to auto
+[       12.70] ---- recalbox-config.sh ----
+[       12.72] setting audio output mode : auto
+[       12.69] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.69]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.69]   : values=0
+[       12.78] starting emulationstation with lang = pt_BR
+[       12.91] ---- recalbox-config.sh ----
+[       15.50] Starting S92switch
+[       15.51] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.61] Starting S94manager
+[       15.62] ... Starting manager v2
+[       20.80] starting xarcade2jstick
+[       21.02] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[        3.28] Wifi option disabled
+[       14.24] [        3.28] Wifi option disabled
+es
+[       14.32] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       14.42] Running MIGRATIONS…
+[       14.44] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       14.57] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       14.71] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       14.84] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       14.98] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       15.14] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       15.28] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       15.42] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       15.55] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       15.68] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       15.83] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       16.06] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       17.65] starting new log
+[       17.66] converting dos to unix carriage return characters
+[       17.69] setting audio volume to 93
+[       17.70] [       17.70] enabling mk_arcade_joystick_rpisetting hostname to RECALBOX
+
+[       17.71] setting keyboard layout to pt
+[       17.72] setting timezone to Europe/Paris
+[       17.73] ---- recalbox-config.sh ----
+[       17.74] ---- recalbox-config.sh ----
+[       17.76] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       17.76] setting audio volume : 93
+[       17.71] Simple mixer control 'PCM',0
+[       17.71]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       17.71]   Playback channels: Mono
+[       17.71]   Limits: Playback -10239 - 400
+[       17.71]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       17.77] [       17.79] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       17.85] Setting volume for numid=3
+[       17.87] Setting volume for numid=2
+[       17.88] Setting volume for numid=1
+[       17.90] Setting volume for numid=5
+[       17.71] amixer: Control default element write error: Operation not permitted
+[       17.71] 
+[       17.91] Setting volume for numid=4
+[       17.93] Restoring ALSA mixers configuration
+[       17.96] setting audio to auto
+[       17.98] ---- recalbox-config.sh ----
+[       18.00] setting audio output mode : auto
+[       17.97] numid=3,iface=MIXER,name='PCM Playback Route'
+[       17.97]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       17.97]   : values=0
+[       18.06] starting emulationstation with lang = pt_BR
+[       18.21] ---- recalbox-config.sh ----
+[       20.83] Starting S92switch
+[       20.84] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       20.94] Starting S94manager
+[       20.96] ... Starting manager v2
+[       26.10] starting xarcade2jstick
+[       26.35] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[        3.23] Wifi option disabled
+[       11.85] [        3.23] Wifi option disabled
+es
+[       11.93] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       12.04] Running MIGRATIONS…
+[       12.05] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.08] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.11] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.12] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.15] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.16] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.17] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.20] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.31] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.61] starting new log
+[       12.62] converting dos to unix carriage return characters
+[       12.65] setting audio volume to 90
+[       12.66] setting hostname to RECALBOX
+[       12.67] setting keyboard layout to en
+[       12.68] enabling mk_arcade_joystick_rpi
+[       12.70] setting timezone to Europe/Paris
+[       12.71] ---- recalbox-config.sh ----
+[       12.72] ---- recalbox-config.sh ----
+[       12.68] cannot open file en
+[       12.74] setting audio volume : 90
+[       12.75] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.67] Simple mixer control 'PCM',0
+[       12.67]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.67]   Playback channels: Mono
+[       12.67]   Limits: Playback -10239 - 400
+[       12.67]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.76] [       12.77] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.83] Setting volume for numid=3
+[       12.85] Setting volume for numid=2
+[       12.87] Setting volume for numid=1
+[       12.88] Setting volume for numid=5
+[       12.67] amixer: Control default element write error: Operation not permitted
+[       12.67] 
+[       12.90] Setting volume for numid=4
+[       12.91] Restoring ALSA mixers configuration
+[       12.94] setting audio to auto
+[       12.96] ---- recalbox-config.sh ----
+[       12.98] setting audio output mode : auto
+[       12.95] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.95]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.95]   : values=0
+[       13.05] starting emulationstation with lang = en_US
+[       13.23] ---- recalbox-config.sh ----
+[       15.99] Starting S92switch
+[       15.99] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       16.12] Starting S94manager
+[       16.16] ... Starting manager v2
+[       21.05] starting xarcade2jstick
+[       21.23] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       41.48] ---- recalbox-config.sh ----
+[       41.62] ---- recalbox-config.sh ----
+[       50.27] Stopping S94manager
+[       50.46] Stopping S92switch
+[       50.47] script /recalbox/scripts/powerswitch.sh already stopped !
+[       51.01] Stopping Emulationstation
+[       51.11] Saving ALSA mixers configuration
+[       51.28] Stopping S13fbcp
+[       51.44] recalbox.conf saved to /boot partition
+[        3.23] Wifi option disabled
+[       11.70] [        3.23] Wifi option disabled
+es
+[       11.78] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.88] Running MIGRATIONS…
+[       11.90] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.92] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.93] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.94] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.95] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.96] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.98] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.99] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.00] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.01] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.04] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.14] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.43] starting new log
+[       12.43] converting dos to unix carriage return characters
+[       12.46] setting audio volume to 90
+[       12.48] setting hostname to RECALBOX
+[       12.49] enabling mk_arcade_joystick_rpi
+[       12.49] setting keyboard layout to pt
+[       12.49] setting timezone to Europe/Paris
+[       12.51] ---- recalbox-config.sh ----
+[       12.51] ---- recalbox-config.sh ----
+[       12.53] setting audio volume : 90
+[       12.53] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.47] Simple mixer control 'PCM',0
+[       12.47]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.47]   Playback channels: Mono
+[       12.47]   Limits: Playback -10239 - 400
+[       12.47]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.61] Setting volume for numid=3
+[       12.55] [       12.57] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.63] Setting volume for numid=2
+[       12.65] Setting volume for numid=1
+[       12.67] Setting volume for numid=5
+[       12.47] amixer: Control default element write error: Operation not permitted
+[       12.47] 
+[       12.68] Setting volume for numid=4
+[       12.69] Restoring ALSA mixers configuration
+[       12.72] setting audio to auto
+[       12.74] ---- recalbox-config.sh ----
+[       12.76] setting audio output mode : auto
+[       12.73] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.73]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.73]   : values=0
+[       12.82] starting emulationstation with lang = pt_BR
+[       12.97] ---- recalbox-config.sh ----
+[       15.58] Starting S92switch
+[       15.59] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.70] Starting S94manager
+[       15.71] ... Starting manager v2
+[       20.87] starting xarcade2jstick
+[       21.06] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      179.97] ---- recalbox-config.sh ----
+[      750.74] ---- recalbox-config.sh ----
+[      750.87] ---- recalbox-config.sh ----
+[      763.20] Stopping S94manager
+[      763.32] Stopping S92switch
+[      763.33] script /recalbox/scripts/powerswitch.sh already stopped !
+[      763.68] Stopping Emulationstation
+[      763.73] Saving ALSA mixers configuration
+[      763.85] Stopping S13fbcp
+[      763.96] recalbox.conf saved to /boot partition
+[        3.25] Wifi option disabled
+[       11.66] [        3.25] Wifi option disabled
+es
+[       11.74] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.84] Running MIGRATIONS…
+[       11.86] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.87] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.88] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.90] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.91] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.92] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.93] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.95] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       11.96] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       11.97] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.00] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.11] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.40] starting new log
+[       12.40] converting dos to unix carriage return characters
+[       12.44] setting audio volume to 90
+[       12.44] enabling mk_arcade_joystick_rpi
+[       12.45] setting hostname to RECALBOX
+[       12.46] setting timezone to Europe/Paris
+[       12.47] setting keyboard layout to pt
+[       12.48] ---- recalbox-config.sh ----
+[       12.48] ---- recalbox-config.sh ----
+[       12.50] setting audio volume : 90
+[       12.51] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.45] Simple mixer control 'PCM',0
+[       12.45]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.45]   Playback channels: Mono
+[       12.45]   Limits: Playback -10239 - 400
+[       12.45]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.58] Setting volume for numid=3
+[       12.52] [       12.53] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.60] Setting volume for numid=2
+[       12.61] Setting volume for numid=1
+[       12.63] Setting volume for numid=5
+[       12.45] amixer: Control default element write error: Operation not permitted
+[       12.45] 
+[       12.64] Setting volume for numid=4
+[       12.66] Restoring ALSA mixers configuration
+[       12.69] setting audio to auto
+[       12.71] ---- recalbox-config.sh ----
+[       12.72] setting audio output mode : auto
+[       12.70] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.70]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.70]   : values=0
+[       12.79] starting emulationstation with lang = pt_BR
+[       12.93] ---- recalbox-config.sh ----
+[       15.48] Starting S92switch
+[       15.49] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.59] Starting S94manager
+[       15.61] ... Starting manager v2
+[       20.81] starting xarcade2jstick
+[       21.07] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      183.10] Stopping S94manager
+[      183.22] Stopping S92switch
+[      183.23] script /recalbox/scripts/powerswitch.sh already stopped !
+[      183.58] Stopping Emulationstation
+[      183.64] Saving ALSA mixers configuration
+[      183.76] Stopping S13fbcp
+[      183.88] recalbox.conf saved to /boot partition
+[        3.24] Wifi option disabled
+[       11.71] [        3.24] Wifi option disabled
+es
+[       11.79] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.89] Running MIGRATIONS…
+[       11.91] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.92] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.93] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.94] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.96] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.97] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.98] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.99] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.01] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.02] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.04] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.15] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.44] starting new log
+[       12.45] converting dos to unix carriage return characters
+[       12.49] setting hostname to RECALBOX
+[       12.49] enabling mk_arcade_joystick_rpi
+[       12.50] setting audio volume to 90
+[       12.51] setting timezone to Europe/Paris
+[       12.51] setting keyboard layout to pt
+[       12.54] ---- recalbox-config.sh ----
+[       12.54] ---- recalbox-config.sh ----
+[       12.56] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.57] setting audio volume : 90
+[       12.57] [       12.58] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.52] Simple mixer control 'PCM',0
+[       12.52]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.52]   Playback channels: Mono
+[       12.52]   Limits: Playback -10239 - 400
+[       12.52]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.68] Setting volume for numid=3
+[       12.69] Setting volume for numid=2
+[       12.71] Setting volume for numid=1
+[       12.72] Setting volume for numid=5
+[       12.52] amixer: Control default element write error: Operation not permitted
+[       12.52] 
+[       12.74] Setting volume for numid=4
+[       12.75] Restoring ALSA mixers configuration
+[       12.78] setting audio to auto
+[       12.80] ---- recalbox-config.sh ----
+[       12.82] setting audio output mode : auto
+[       12.79] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.79]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.79]   : values=0
+[       12.88] starting emulationstation with lang = pt_BR
+[       13.04] ---- recalbox-config.sh ----
+[       15.75] Starting S92switch
+[       15.76] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.88] Starting S94manager
+[       15.90] ... Starting manager v2
+[       20.86] starting xarcade2jstick
+[       20.98] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[     4038.07] Stopping S94manager
+[     4038.19] Stopping S92switch
+[     4038.20] script /recalbox/scripts/powerswitch.sh already stopped !
+[     4038.55] Stopping Emulationstation
+[     4038.60] Saving ALSA mixers configuration
+[     4038.72] Stopping S13fbcp
+[     4038.85] recalbox.conf saved to /boot partition
+[        3.18] Wifi option disabled
+[       11.71] [        3.18] Wifi option disabled
+es
+[       11.79] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.90] Running MIGRATIONS…
+[       11.91] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.93] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.94] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.95] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.96] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.98] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.99] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.00] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.01] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.03] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.05] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.16] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.46] starting new log
+[       12.46] converting dos to unix carriage return characters
+[       12.51] enabling mk_arcade_joystick_rpi
+[       12.51] setting hostname to RECALBOX
+[       12.51] setting audio volume to 90
+[       12.54] setting timezone to Europe/Paris
+[       12.54] setting keyboard layout to pt
+[       12.55] ---- recalbox-config.sh ----
+[       12.56] ---- recalbox-config.sh ----
+[       12.57] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.59] setting audio volume : 90
+[       12.59] [       12.60] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.54] Simple mixer control 'PCM',0
+[       12.54]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.54]   Playback channels: Mono
+[       12.54]   Limits: Playback -10239 - 400
+[       12.54]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.71] Setting volume for numid=3
+[       12.72] Setting volume for numid=2
+[       12.74] Setting volume for numid=1
+[       12.75] Setting volume for numid=5
+[       12.54] amixer: Control default element write error: Operation not permitted
+[       12.54] 
+[       12.76] Setting volume for numid=4
+[       12.78] Restoring ALSA mixers configuration
+[       12.81] setting audio to auto
+[       12.83] ---- recalbox-config.sh ----
+[       12.85] setting audio output mode : auto
+[       12.82] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.82]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.82]   : values=0
+[       12.92] starting emulationstation with lang = pt_BR
+[       13.07] ---- recalbox-config.sh ----
+[       15.77] Starting S92switch
+[       15.79] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.92] Starting S94manager
+[       15.94] ... Starting manager v2
+[       20.93] starting xarcade2jstick
+[       21.08] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[     3873.36] Stopping S94manager
+[     3873.49] Stopping S92switch
+[     3873.50] script /recalbox/scripts/powerswitch.sh already stopped !
+[     3873.85] Stopping Emulationstation
+[     3873.90] Saving ALSA mixers configuration
+[     3874.01] Stopping S13fbcp
+[     3874.13] recalbox.conf saved to /boot partition
+[        3.24] Wifi option disabled
+[       11.60] [        3.24] Wifi option disabled
+es
+[       11.68] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.77] Running MIGRATIONS…
+[       11.80] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.81] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.82] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.83] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.84] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.85] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.87] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.88] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       11.89] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       11.90] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       11.92] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.03] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.29] starting new log
+[       12.30] converting dos to unix carriage return characters
+[       12.33] setting audio volume to 90
+[       12.34] setting hostname to RECALBOX[       12.34] 
+setting keyboard layout to pt
+[       12.34] enabling mk_arcade_joystick_rpi
+[       12.35] setting timezone to Europe/Paris
+[       12.37] ---- recalbox-config.sh ----
+[       12.38] ---- recalbox-config.sh ----
+[       12.39] setting audio volume : 90
+[       12.41] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.34] Simple mixer control 'PCM',0
+[       12.34]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.34]   Playback channels: Mono
+[       12.34]   Limits: Playback -10239 - 400
+[       12.34]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.47] Setting volume for numid=3
+[       12.48] Setting volume for numid=2
+[       12.42] [       12.43] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.50] Setting volume for numid=1
+[       12.51] Setting volume for numid=5
+[       12.34] amixer: Control default element write error: Operation not permitted
+[       12.34] 
+[       12.52] Setting volume for numid=4
+[       12.54] Restoring ALSA mixers configuration
+[       12.57] setting audio to auto
+[       12.58] ---- recalbox-config.sh ----
+[       12.60] setting audio output mode : auto
+[       12.57] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.57]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.57]   : values=0
+[       12.66] starting emulationstation with lang = pt_BR
+[       12.79] ---- recalbox-config.sh ----
+[       15.32] Starting S92switch
+[       15.33] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.43] Starting S94manager
+[       15.44] ... Starting manager v2
+[       20.69] starting xarcade2jstick
+[       20.95] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[     8465.30] ---- recalbox-config.sh ----
+[     8501.50] ---- recalbox-config.sh ----
+[     8507.79] ---- recalbox-config.sh ----
+[     8562.47] ---- recalbox-config.sh ----
+[     8659.07] ---- recalbox-config.sh ----
+[     8666.68] ---- recalbox-config.sh ----
+[     8796.31] ---- recalbox-config.sh ----
+[     8858.78] ---- recalbox-config.sh ----
+[     9110.75] Stopping S94manager
+[     9110.88] Stopping S92switch
+[     9110.89] script /recalbox/scripts/powerswitch.sh already stopped !
+[     9111.24] Stopping Emulationstation
+[     9111.29] Saving ALSA mixers configuration
+[     9111.41] Stopping S13fbcp
+[     9111.53] recalbox.conf saved to /boot partition
+[        3.21] Wifi option disabled
+[       11.79] [        3.21] Wifi option disabled
+es
+[       11.87] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.97] Running MIGRATIONS…
+[       12.12] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       12.13] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.27] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.40] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.54] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.67] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.80] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.94] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       13.07] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       13.21] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       13.35] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       13.59] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       15.44] starting new log
+[       15.45] converting dos to unix carriage return characters
+[       15.48] setting hostname to RECALBOX
+[       15.48] setting audio volume to 90
+[       15.49] enabling mk_arcade_joystick_rpi
+[       15.51] setting keyboard layout to pt
+[       15.64] ---- recalbox-config.sh ----
+[       15.64] setting timezone to Europe/Paris
+[       15.64] ---- recalbox-config.sh ----
+[       15.66] [       15.66] setting audio volume : 90rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+
+[       15.49] Simple mixer control 'PCM',0
+[       15.49]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       15.49]   Playback channels: Mono
+[       15.49]   Limits: Playback -10239 - 400
+[       15.49]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       15.67] [       15.68] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       15.76] Setting volume for numid=3
+[       15.77] Setting volume for numid=2
+[       15.79] Setting volume for numid=1
+[       15.80] Setting volume for numid=5
+[       15.49] amixer: Control default element write error: Operation not permitted
+[       15.49] 
+[       15.81] Setting volume for numid=4
+[       15.83] Restoring ALSA mixers configuration
+[       15.86] setting audio to auto
+[       15.87] ---- recalbox-config.sh ----
+[       15.89] setting audio output mode : auto
+[       15.86] numid=3,iface=MIXER,name='PCM Playback Route'
+[       15.86]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       15.86]   : values=0
+[       15.95] starting emulationstation with lang = pt_BR
+[       16.30] ---- recalbox-config.sh ----
+[       19.02] Starting S92switch
+[       19.02] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       19.12] Starting S94manager
+[       19.14] ... Starting manager v2
+[       23.94] starting xarcade2jstick
+[       24.21] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[      214.37] Stopping S94manager
+[      214.51] Stopping S92switch
+[      214.52] script /recalbox/scripts/powerswitch.sh already stopped !
+[      214.87] Stopping Emulationstation
+[      214.91] Saving ALSA mixers configuration
+[      215.03] Stopping S13fbcp
+[      215.15] recalbox.conf saved to /boot partition
+[        3.22] Wifi option disabled
+[       11.67] [        3.22] Wifi option disabled
+es
+[       11.75] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.85] Running MIGRATIONS…
+[       11.86] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.88] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.89] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.90] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.91] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.92] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.93] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.95] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       11.96] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       11.97] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       11.99] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.10] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.38] starting new log
+[       12.38] converting dos to unix carriage return characters
+[       12.41] setting hostname to RECALBOX
+[       12.42] setting audio volume to 90
+[       12.43] enabling mk_arcade_joystick_rpi
+[       12.43] setting timezone to Europe/Paris
+[       12.43] setting keyboard layout to pt
+[       12.45] ---- recalbox-config.sh ----
+[       12.46] ---- recalbox-config.sh ----
+[       12.47] setting audio volume : 90
+[       12.48] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.43] Simple mixer control 'PCM',0
+[       12.43]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.43]   Playback channels: Mono
+[       12.43]   Limits: Playback -10239 - 400
+[       12.43]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.55] Setting volume for numid=3
+[       12.49] [       12.50] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.57] Setting volume for numid=2
+[       12.59] Setting volume for numid=1
+[       12.60] Setting volume for numid=5
+[       12.43] amixer: Control default element write error: Operation not permitted
+[       12.43] 
+[       12.61] Setting volume for numid=4
+[       12.63] Restoring ALSA mixers configuration
+[       12.66] setting audio to auto
+[       12.68] ---- recalbox-config.sh ----
+[       12.69] setting audio output mode : auto
+[       12.67] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.67]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.67]   : values=0
+[       12.75] starting emulationstation with lang = pt_BR
+[       12.89] ---- recalbox-config.sh ----
+[       15.46] Starting S92switch
+[       15.47] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.58] Starting S94manager
+[       15.59] ... Starting manager v2
+[       20.74] starting xarcade2jstick
+[       20.91] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[    11607.82] ---- recalbox-config.sh ----
+[    11879.24] ---- recalbox-config.sh ----
+[    11975.61] ---- recalbox-config.sh ----
+[    12196.00] Stopping S94manager
+[    12196.14] Stopping S92switch
+[    12196.14] script /recalbox/scripts/powerswitch.sh already stopped !
+[    12196.74] Stopping Emulationstation
+[    12196.82] Saving ALSA mixers configuration
+[    12196.98] Stopping S13fbcp
+[    12197.15] recalbox.conf saved to /boot partition
+[        3.15] Wifi option disabled
+[       11.58] [        3.15] Wifi option disabled
+es
+[       11.66] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.76] Running MIGRATIONS…
+[       11.78] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.79] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       11.80] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.81] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       11.83] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       11.84] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       11.85] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       11.86] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       11.87] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       11.89] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       11.91] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.02] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.31] starting new log
+[       12.32] converting dos to unix carriage return characters
+[       12.35] setting audio volume to 90
+[       12.36] setting hostname to RECALBOX
+[       12.37] setting keyboard layout to pt
+[       12.37] enabling mk_arcade_joystick_rpi
+[       12.38] setting timezone to Europe/Paris
+[       12.39] ---- recalbox-config.sh ----
+[       12.40] ---- recalbox-config.sh ----
+[       12.42] setting audio volume : 90
+[       12.42] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.36] Simple mixer control 'PCM',0
+[       12.36]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.36]   Playback channels: Mono
+[       12.36]   Limits: Playback -10239 - 400
+[       12.36]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.44] [       12.45] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.52] Setting volume for numid=3
+[       12.54] Setting volume for numid=2
+[       12.55] Setting volume for numid=1
+[       12.56] Setting volume for numid=5
+[       12.36] amixer: Control default element write error: Operation not permitted
+[       12.36] 
+[       12.58] Setting volume for numid=4
+[       12.59] Restoring ALSA mixers configuration
+[       12.62] setting audio to auto
+[       12.64] ---- recalbox-config.sh ----
+[       12.66] setting audio output mode : auto
+[       12.63] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.63]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.63]   : values=0
+[       12.72] starting emulationstation with lang = pt_BR
+[       12.87] ---- recalbox-config.sh ----
+[       15.42] Starting S92switch
+[       15.42] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.52] Starting S94manager
+[       15.54] ... Starting manager v2
+[       20.69] starting xarcade2jstick
+[       20.82] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       67.70] Stopping S94manager
+[       67.82] Stopping S92switch
+[       67.83] script /recalbox/scripts/powerswitch.sh already stopped !
+[       68.18] Stopping Emulationstation
+[       68.22] Saving ALSA mixers configuration
+[       68.34] Stopping S13fbcp
+[       68.47] recalbox.conf saved to /boot partition
+[        3.23] Wifi option disabled
+[       11.76] [        3.23] Wifi option disabled
+es
+[       11.84] Will not start S13fbcp : system.fbcp.enabled is set to 0
+[       11.95] Running MIGRATIONS…
+[       11.97] RENAMED 'vb' core to 'mednafen_vb' in /recalbox/share/system/recalbox.conf.
+[       11.99] RENAMED 'pce' core to 'mednafen_pce_fast' in /recalbox/share/system/recalbox.conf.
+[       12.00] RENAMED 'fba' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.01] RENAMED 'mame078' core to 'mame2003' in /recalbox/share/system/recalbox.conf.
+[       12.03] RENAMED 'pocketsnes' core to 'snes9x2002' in /recalbox/share/system/recalbox.conf.
+[       12.04] RENAMED 'imame' core to 'mame2000' in /recalbox/share/system/recalbox.conf.
+[       12.05] RENAMED 'fbalpha' core to 'fbneo' in /recalbox/share/system/recalbox.conf.
+[       12.07] RENAMED 'snes9x_next' core to 'snes9x2010' in /recalbox/share/system/recalbox.conf.
+[       12.08] RENAMED 'catsfc' core to 'snes9x2005' in /recalbox/share/system/recalbox.conf.
+[       12.09] RENAMED 'glupen64' core to 'mupen64plus' in /recalbox/share/system/recalbox.conf.
+[       12.12] UPDATED Virtual Gamepad configuration to new 'es_input.cfg' format.
+[       12.23] BUMPED webmanager version in /recalbox/share/system/recalbox.conf.
+[       12.54] starting new log
+[       12.55] converting dos to unix carriage return characters
+[       12.59] setting audio volume to 90
+[       12.59] setting hostname to RECALBOX
+[       12.60] enabling mk_arcade_joystick_rpi
+[       12.62] setting timezone to Europe/Paris
+[       12.63] setting keyboard layout to pt
+[       12.64] ---- recalbox-config.sh ----
+[       12.64] ---- recalbox-config.sh ----
+[       12.66] rmmod: can't unload module 'mk_arcade_joystick_rpi': No such file or directory
+[       12.67] setting audio volume : 90
+[       12.68] [       12.69] : loading module mk_arcade_joystick_rpi args = map=1,2  
+[       12.62] Simple mixer control 'PCM',0
+[       12.62]   Capabilities: pvolume pvolume-joined pswitch pswitch-joined
+[       12.62]   Playback channels: Mono
+[       12.62]   Limits: Playback -10239 - 400
+[       12.62]   Mono: Playback 0 [96%] [0.00dB] [on]
+[       12.80] Setting volume for numid=3
+[       12.82] Setting volume for numid=2
+[       12.83] Setting volume for numid=1
+[       12.84] Setting volume for numid=5
+[       12.62] amixer: Control default element write error: Operation not permitted
+[       12.62] 
+[       12.86] Setting volume for numid=4
+[       12.88] Restoring ALSA mixers configuration
+[       12.91] setting audio to auto
+[       12.93] ---- recalbox-config.sh ----
+[       12.95] setting audio output mode : auto
+[       12.92] numid=3,iface=MIXER,name='PCM Playback Route'
+[       12.92]   ; type=INTEGER,access=rw------,values=1,min=0,max=2,step=0
+[       12.92]   : values=0
+[       13.01] starting emulationstation with lang = pt_BR
+[       13.20] ---- recalbox-config.sh ----
+[       15.80] Starting S92switch
+[       15.81] script /recalbox/scripts/powerswitch.sh [ STARTED ]
+[       15.92] Starting S94manager
+[       15.94] ... Starting manager v2
+[       20.99] starting xarcade2jstick
+[       21.13] xarcade2jstick : no official stick found, looking for keyboard encoder now ...
+[       54.38] ---- recalbox-config.sh ----
+[       54.59] ---- recalbox-config.sh ----
+[      120.64] ---- recalbox-config.sh ----
+[      278.06] ---- recalbox-config.sh ----
+[      672.19] ---- recalbox-config.sh ----
+[      677.49] ---- recalbox-config.sh ----
